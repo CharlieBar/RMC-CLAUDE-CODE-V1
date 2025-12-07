@@ -1,0 +1,9 @@
+BUSINESS 
+- Name: Rand Medical Center (RMC)
+- Domain: https://www.randmedicalcenter.com/
+- Address: 1925 E Rand Rd, Arlington Heights, IL 60004
+- Phone: +1 (224) 735-3522  (use tel:+12247353522 in links)
+- Book Now: Link to: https://www.tebra.com/care/practice/rand-medical-center-456192
+- Primary actions: Call Now, Book Appointment, Request Injury Evaluation
+- Services: Pain Management, Immediate Care, Orthopedics, Physical Therapy, Specialty Programs (Workers’ Comp, Personal Injury, Motor Vehicle Accident)
+- Audience: injured workers, personal injury patients, athletes, families
