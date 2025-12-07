@@ -1,0 +1,277 @@
+// Site Information
+export const SITE_CONFIG = {
+  name: "Rand Medical Center",
+  shortName: "RMC",
+  domain: "https://www.randmedicalcenter.com",
+  description:
+    "Comprehensive medical care in Arlington Heights, IL. Pain management, orthopedics, physical therapy, immediate care, and outpatient surgery. Joint Commission accredited.",
+  phone: "+1-224-735-3522",
+  phoneDisplay: "(224) 735-3522",
+  phoneTel: "tel:+12247353522",
+  email: "info@randmedicalcenter.com",
+  address: {
+    street: "1925 E Rand Rd",
+    city: "Arlington Heights",
+    state: "IL",
+    zip: "60004",
+    full: "1925 E Rand Rd, Arlington Heights, IL 60004",
+  },
+  hours: {
+    weekdays: "9:00 AM - 5:00 PM",
+    weekend: "Closed",
+    display: "Mon-Fri 9am-5pm",
+  },
+  bookingUrl: "https://www.tebra.com/care/practice/rand-medical-center-456192",
+  socialMedia: {
+    facebook: "",
+    instagram: "",
+    linkedin: "",
+    youtube: "",
+  },
+} as const;
+
+// Navigation
+export const NAV_ITEMS = {
+  main: [
+    { label: "Immediate Care", href: "/immediate-care", highlight: true },
+    {
+      label: "Services",
+      href: "/services",
+      megaMenu: true,
+      children: [
+        {
+          category: "Internal Medicine",
+          items: [
+            { label: "Physicals", href: "/services/internal-medicine/physicals" },
+            { label: "Preventive Care", href: "/services/internal-medicine/preventive-care" },
+            { label: "Chronic Disease Management", href: "/services/internal-medicine/chronic-disease-management" },
+            { label: "Vaccinations", href: "/services/internal-medicine/vaccinations" },
+          ],
+        },
+        {
+          category: "Pain Management",
+          items: [
+            { label: "Epidural Injections", href: "/services/pain-management/epidural-steroid-injections" },
+            { label: "Radiofrequency Ablation", href: "/services/pain-management/radiofrequency-ablation" },
+            { label: "Joint Injections", href: "/services/pain-management/joint-injections" },
+            { label: "Nerve Blocks", href: "/services/pain-management/selective-nerve-root-block" },
+            { label: "View All", href: "/services/pain-management" },
+          ],
+        },
+        {
+          category: "Orthopedics",
+          items: [
+            { label: "Shoulder & Rotator Cuff", href: "/services/orthopedics/shoulder-rotator-cuff" },
+            { label: "Knee", href: "/services/orthopedics/knee" },
+            { label: "Hip", href: "/services/orthopedics/hip" },
+            { label: "Sports Injuries", href: "/services/orthopedics/sports-injuries" },
+            { label: "View All", href: "/services/orthopedics" },
+          ],
+        },
+        {
+          category: "Physical Therapy",
+          items: [
+            { label: "Post-Surgical Rehab", href: "/services/physical-therapy/post-surgical-rehab" },
+            { label: "Spine Rehab", href: "/services/physical-therapy/spine-rehab" },
+            { label: "Sports Rehab", href: "/services/physical-therapy/sports-rehab" },
+            { label: "View All", href: "/services/physical-therapy" },
+          ],
+        },
+        {
+          category: "Diagnostics",
+          items: [
+            { label: "X-Ray", href: "/services/diagnostics/x-ray" },
+            { label: "Lab Services", href: "/services/diagnostics/lab" },
+          ],
+        },
+        {
+          category: "Injuries & Claims",
+          items: [
+            { label: "Auto Accidents", href: "/services/injuries/motor-vehicle-accidents" },
+            { label: "Workers' Comp", href: "/services/injuries/workers-compensation" },
+            { label: "Personal Injury", href: "/services/injuries/personal-injury" },
+          ],
+        },
+        {
+          category: "Surgery Center",
+          items: [
+            { label: "Overview", href: "/surgery-center" },
+            { label: "Pain Procedures", href: "/surgery-center/pain-procedures" },
+            { label: "Orthopedic Procedures", href: "/surgery-center/orthopedic-procedures" },
+          ],
+        },
+      ],
+    },
+    { label: "Conditions", href: "/conditions" },
+    { label: "Treatments", href: "/treatments" },
+    { label: "Providers", href: "/providers" },
+    {
+      label: "Patients",
+      href: "/patients",
+      children: [
+        { label: "Insurance & Pricing", href: "/patients/insurance-pricing" },
+        { label: "Patient Forms", href: "/patients/forms" },
+        { label: "Referrals", href: "/patients/referrals" },
+        { label: "FAQs", href: "/patients/faq" },
+      ],
+    },
+    {
+      label: "About",
+      href: "/about",
+      children: [
+        { label: "Our Mission", href: "/about/mission" },
+        { label: "Accreditation", href: "/about/accreditation" },
+        { label: "Our Facility", href: "/about/facility" },
+        { label: "Careers", href: "/careers" },
+      ],
+    },
+    { label: "Blog", href: "/blog" },
+  ],
+  utility: [
+    { label: "Insurance & Pricing", href: "/patients/insurance-pricing" },
+    { label: "Patient Forms", href: "/patients/forms" },
+    { label: "Referrals", href: "/patients/referrals" },
+  ],
+  footer: {
+    services: [
+      { label: "Pain Management", href: "/services/pain-management" },
+      { label: "Orthopedics", href: "/services/orthopedics" },
+      { label: "Physical Therapy", href: "/services/physical-therapy" },
+      { label: "Immediate Care", href: "/immediate-care" },
+      { label: "Internal Medicine", href: "/services/internal-medicine" },
+      { label: "Surgery Center", href: "/surgery-center" },
+    ],
+    conditions: [
+      { label: "Back Pain", href: "/conditions/back-pain" },
+      { label: "Sciatica", href: "/conditions/sciatica" },
+      { label: "Neck Pain", href: "/conditions/neck-pain" },
+      { label: "Knee Pain", href: "/conditions/knee-pain" },
+      { label: "Shoulder Pain", href: "/conditions/shoulder-pain" },
+      { label: "All Conditions", href: "/conditions" },
+    ],
+    patients: [
+      { label: "Insurance & Pricing", href: "/patients/insurance-pricing" },
+      { label: "Patient Forms", href: "/patients/forms" },
+      { label: "FAQs", href: "/patients/faq" },
+      { label: "Book Appointment", href: "/book" },
+    ],
+    legal: [
+      { label: "Privacy Policy", href: "/legal/privacy-policy" },
+      { label: "HIPAA Notice", href: "/legal/notice-of-privacy-practices" },
+      { label: "Terms of Use", href: "/legal/terms" },
+      { label: "Accessibility", href: "/accessibility" },
+      { label: "Nondiscrimination", href: "/legal/nondiscrimination" },
+    ],
+  },
+} as const;
+
+// Providers
+export const PROVIDERS = [
+  {
+    id: "demetrios-giokaris-md",
+    name: "Dr. Demetrios Giokaris",
+    credentials: "MD",
+    title: "Chief Physician",
+    specialty: "Internal Medicine",
+    slug: "demetrios-giokaris-md",
+    image: "/images/providers/dr-giokaris.jpg",
+  },
+  {
+    id: "krishna-chunduri-md",
+    name: "Dr. Krishna C. Chunduri",
+    credentials: "MD",
+    title: "Pain Management Specialist",
+    specialty: "Pain Management",
+    slug: "krishna-chunduri-md",
+    image: "/images/providers/dr-chunduri.jpg",
+  },
+  {
+    id: "christos-giannoulias-md",
+    name: "Dr. Christos S. Giannoulias",
+    credentials: "MD",
+    title: "Orthopedic Surgeon",
+    specialty: "Orthopedic Surgery",
+    slug: "christos-giannoulias-md",
+    image: "/images/providers/dr-giannoulias.jpg",
+  },
+  {
+    id: "thomas-poepping-md",
+    name: "Dr. Thomas Poepping",
+    credentials: "MD",
+    title: "Orthopedic Surgeon",
+    specialty: "Orthopedic Surgery",
+    slug: "thomas-poepping-md",
+    image: "/images/providers/dr-poepping.jpg",
+  },
+  {
+    id: "ruben-bermudez-pa",
+    name: "Ruben Bermudez",
+    credentials: "PA",
+    title: "Physician Assistant",
+    specialty: "General Medicine",
+    slug: "ruben-bermudez-pa",
+    image: "/images/providers/ruben-bermudez.jpg",
+  },
+] as const;
+
+// Service Categories
+export const SERVICE_CATEGORIES = [
+  {
+    id: "immediate-care",
+    name: "Immediate Care",
+    description: "Walk-in and same-day care for urgent medical needs",
+    icon: "Clock",
+    href: "/immediate-care",
+    color: "amber",
+  },
+  {
+    id: "pain-management",
+    name: "Pain Management",
+    description: "Advanced treatments for chronic and acute pain",
+    icon: "Activity",
+    href: "/services/pain-management",
+    color: "teal",
+  },
+  {
+    id: "orthopedics",
+    name: "Orthopedics",
+    description: "Expert care for bones, joints, and musculoskeletal conditions",
+    icon: "Bone",
+    href: "/services/orthopedics",
+    color: "blue",
+  },
+  {
+    id: "physical-therapy",
+    name: "Physical Therapy",
+    description: "Rehabilitation and recovery programs",
+    icon: "Dumbbell",
+    href: "/services/physical-therapy",
+    color: "green",
+  },
+  {
+    id: "internal-medicine",
+    name: "Internal Medicine",
+    description: "Primary care, preventive medicine, and chronic disease management",
+    icon: "Stethoscope",
+    href: "/services/internal-medicine",
+    color: "purple",
+  },
+  {
+    id: "surgery-center",
+    name: "Surgery Center",
+    description: "Joint Commission accredited outpatient surgical facility",
+    icon: "Hospital",
+    href: "/surgery-center",
+    color: "rose",
+  },
+] as const;
+
+// Trust Badges
+export const TRUST_BADGES = [
+  { label: "Joint Commission Accredited", icon: "Award" },
+  { label: "Board Certified Specialists", icon: "BadgeCheck" },
+  { label: "Same-Day Appointments", icon: "Calendar" },
+  { label: "On-Site X-Ray & Labs", icon: "Microscope" },
+  { label: "Most Insurance Accepted", icon: "CreditCard" },
+  { label: "15+ Years Experience", icon: "Clock" },
+] as const;
