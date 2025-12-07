@@ -1,0 +1,251 @@
+// Blog posts data
+export interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  author: string;
+  authorTitle: string;
+  publishedAt: string;
+  category: string;
+  tags: string[];
+  readTime: string;
+  metaDescription: string;
+}
+
+export const BLOG_POSTS: BlogPost[] = [
+  {
+    slug: "understanding-epidural-steroid-injections",
+    title: "Understanding Epidural Steroid Injections: What to Expect",
+    excerpt:
+      "Epidural steroid injections are one of the most common treatments for spine-related pain. Learn what happens during the procedure and how it can help you find relief.",
+    content: `
+## What Are Epidural Steroid Injections?
+
+Epidural steroid injections (ESIs) deliver anti-inflammatory medication directly to the epidural space surrounding your spinal nerves. This targeted approach allows the medication to reduce inflammation where it's needed most, providing relief from pain caused by conditions like herniated discs, spinal stenosis, and sciatica.
+
+## How Do They Work?
+
+When spinal nerves become inflamed or irritated, they can cause pain that radiates through your back and into your arms or legs. The steroid medication in an ESI works by reducing this inflammation, which in turn reduces pressure on the nerves and decreases pain signals.
+
+## What to Expect During the Procedure
+
+The injection is typically performed as an outpatient procedure and takes about 15-30 minutes:
+
+1. **Preparation**: You'll lie on your stomach on an examination table. The injection site will be cleaned and numbed with a local anesthetic.
+
+2. **Guidance**: Using fluoroscopy (real-time X-ray), your physician guides a thin needle to the precise location in your spine.
+
+3. **Injection**: Once the needle is properly positioned, contrast dye confirms placement, and then the steroid medication is injected.
+
+4. **Recovery**: You'll rest for about 15-30 minutes while we monitor you, then you can go home with a driver.
+
+## After Your Injection
+
+Most patients can return to normal activities within 24 hours. You may experience temporary numbness or weakness in your legs, and some people notice increased pain for a day or two before improvement begins. Many patients notice significant relief within 3-7 days.
+
+## Is an ESI Right for You?
+
+ESIs work best for conditions where inflammation is causing nerve irritation. They're often recommended when conservative treatments like physical therapy and medications haven't provided adequate relief. Talk to your pain management specialist to determine if this treatment is appropriate for your condition.
+    `.trim(),
+    author: "Dr. Krishna C. Chunduri",
+    authorTitle: "Pain Management Specialist",
+    publishedAt: "2024-11-15",
+    category: "Pain Management",
+    tags: ["epidural", "spine", "injections", "pain relief"],
+    readTime: "4 min read",
+    metaDescription:
+      "Learn what to expect from epidural steroid injections, how they work, and whether this pain management treatment is right for your back or neck pain.",
+  },
+  {
+    slug: "preparing-for-knee-replacement-surgery",
+    title: "How to Prepare for Knee Replacement Surgery",
+    excerpt:
+      "Proper preparation can significantly improve your knee replacement outcomes and recovery. Here's what you should do before your surgery.",
+    content: `
+## Why Preparation Matters
+
+Knee replacement surgery is a major procedure that can dramatically improve your quality of life if you have severe arthritis or knee damage. Taking time to prepare properly can lead to better outcomes, faster recovery, and fewer complications.
+
+## Weeks Before Surgery
+
+### Get Physically Ready
+
+- **Start physical therapy**: Pre-surgical exercises strengthen the muscles around your knee, which helps with recovery
+- **Lose weight if needed**: Every pound of body weight puts 4 pounds of pressure on your knees
+- **Stop smoking**: Smoking slows healing and increases infection risk
+- **Manage chronic conditions**: Work with your doctors to optimize diabetes, blood pressure, and other conditions
+
+### Prepare Your Home
+
+- **Clear walking paths**: Remove rugs and obstacles that could cause tripping
+- **Install safety aids**: Consider grab bars in the bathroom and a shower chair
+- **Move essentials**: Place frequently used items at waist level to avoid bending or reaching
+- **Prepare meals**: Stock up on easy-to-prepare foods or make meals ahead to freeze
+
+## The Week Before
+
+- Complete any required lab tests or medical clearances
+- Stop certain medications as directed by your surgeon
+- Arrange for someone to drive you home and stay with you
+- Prepare a bag for your hospital stay
+
+## Day of Surgery
+
+- Follow fasting instructions (typically no food or drink after midnight)
+- Take only medications your surgeon has approved
+- Wear loose, comfortable clothing
+- Leave jewelry and valuables at home
+
+## What to Expect After Surgery
+
+Most patients stay in the hospital for 1-2 days. You'll start physical therapy the same day as surgery to begin your recovery. Full recovery takes 3-6 months, but many patients notice significant improvement within the first few weeks.
+
+## Questions to Ask Your Surgeon
+
+- What type of implant will you use?
+- What are the risks specific to my situation?
+- How long will I need physical therapy?
+- When can I return to my normal activities?
+    `.trim(),
+    author: "Dr. Christos S. Giannoulias",
+    authorTitle: "Orthopedic Surgeon",
+    publishedAt: "2024-10-22",
+    category: "Orthopedics",
+    tags: ["knee replacement", "surgery", "preparation", "recovery"],
+    readTime: "5 min read",
+    metaDescription:
+      "Prepare for successful knee replacement surgery with tips on physical preparation, home modifications, and what to expect before, during, and after your procedure.",
+  },
+  {
+    slug: "benefits-of-physical-therapy-after-surgery",
+    title: "The Benefits of Physical Therapy After Surgery",
+    excerpt:
+      "Post-surgical physical therapy is essential for optimal recovery. Discover how PT helps restore strength, mobility, and function after your procedure.",
+    content: `
+## Why Physical Therapy Matters After Surgery
+
+Whether you've had a joint replacement, spine surgery, or orthopedic procedure, physical therapy plays a crucial role in your recovery. It's not just about regaining strength—PT helps you heal properly and return to your normal activities safely.
+
+## Key Benefits of Post-Surgical PT
+
+### 1. Faster Recovery
+
+Studies consistently show that patients who participate in physical therapy recover faster than those who don't. Your therapist guides you through progressive exercises that safely challenge your healing tissues without overdoing it.
+
+### 2. Reduced Pain and Swelling
+
+While it might seem counterintuitive, moving appropriately after surgery actually reduces pain. PT techniques like manual therapy, therapeutic exercises, and modalities (ice, heat, electrical stimulation) help manage post-surgical discomfort.
+
+### 3. Prevention of Complications
+
+Without proper movement, surgery sites can develop scar tissue adhesions that limit mobility. Physical therapy prevents this by keeping tissues flexible during healing. PT also reduces the risk of blood clots and other complications associated with inactivity.
+
+### 4. Restored Strength and Mobility
+
+Surgery often requires cutting through muscles or temporarily restricting movement. Physical therapy systematically rebuilds the strength and flexibility you've lost, tailored to your specific procedure and goals.
+
+### 5. Education and Confidence
+
+Your physical therapist teaches you how to move safely, what activities to avoid, and when it's okay to progress. This knowledge helps you recover with confidence and reduces anxiety about reinjury.
+
+## What to Expect in PT
+
+Your program will be customized based on your surgery type, overall health, and personal goals. Typically, you'll attend sessions 2-3 times per week and perform home exercises daily. As you progress, your exercises will become more challenging.
+
+## Maximizing Your PT Results
+
+- **Attend all scheduled sessions**: Consistency is key to recovery
+- **Do your home exercises**: They're just as important as in-clinic work
+- **Communicate with your therapist**: Report pain, concerns, or changes in your condition
+- **Be patient**: Recovery takes time, but dedication pays off
+    `.trim(),
+    author: "Physical Therapy Team",
+    authorTitle: "Rand Medical Center",
+    publishedAt: "2024-09-18",
+    category: "Physical Therapy",
+    tags: ["physical therapy", "surgery", "recovery", "rehabilitation"],
+    readTime: "4 min read",
+    metaDescription:
+      "Discover why physical therapy is essential after surgery and how it speeds recovery, reduces pain, and helps restore strength and mobility.",
+  },
+  {
+    slug: "when-to-see-doctor-for-back-pain",
+    title: "When Should You See a Doctor for Back Pain?",
+    excerpt:
+      "Most back pain improves on its own, but some symptoms require medical attention. Learn when to seek professional care for your back pain.",
+    content: `
+## Most Back Pain Resolves on Its Own
+
+Here's some good news: the majority of back pain episodes improve significantly within 2-4 weeks with basic self-care. Rest, over-the-counter pain relievers, ice, and gentle stretching help most people recover from acute back pain.
+
+## Warning Signs That Require Immediate Attention
+
+Seek emergency care if your back pain is accompanied by:
+
+- **Loss of bladder or bowel control**: This could indicate cauda equina syndrome, a serious condition requiring immediate treatment
+- **Progressive weakness in the legs**: Especially if it's rapidly worsening
+- **Numbness in the groin or inner thighs**: Known as "saddle anesthesia"
+- **Severe abdominal pain**: Back pain combined with abdominal symptoms could indicate a serious internal condition
+- **Fever with back pain**: Could indicate an infection
+
+## When to Schedule an Appointment
+
+See a doctor within the next few days if you experience:
+
+- Pain that persists beyond 2-3 weeks despite self-care
+- Pain that radiates down one or both legs, especially below the knee
+- Numbness, tingling, or weakness in one or both legs
+- Unintentional weight loss with back pain
+- Pain that worsens at night or when lying down
+- History of cancer, osteoporosis, or recent trauma
+- Pain that began after age 50 or before age 20
+
+## What to Expect at Your Appointment
+
+Your doctor will:
+
+1. **Take a detailed history**: Including when the pain started, what makes it better or worse, and any other symptoms
+2. **Perform a physical exam**: Testing your range of motion, strength, and reflexes
+3. **Order tests if needed**: X-rays, MRI, or other imaging may be recommended based on your symptoms
+
+## Treatment Options
+
+Depending on your diagnosis, treatment might include:
+
+- Physical therapy to strengthen supporting muscles
+- Medications for pain and inflammation
+- Interventional procedures like epidural injections
+- Referral to a spine specialist if needed
+
+Don't suffer in silence—if your back pain is affecting your quality of life, it's worth getting evaluated.
+    `.trim(),
+    author: "Dr. Demetrios Giokaris",
+    authorTitle: "Chief Physician",
+    publishedAt: "2024-08-05",
+    category: "Health Education",
+    tags: ["back pain", "symptoms", "when to see doctor", "spine health"],
+    readTime: "4 min read",
+    metaDescription:
+      "Know when back pain requires medical attention. Learn the warning signs, when to schedule an appointment, and what to expect from your doctor visit.",
+  },
+];
+
+export const BLOG_CATEGORIES = [
+  "Pain Management",
+  "Orthopedics",
+  "Physical Therapy",
+  "Health Education",
+];
+
+export function getBlogPostBySlug(slug: string): BlogPost | undefined {
+  return BLOG_POSTS.find((p) => p.slug === slug);
+}
+
+export function getAllBlogSlugs(): string[] {
+  return BLOG_POSTS.map((p) => p.slug);
+}
+
+export function getBlogPostsByCategory(category: string): BlogPost[] {
+  return BLOG_POSTS.filter((p) => p.category === category);
+}
