@@ -1,11 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { Badge, StatusBadge } from "@/components/ui/badge";
+import { Badge } from "@/components/ui/badge";
 import { InteractiveCard, Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { SITE_CONFIG, SERVICE_CATEGORIES, TRUST_BADGES } from "@/lib/constants";
 import {
   Phone,
   Calendar,
-  MapPin,
   Clock,
   ChevronRight,
   Activity,
@@ -17,35 +16,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      {/* Top Utility Bar */}
-      <div className="bg-slate-900 text-white py-2">
-        <div className="container container-default mx-auto flex flex-wrap items-center justify-between text-sm">
-          <div className="flex items-center gap-4">
-            <a
-              href={SITE_CONFIG.phoneTel}
-              className="flex items-center gap-2 hover:text-teal-400 transition-colors"
-            >
-              <Phone className="h-4 w-4" />
-              {SITE_CONFIG.phoneDisplay}
-            </a>
-            <span className="hidden md:flex items-center gap-2 text-slate-400">
-              <MapPin className="h-4 w-4" />
-              {SITE_CONFIG.address.city}, {SITE_CONFIG.address.state}
-            </span>
-          </div>
-          <div className="flex items-center gap-4">
-            <StatusBadge status="available" />
-            <a
-              href={SITE_CONFIG.bookingUrl}
-              className="bg-teal-500 hover:bg-teal-600 px-4 py-1 rounded-full transition-colors font-medium"
-            >
-              Book Online
-            </a>
-          </div>
-        </div>
-      </div>
-
+    <>
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 bg-gradient-to-br from-slate-50 via-white to-teal-50/30 overflow-hidden">
         {/* Background decoration */}
@@ -268,112 +239,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12">
-        <div className="container container-default mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-              <h3 className="font-bold text-lg mb-4">Rand Medical Center</h3>
-              <p className="text-slate-400 text-sm mb-4">
-                Comprehensive medical care for pain management, orthopedics,
-                physical therapy, and immediate care.
-              </p>
-              <div className="flex items-center gap-2 text-slate-400 text-sm">
-                <MapPin className="h-4 w-4" />
-                {SITE_CONFIG.address.full}
-              </div>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-slate-400 text-sm">
-                <li>
-                  <a href="/services/pain-management" className="hover:text-teal-400">
-                    Pain Management
-                  </a>
-                </li>
-                <li>
-                  <a href="/services/orthopedics" className="hover:text-teal-400">
-                    Orthopedics
-                  </a>
-                </li>
-                <li>
-                  <a href="/services/physical-therapy" className="hover:text-teal-400">
-                    Physical Therapy
-                  </a>
-                </li>
-                <li>
-                  <a href="/immediate-care" className="hover:text-teal-400">
-                    Immediate Care
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Patients</h4>
-              <ul className="space-y-2 text-slate-400 text-sm">
-                <li>
-                  <a href="/patients/insurance-pricing" className="hover:text-teal-400">
-                    Insurance & Pricing
-                  </a>
-                </li>
-                <li>
-                  <a href="/patients/forms" className="hover:text-teal-400">
-                    Patient Forms
-                  </a>
-                </li>
-                <li>
-                  <a href="/patients/faq" className="hover:text-teal-400">
-                    FAQs
-                  </a>
-                </li>
-                <li>
-                  <a href="/contact" className="hover:text-teal-400">
-                    Contact Us
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Contact</h4>
-              <div className="space-y-3 text-slate-400 text-sm">
-                <a
-                  href={SITE_CONFIG.phoneTel}
-                  className="flex items-center gap-2 hover:text-teal-400"
-                >
-                  <Phone className="h-4 w-4" />
-                  {SITE_CONFIG.phoneDisplay}
-                </a>
-                <div className="flex items-center gap-2">
-                  <Clock className="h-4 w-4" />
-                  {SITE_CONFIG.hours.display}
-                </div>
-                <Button size="sm" className="mt-4">
-                  Book Appointment
-                </Button>
-              </div>
-            </div>
-          </div>
-
-          <div className="border-t border-slate-800 pt-8 flex flex-wrap justify-between items-center gap-4 text-sm text-slate-400">
-            <p>&copy; {new Date().getFullYear()} Rand Medical Center. All rights reserved.</p>
-            <div className="flex gap-6">
-              <a href="/legal/privacy-policy" className="hover:text-teal-400">
-                Privacy Policy
-              </a>
-              <a href="/legal/terms" className="hover:text-teal-400">
-                Terms of Use
-              </a>
-              <a href="/accessibility" className="hover:text-teal-400">
-                Accessibility
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </main>
+    </>
   );
 }
