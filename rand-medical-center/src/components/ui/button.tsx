@@ -1,10 +1,12 @@
 import { forwardRef, ButtonHTMLAttributes } from "react";
+import { Slot } from "@radix-ui/react-slot";
 import { cn } from "@/lib/utils";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary" | "outline" | "ghost" | "destructive" | "link";
   size?: "sm" | "md" | "lg" | "xl" | "icon";
   isLoading?: boolean;
+  asChild?: boolean;
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -14,14 +16,17 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       variant = "primary",
       size = "md",
       isLoading = false,
+      asChild = false,
       disabled,
       children,
       ...props
     },
     ref
   ) => {
+    const Comp = asChild ? Slot : "button";
+
     return (
-      <button
+      <Comp
         ref={ref}
         disabled={disabled || isLoading}
         className={cn(
@@ -88,7 +93,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ) : (
           children
         )}
-      </button>
+      </Comp>
     );
   }
 );
