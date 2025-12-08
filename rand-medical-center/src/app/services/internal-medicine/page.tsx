@@ -31,25 +31,25 @@ const SERVICES = [
   {
     name: "Annual Physicals",
     description:
-      "Comprehensive wellness exams to assess your overall health and identify potential issues early.",
+      "Your yearly checkup isn't just a formality—it's how we catch issues before they become problems.",
     href: "/services/internal-medicine/physicals",
   },
   {
     name: "Preventive Care",
     description:
-      "Health screenings, risk assessments, and lifestyle counseling to help you stay healthy.",
+      "Screenings, health assessments, and honest conversations about what you can do to stay healthy.",
     href: "/services/internal-medicine/preventive-care",
   },
   {
-    name: "Chronic Disease Management",
+    name: "Chronic Conditions",
     description:
-      "Ongoing care for conditions like diabetes, hypertension, and high cholesterol.",
+      "Managing diabetes, high blood pressure, or cholesterol? We'll help you get it under control and keep it there.",
     href: "/services/internal-medicine/chronic-disease-management",
   },
   {
     name: "Vaccinations",
     description:
-      "Flu shots, pneumonia vaccines, shingles vaccines, and other immunizations.",
+      "Flu shots, pneumonia, shingles—whatever you're due for. We'll keep you up to date.",
     href: "/services/internal-medicine/vaccinations",
   },
 ];
@@ -88,15 +88,14 @@ export default function InternalMedicinePage() {
             </Badge>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight">
-              Your Partner in{" "}
-              <span className="text-purple-600">Lifelong Health</span>
+              A Doctor Who{" "}
+              <span className="text-purple-600">Knows You</span>
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              Our internal medicine physicians provide comprehensive primary
-              care for adults, focusing on prevention, early detection, and
-              management of chronic conditions. We take the time to understand
-              your unique health needs.
+              Having a primary care doctor who actually knows your history makes all
+              the difference. We manage your ongoing health, catch problems early,
+              and coordinate with specialists when you need them&mdash;so nothing falls through the cracks.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -126,33 +125,32 @@ export default function InternalMedicinePage() {
                 Our Approach
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-                Comprehensive Primary Care
+                More Than Just Checkups
               </h2>
               <p className="text-lg text-slate-600 mb-6">
-                As your primary care provider, we serve as your first point of
-                contact for health concerns and coordinate your care across
-                specialties. Our integrated approach means seamless access to
-                pain management, orthopedics, and other services when needed.
+                When you need to see a specialist&mdash;pain management, orthopedics, whatever&mdash;we
+                coordinate it. We&apos;re all in the same building, so your care actually gets coordinated
+                instead of you playing phone tag between offices.
               </p>
               <div className="space-y-4">
                 {[
                   {
                     icon: Heart,
-                    title: "Preventive Focus",
+                    title: "We Catch Things Early",
                     description:
-                      "We emphasize prevention and early detection to keep you healthy.",
+                      "Regular checkups aren't just paperwork—they're how we spot problems before they get serious.",
                   },
                   {
                     icon: Shield,
-                    title: "Chronic Care Expertise",
+                    title: "We Manage the Long Haul",
                     description:
-                      "Expert management of ongoing conditions with personalized plans.",
+                      "Diabetes, blood pressure, cholesterol—we help you keep them under control, not just take pills.",
                   },
                   {
                     icon: Stethoscope,
-                    title: "Integrated Care",
+                    title: "We Coordinate Your Care",
                     description:
-                      "Coordinated access to specialists under one roof when needed.",
+                      "Need a specialist? We'll make sure they know your history and we stay in the loop.",
                   },
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-4">
@@ -209,8 +207,11 @@ export default function InternalMedicinePage() {
               Services
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Primary Care Services
+              What We Do
             </h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              The basics that keep you healthy, plus the ongoing care when things need managing.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
@@ -242,8 +243,11 @@ export default function InternalMedicinePage() {
               Conditions
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Conditions We Manage
+              Things We Help Manage
             </h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              If you&apos;re dealing with any of these, we can help you stay on top of it.
+            </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -265,11 +269,11 @@ export default function InternalMedicinePage() {
         <div className="container container-default mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-              Invest in Your Health
+              Time for a Checkup?
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              Whether you need a routine physical, have a new health concern, or
-              want to better manage a chronic condition, we&apos;re here to help.
+              Whether you&apos;re overdue for a physical, have a new concern, or need
+              someone to help manage an ongoing condition&mdash;let&apos;s get you scheduled.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" className="bg-purple-600 hover:bg-purple-700" asChild>

@@ -58,27 +58,27 @@ const PROCEDURES = [
 const BENEFITS = [
   {
     icon: DollarSign,
-    title: "Lower Costs",
+    title: "It Costs Less",
     description:
-      "Outpatient surgery centers typically cost 40-60% less than hospital operating rooms for the same procedures.",
+      "Hospital ORs charge a premium. We do the same procedures for 40-60% less.",
   },
   {
     icon: Clock,
-    title: "Same-Day Discharge",
+    title: "Home the Same Day",
     description:
-      "Go home the same day to recover in the comfort of your own environment.",
+      "No overnight stays. Get your procedure done and recover in your own bed.",
   },
   {
     icon: Shield,
-    title: "Joint Commission Accredited",
+    title: "Fully Accredited",
     description:
-      "Our facility meets the highest standards for safety and quality of care.",
+      "Joint Commission certified—that's the gold standard for surgical facilities.",
   },
   {
     icon: Users,
-    title: "Personalized Attention",
+    title: "You're Not Just a Number",
     description:
-      "Smaller setting means more individualized care from our dedicated surgical team.",
+      "Smaller facility means the staff actually knows who you are and what you need.",
   },
 ];
 
@@ -97,15 +97,14 @@ export default function SurgeryCenterPage() {
             </Badge>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight">
-              Advanced Surgery in a{" "}
-              <span className="text-rose-600">Comfortable Setting</span>
+              Surgery Without the{" "}
+              <span className="text-rose-600">Hospital Hassle</span>
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              Our Joint Commission-accredited outpatient surgery center provides
-              advanced surgical care in a comfortable, efficient environment.
-              Experience quality care with shorter wait times, lower costs, and
-              same-day recovery.
+              Many procedures don&apos;t require a hospital stay. You come in, get it done,
+              and go home the same day&mdash;all in a facility that meets the same safety
+              standards as any hospital, but without the chaos and the big bill.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-8">
@@ -136,10 +135,10 @@ export default function SurgeryCenterPage() {
         <div className="container container-default mx-auto">
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4">
-              Why Choose Us
+              Why Here
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Advantages of Outpatient Surgery
+              Why Skip the Hospital?
             </h2>
           </div>
 
@@ -166,14 +165,14 @@ export default function SurgeryCenterPage() {
         <div className="container container-default mx-auto">
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4">
-              Procedures
+              What We Do
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Procedures Performed
+              Procedures We Perform Here
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Our surgery center specializes in pain management and orthopedic
-              procedures that can be safely performed in an outpatient setting.
+              Pain management injections, orthopedic procedures, and other surgeries
+              that don&apos;t require an overnight stay.
             </p>
           </div>
 
@@ -213,22 +212,20 @@ export default function SurgeryCenterPage() {
             <div>
               <Badge variant="outline" className="mb-4 border-white/30 text-white">
                 <Award className="h-4 w-4 mr-1" />
-                Accreditation
+                Safety Standards
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold font-display mb-6">
-                Joint Commission Accredited
+                Same Standards as Any Hospital
               </h2>
               <p className="text-lg text-slate-300 mb-6">
-                Our surgery center has earned accreditation from The Joint
-                Commission, the nation&apos;s leading healthcare quality organization.
-                This recognition demonstrates our commitment to meeting rigorous
-                performance standards and continuous improvement.
+                &ldquo;Outpatient&rdquo; doesn&apos;t mean cutting corners. We&apos;re accredited by The
+                Joint Commission&mdash;the same organization that inspects major hospitals.
+                They show up unannounced and check everything.
               </p>
               <p className="text-slate-400">
-                Joint Commission accreditation is voluntary and requires
-                facilities to meet comprehensive standards for patient safety,
-                quality of care, infection control, medication management, and
-                more.
+                You get the same safety protocols, infection prevention, and
+                emergency preparedness you&apos;d expect from any surgical facility.
+                Just without the hospital overhead.
               </p>
             </div>
 
@@ -259,10 +256,10 @@ export default function SurgeryCenterPage() {
         <div className="container container-default mx-auto">
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4">
-              Your Experience
+              How It Works
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              What to Expect
+              What Your Day Looks Like
             </h2>
           </div>
 
@@ -270,27 +267,27 @@ export default function SurgeryCenterPage() {
             {[
               {
                 step: "1",
-                title: "Pre-Op Consultation",
+                title: "We Talk First",
                 description:
-                  "Meet with your surgeon to discuss the procedure and prepare for surgery.",
+                  "Meet with your surgeon beforehand so you know exactly what to expect.",
               },
               {
                 step: "2",
-                title: "Day of Surgery",
+                title: "Surgery Day",
                 description:
-                  "Arrive at our center, complete check-in, and receive pre-op care.",
+                  "Show up, check in, and we&apos;ll get you prepped and comfortable.",
               },
               {
                 step: "3",
-                title: "Procedure",
+                title: "The Procedure",
                 description:
-                  "Your procedure is performed by our experienced surgical team.",
+                  "Our surgical team handles everything while you&apos;re under.",
               },
               {
                 step: "4",
-                title: "Recovery & Discharge",
+                title: "Wake Up, Go Home",
                 description:
-                  "Recover in our comfortable setting before going home same day.",
+                  "Rest a bit in recovery, then head home to your own bed.",
               },
             ].map((item, index) => (
               <div key={index} className="text-center">
@@ -310,12 +307,12 @@ export default function SurgeryCenterPage() {
         <div className="container container-default mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-              Learn More About Your Procedure
+              Got Questions? Let&apos;s Talk.
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              Have questions about whether your procedure can be performed at our
-              outpatient surgery center? Schedule a consultation with one of our
-              specialists.
+              Not sure if your procedure can be done here? Wondering about costs
+              or what to expect? Talk to one of our specialists and we&apos;ll give you
+              straight answers.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" className="bg-rose-600 hover:bg-rose-700" asChild>

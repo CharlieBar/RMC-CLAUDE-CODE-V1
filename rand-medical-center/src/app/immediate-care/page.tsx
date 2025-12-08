@@ -67,14 +67,14 @@ export default function ImmediateCarePage() {
             </Badge>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight">
-              Immediate Care{" "}
-              <span className="text-amber-600">When You Need It</span>
+              Sick or Hurt?{" "}
+              <span className="text-amber-600">Don&apos;t Wait.</span>
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              Skip the ER wait. Get same-day medical care for urgent but
-              non-life-threatening conditions. Walk-ins welcome or book online
-              for priority scheduling.
+              You don&apos;t need to sit in an ER for hours when you&apos;ve got a bad
+              sprain, that infection that won&apos;t quit, or your kid spiked a fever.
+              Walk in or book online&mdash;we&apos;ll get you seen fast.
             </p>
 
             <div className="flex flex-wrap gap-4 mb-8">
@@ -112,14 +112,14 @@ export default function ImmediateCarePage() {
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4">
               <Thermometer className="h-4 w-4 mr-1" />
-              Conditions We Treat
+              Walk In With Any of These
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              What We Can Help With
+              What We Treat
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Our immediate care services address a wide range of urgent but
-              non-emergency conditions.
+              Urgent stuff that can&apos;t wait for your regular doctor, but isn&apos;t an
+              emergency room situation.
             </p>
           </div>
 
@@ -152,8 +152,8 @@ export default function ImmediateCarePage() {
                   </h2>
                 </div>
                 <p className="text-red-800 mb-6">
-                  For life-threatening emergencies, please call 911 or go to your
-                  nearest emergency room. This includes:
+                  Some things really do need the ER. If you&apos;re experiencing any of
+                  these, call 911 or get to the emergency room immediately:
                 </p>
                 <ul className="space-y-3">
                   {WHEN_TO_VISIT_ER.map((condition, index) => (
@@ -168,32 +168,32 @@ export default function ImmediateCarePage() {
 
             <div>
               <Badge variant="secondary" className="mb-4">
-                Right Care, Right Place
+                Skip the ER
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-                Why Choose Immediate Care Over the ER?
+                Why Come Here Instead of the ER?
               </h2>
               <div className="space-y-4">
                 {[
                   {
-                    title: "Shorter Wait Times",
+                    title: "You Won't Wait for Hours",
                     description:
-                      "Skip the crowded ER waiting room and get seen faster.",
+                      "No crowded waiting rooms. We get you in, treated, and out.",
                   },
                   {
-                    title: "Lower Costs",
+                    title: "It Costs a Lot Less",
                     description:
-                      "Immediate care visits typically cost less than emergency room visits.",
+                      "ER visits can cost thousands. We can usually treat the same things for much less.",
                   },
                   {
-                    title: "Specialized Follow-Up",
+                    title: "Specialists Are Right Here",
                     description:
-                      "Direct access to specialists if your condition requires ongoing care.",
+                      "If you need follow-up care, our pain docs, orthopedics, and PT are all in the building.",
                   },
                   {
-                    title: "On-Site Diagnostics",
+                    title: "X-Ray and Labs On-Site",
                     description:
-                      "X-ray and lab services available for quick diagnosis.",
+                      "We can run tests right here so you leave with answers, not just a referral.",
                   },
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-start gap-4">
@@ -219,10 +219,10 @@ export default function ImmediateCarePage() {
         <div className="container container-default mx-auto">
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4">
-              What to Expect
+              What Happens
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Your Visit Process
+              In and Out, Simple as That
             </h2>
           </div>
 
@@ -230,27 +230,27 @@ export default function ImmediateCarePage() {
             {[
               {
                 step: "1",
-                title: "Check In",
+                title: "Walk In or Book",
                 description:
-                  "Walk in or check in online to reserve your spot in line.",
+                  "Show up during office hours or book online to skip the line.",
               },
               {
                 step: "2",
-                title: "Evaluation",
+                title: "We Take a Look",
                 description:
-                  "A provider will assess your condition and discuss symptoms.",
+                  "A provider checks you out and asks what&apos;s going on.",
               },
               {
                 step: "3",
-                title: "Diagnostics",
+                title: "Run Tests If Needed",
                 description:
-                  "If needed, we'll perform X-rays or lab tests on-site.",
+                  "X-rays, labs, whatever it takes to figure out what&apos;s wrong.",
               },
               {
                 step: "4",
-                title: "Treatment",
+                title: "Get Treated, Go Home",
                 description:
-                  "Receive treatment and a personalized care plan before you leave.",
+                  "We fix you up, give you a plan, and send you on your way.",
               },
             ].map((item, index) => (
               <div key={index} className="text-center">
@@ -271,14 +271,14 @@ export default function ImmediateCarePage() {
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4 border-white/30 text-white">
               <FileText className="h-4 w-4 mr-1" />
-              Injury Documentation
+              Accident Injuries
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">
-              Injured in an Accident?
+              Been in an Accident?
             </h2>
             <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-              We specialize in treating and documenting injuries from auto
-              accidents, workplace incidents, and personal injury cases.
+              Car crash, workplace injury, or slip and fall? We treat your injuries
+              and document everything properly&mdash;which matters if you need to file a claim.
             </p>
           </div>
 
@@ -318,11 +318,11 @@ export default function ImmediateCarePage() {
         <div className="container container-default mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-              Need Care Today?
+              Feeling Lousy? Let&apos;s Fix That.
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              Walk in during office hours or book online to reserve your spot.
-              We&apos;ll get you seen as quickly as possible.
+              Walk in anytime we&apos;re open, or book online if you want to skip the wait.
+              Either way, we&apos;ll take care of you.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" className="bg-amber-500 hover:bg-amber-600" asChild>

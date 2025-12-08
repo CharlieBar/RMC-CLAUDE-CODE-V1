@@ -28,39 +28,39 @@ export const metadata: Metadata = {
 
 const PROGRAMS = [
   {
-    name: "Post-Surgical Rehabilitation",
+    name: "Post-Surgery Recovery",
     description:
-      "Specialized recovery programs following orthopedic surgery, including joint replacement, ACL reconstruction, and spine surgery.",
+      "Just had knee replacement, ACL repair, or spine surgery? We'll make sure you heal right and get your strength back safely.",
     href: "/services/physical-therapy/post-surgical-rehab",
   },
   {
-    name: "Spine Rehabilitation",
+    name: "Back & Neck Rehab",
     description:
-      "Targeted therapy for back and neck conditions, herniated discs, and chronic spinal pain.",
+      "Back and neck problems are our specialty. We work with your pain doctor to get you moving without pain.",
     href: "/services/physical-therapy/spine-rehab",
   },
   {
-    name: "Sports Rehabilitation",
+    name: "Sports Rehab",
     description:
-      "Get athletes back in the game with sport-specific training and return-to-play protocols.",
+      "Getting an athlete back to their sport takes specific training. We know the protocols for ACL, shoulder, and more.",
     href: "/services/physical-therapy/sports-rehab",
   },
   {
-    name: "Manual Therapy",
+    name: "Hands-On Treatment",
     description:
-      "Hands-on techniques including joint mobilization, soft tissue work, and myofascial release.",
+      "Sometimes you need manual work—massage, joint mobilization, the stuff that loosens things up when stretching isn't enough.",
     href: "/services/physical-therapy/manual-therapy",
   },
   {
-    name: "Balance & Fall Prevention",
+    name: "Balance Training",
     description:
-      "Programs to improve stability and reduce fall risk, especially for older adults.",
+      "Falls are scary and preventable. We'll help you feel steady on your feet, especially if you've fallen before.",
     href: "/services/physical-therapy/balance-training",
   },
   {
-    name: "Work Conditioning",
+    name: "Return to Work",
     description:
-      "Prepare for safe return to work after injury with job-specific functional training.",
+      "Going back to work after an injury? We'll make sure you can do your job safely without re-injuring yourself.",
     href: "/services/physical-therapy/work-conditioning",
   },
 ];
@@ -95,15 +95,14 @@ export default function PhysicalTherapyPage() {
             </Badge>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight">
-              Restore Your{" "}
-              <span className="text-green-600">Strength & Mobility</span>
+              Get Stronger.{" "}
+              <span className="text-green-600">Feel Like Yourself.</span>
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              Our physical therapists work closely with your medical team to
-              create personalized rehabilitation programs. Whether you&apos;re
-              recovering from surgery, injury, or managing chronic pain, we help
-              you get back to the activities you love.
+              Recovery doesn&apos;t happen by accident. Our PTs create a plan that works
+              for YOUR body, YOUR schedule, and YOUR goals&mdash;whether that&apos;s playing
+              with your grandkids or getting back on the tennis court.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -133,13 +132,12 @@ export default function PhysicalTherapyPage() {
                 Our Approach
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-                Integrated, Personalized Care
+                We Don&apos;t Just Give You Exercises
               </h2>
               <p className="text-lg text-slate-600 mb-6">
-                As part of a comprehensive medical center, our physical
-                therapists collaborate directly with your physicians. This
-                integrated approach means your rehabilitation is coordinated
-                with your overall treatment plan for better outcomes.
+                Your PT talks directly to your doctor. If you&apos;re seeing our pain
+                specialist or orthopedic surgeon, everyone&apos;s on the same page about
+                your recovery. No miscommunication, no conflicting advice.
               </p>
             </div>
 
@@ -147,27 +145,27 @@ export default function PhysicalTherapyPage() {
               {[
                 {
                   icon: Target,
-                  title: "Goal-Oriented",
+                  title: "Your Goals, Not Ours",
                   description:
-                    "We set clear, measurable goals based on what matters to you.",
+                    "Want to get back to running? Gardening? We build your plan around what you actually want to do.",
                 },
                 {
                   icon: Users,
-                  title: "Team Collaboration",
+                  title: "One Team",
                   description:
-                    "Direct communication with your doctors for coordinated care.",
+                    "Your PT, your doctor, your surgeon—we all talk to each other about your progress.",
                 },
                 {
                   icon: TrendingUp,
-                  title: "Progress Tracking",
+                  title: "We Track Results",
                   description:
-                    "Regular assessments to measure improvement and adjust plans.",
+                    "Regular check-ins to make sure you're actually getting better, not just going through motions.",
                 },
                 {
                   icon: Heart,
-                  title: "Patient Education",
+                  title: "Skills for Life",
                   description:
-                    "Learn exercises and strategies for long-term wellness.",
+                    "We teach you how to stay strong and prevent future problems, not just fix the current one.",
                 },
               ].map((item, index) => (
                 <div
@@ -196,11 +194,10 @@ export default function PhysicalTherapyPage() {
               Programs
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Rehabilitation Programs
+              What We Help With
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Specialized therapy programs tailored to your specific condition
-              and recovery goals.
+              Different situations need different approaches. Here&apos;s what we specialize in.
             </p>
           </div>
 
@@ -233,8 +230,11 @@ export default function PhysicalTherapyPage() {
               Conditions
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Conditions We Treat
+              Sound Familiar?
             </h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              If you&apos;re dealing with any of these, PT can probably help.
+            </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -256,10 +256,10 @@ export default function PhysicalTherapyPage() {
         <div className="container container-default mx-auto">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4 border-white/30 text-white">
-              Your Journey
+              How It Works
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">
-              What to Expect
+              Here&apos;s What Happens
             </h2>
           </div>
 
@@ -267,27 +267,27 @@ export default function PhysicalTherapyPage() {
             {[
               {
                 step: "1",
-                title: "Initial Evaluation",
+                title: "We Assess",
                 description:
-                  "Comprehensive assessment of your condition, mobility, and goals.",
+                  "First visit: we figure out what's going on, what your goals are, and create a plan.",
               },
               {
                 step: "2",
-                title: "Treatment Plan",
+                title: "We Work Together",
                 description:
-                  "Personalized program designed to address your specific needs.",
+                  "Hands-on sessions 2-3 times per week with exercises tailored to your body.",
               },
               {
                 step: "3",
-                title: "Active Therapy",
+                title: "You Practice",
                 description:
-                  "One-on-one sessions with exercises, manual therapy, and education.",
+                  "Home exercises matter. We'll give you things you can actually do between visits.",
               },
               {
                 step: "4",
-                title: "Home Program",
+                title: "We Adjust",
                 description:
-                  "Exercises and strategies to continue progress between sessions.",
+                  "As you improve, we progress your program. If something's not working, we change it.",
               },
             ].map((item, index) => (
               <div key={index} className="text-center">
@@ -307,12 +307,11 @@ export default function PhysicalTherapyPage() {
         <div className="container container-default mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-              Start Your Recovery Today
+              Let&apos;s Get You Back to 100%
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              Whether you&apos;re recovering from surgery, managing an injury, or
-              dealing with chronic pain, our physical therapy team is here to
-              help.
+              Whether you just had surgery, tweaked something at the gym, or have been
+              dealing with pain for months&mdash;we&apos;ll create a plan to get you where you want to be.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" className="bg-green-600 hover:bg-green-700" asChild>

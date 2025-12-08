@@ -29,37 +29,37 @@ const SERVICES = [
   {
     name: "Shoulder & Rotator Cuff",
     description:
-      "Treatment for rotator cuff tears, shoulder instability, frozen shoulder, and other shoulder conditions.",
+      "Throwing pain? Can't reach overhead? We fix torn rotator cuffs, frozen shoulders, and get you moving again.",
     href: "/services/orthopedics/shoulder-rotator-cuff",
   },
   {
     name: "Knee Care",
     description:
-      "ACL reconstruction, meniscus repair, knee replacement, and treatment for arthritis and injuries.",
+      "ACL tears, meniscus problems, worn-out joints—whether you need surgery or not, we'll get your knee working right.",
     href: "/services/orthopedics/knee",
   },
   {
     name: "Hip Treatment",
     description:
-      "Hip replacement, hip arthroscopy, and treatment for hip pain and mobility issues.",
+      "Hip pain making it hard to walk? We do everything from injections to total hip replacement.",
     href: "/services/orthopedics/hip",
   },
   {
     name: "Sports Injuries",
     description:
-      "Comprehensive care for athletic injuries from diagnosis through return to play.",
+      "Get back in the game. We treat athletes from weekend warriors to competitive players.",
     href: "/services/orthopedics/sports-injuries",
   },
   {
     name: "Fracture Care",
     description:
-      "Treatment for broken bones, from simple fractures to complex trauma cases.",
+      "Broken bone? We handle everything from simple fractures to complex breaks that need surgery.",
     href: "/services/orthopedics/fractures",
   },
   {
     name: "Hand & Wrist",
     description:
-      "Treatment for carpal tunnel, trigger finger, and hand injuries.",
+      "Carpal tunnel, trigger finger, or hand injury—we'll get you using your hands again without pain.",
     href: "/services/orthopedics/hand-wrist",
   },
 ];
@@ -98,15 +98,14 @@ export default function OrthopedicsPage() {
             </Badge>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight">
-              Expert Care for{" "}
-              <span className="text-blue-600">Bones & Joints</span>
+              Move Without{" "}
+              <span className="text-blue-600">Pain Again</span>
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              Our board-certified orthopedic surgeons provide comprehensive
-              surgical and non-surgical care for musculoskeletal conditions.
-              From sports injuries to joint replacement, we help restore your
-              mobility and quality of life.
+              Torn ACL? Arthritic knee? Shoulder that won&apos;t stop aching? We see
+              these every day&mdash;and we know how to fix them. Our surgeons will
+              tell you honestly whether you need surgery or if there&apos;s a better option.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -132,14 +131,14 @@ export default function OrthopedicsPage() {
         <div className="container container-default mx-auto">
           <div className="text-center mb-12">
             <Badge variant="secondary" className="mb-4">
-              Specialties
+              What We Fix
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Orthopedic Services
+              From Head to Toe
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Comprehensive care for all orthopedic conditions, from conservative
-              treatment to advanced surgical procedures.
+              Shoulders, knees, hips, hands&mdash;if it&apos;s a bone, joint, or muscle problem,
+              we can help. We always try conservative treatment first, surgery only when it makes sense.
             </p>
           </div>
 
@@ -172,8 +171,12 @@ export default function OrthopedicsPage() {
               Our Surgeons
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Board-Certified Orthopedic Surgeons
+              Surgeons Who Do This Every Day
             </h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              Our orthopedic surgeons have performed thousands of procedures.
+              They&apos;ll give you straight answers about what&apos;s wrong and what it takes to fix it.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -221,8 +224,11 @@ export default function OrthopedicsPage() {
               Conditions
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Conditions We Treat
+              Sound Like You?
             </h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              If you&apos;re dealing with any of these, we can help.
+            </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -249,12 +255,12 @@ export default function OrthopedicsPage() {
                 Accredited Facility
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold font-display mb-6">
-                Joint Commission Accredited Surgery Center
+                Surgery Without the Hospital Stay
               </h2>
               <p className="text-lg text-slate-300 mb-6">
-                Many orthopedic procedures can be performed at our on-site,
-                outpatient surgery center. Benefit from the same quality care in
-                a more convenient, cost-effective setting.
+                Many procedures can be done right here&mdash;you come in, get it done,
+                and go home the same day. Same safety standards as a hospital, but
+                more convenient and usually costs less.
               </p>
               <Button
                 size="lg"
@@ -292,11 +298,11 @@ export default function OrthopedicsPage() {
         <div className="container container-default mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-              Get Back to Moving Freely
+              Let&apos;s Get You Moving Again
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              Whether you&apos;re dealing with an acute injury or chronic joint pain,
-              our orthopedic team can help. Schedule a consultation today.
+              Whether it&apos;s an old injury that never healed right or a new problem
+              that&apos;s slowing you down&mdash;we&apos;ll figure out what&apos;s going on and how to fix it.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" asChild>
