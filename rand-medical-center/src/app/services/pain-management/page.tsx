@@ -32,37 +32,37 @@ const TREATMENTS = [
   {
     name: "Epidural Steroid Injections",
     description:
-      "Targeted injection of anti-inflammatory medication to reduce nerve inflammation and relieve back, neck, and radiating leg or arm pain.",
+      "If you've got back pain shooting down your leg (or neck pain going down your arm), this is often our go-to. Puts anti-inflammatory medicine right where the nerve is irritated.",
     href: "/services/pain-management/epidural-steroid-injections",
   },
   {
     name: "Radiofrequency Ablation",
     description:
-      "Uses heat to disrupt pain signals from specific nerves, providing long-lasting relief for chronic back and neck pain.",
+      "Uses gentle heat to quiet down overactive nerves. The pain relief can last 6-12 months or longer—sometimes much longer.",
     href: "/services/pain-management/radiofrequency-ablation",
   },
   {
     name: "Joint Injections",
     description:
-      "Corticosteroid or hyaluronic acid injections to reduce inflammation and improve mobility in arthritic joints.",
+      "Knees, hips, shoulders giving you trouble? We inject anti-inflammatory or lubricating medicine directly into the joint.",
     href: "/services/pain-management/joint-injections",
   },
   {
     name: "Nerve Blocks",
     description:
-      "Targeted injections that interrupt pain signals from specific nerves, useful for diagnosing and treating various pain conditions.",
+      "Numbs specific nerves to both diagnose where your pain is coming from and provide relief. Think of it as a very targeted anesthetic.",
     href: "/services/pain-management/selective-nerve-root-block",
   },
   {
     name: "Trigger Point Injections",
     description:
-      "Treatment for painful muscle knots that can cause localized or referred pain patterns.",
+      "Got a muscle knot that won't go away no matter how much you stretch? We can inject it directly to release the tension.",
     href: "/services/pain-management/trigger-point-injections",
   },
   {
     name: "Facet Joint Injections",
     description:
-      "Injections targeting the small joints of the spine that can cause back and neck pain.",
+      "The small joints along your spine can cause a lot of back and neck pain. We inject them to calm down inflammation.",
     href: "/services/pain-management/facet-joint-injections",
   },
 ];
@@ -99,15 +99,15 @@ export default function PainManagementPage() {
             </Badge>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight">
-              Find Lasting{" "}
-              <span className="gradient-text-medical">Pain Relief</span>
+              When Nothing Else{" "}
+              <span className="gradient-text-medical">Has Worked</span>
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              Our board-certified pain management specialists use advanced,
-              minimally invasive techniques to target the source of your pain.
-              Get back to living your life without being held back by chronic
-              pain.
+              You&apos;ve tried the stretches. You&apos;ve taken the pills. You&apos;ve done the
+              ice and heat routine. And you&apos;re still in pain. We get it&mdash;and we have
+              treatments that actually target what&apos;s causing your pain, not just
+              mask it.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -137,33 +137,32 @@ export default function PainManagementPage() {
                 Our Approach
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-                Interventional Pain Management
+                We Go After the Source
               </h2>
               <p className="text-lg text-slate-600 mb-6">
-                Rather than masking symptoms with medication alone, we use
-                image-guided interventional procedures to target the specific
-                structures causing your pain. This approach often provides longer
-                lasting relief with fewer side effects.
+                Here&apos;s the thing about pain pills: they just cover up the problem.
+                We use injections and procedures that go directly to the nerve, joint,
+                or disc that&apos;s causing your pain. The result? Relief that actually lasts.
               </p>
               <div className="space-y-4">
                 {[
                   {
                     icon: Target,
-                    title: "Precise Diagnosis",
+                    title: "We Find the Real Problem",
                     description:
-                      "We identify the exact source of your pain using advanced diagnostic techniques.",
+                      "Before we treat anything, we figure out exactly what's causing your pain.",
                   },
                   {
                     icon: Syringe,
-                    title: "Minimally Invasive",
+                    title: "Small Needle, Big Relief",
                     description:
-                      "Most procedures are performed using tiny needles with image guidance.",
+                      "Most procedures use a needle smaller than an IV—no surgery required.",
                   },
                   {
                     icon: Zap,
-                    title: "Quick Recovery",
+                    title: "Get Back to Life Fast",
                     description:
-                      "Return to normal activities faster than with traditional surgery.",
+                      "Most patients are back to normal activities within a day or two.",
                   },
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-4">
@@ -220,11 +219,11 @@ export default function PainManagementPage() {
               Treatments
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Pain Management Procedures
+              How We Help You Feel Better
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              We offer a comprehensive range of interventional pain treatments
-              performed in our Joint Commission-accredited facility.
+              Different problems need different solutions. Here are the main treatments
+              we use&mdash;your doctor will recommend what makes sense for your situation.
             </p>
           </div>
 
@@ -259,8 +258,11 @@ export default function PainManagementPage() {
               Conditions We Treat
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Pain Conditions We Treat
+              Sound Familiar?
             </h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              If you&apos;re dealing with any of these, you&apos;re in the right place.
+            </p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -282,10 +284,10 @@ export default function PainManagementPage() {
         <div className="container container-default mx-auto">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4 border-white/30 text-white">
-              Your Journey
+              How It Works
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">
-              What to Expect
+              Here&apos;s What Happens Next
             </h2>
           </div>
 
@@ -293,27 +295,27 @@ export default function PainManagementPage() {
             {[
               {
                 step: "1",
-                title: "Consultation",
+                title: "We Talk",
                 description:
-                  "Meet with our specialist to discuss your pain history and goals.",
+                  "Tell us about your pain—when it started, what makes it worse, what you've already tried.",
               },
               {
                 step: "2",
-                title: "Diagnosis",
+                title: "We Diagnose",
                 description:
-                  "We use imaging and diagnostic procedures to identify pain sources.",
+                  "Using imaging and sometimes diagnostic injections, we figure out what's really going on.",
               },
               {
                 step: "3",
-                title: "Treatment Plan",
+                title: "We Treat",
                 description:
-                  "Receive a personalized plan that may include procedures and therapy.",
+                  "Based on what we find, we recommend a treatment plan. You decide if it makes sense for you.",
               },
               {
                 step: "4",
-                title: "Follow-Up",
+                title: "We Follow Up",
                 description:
-                  "We monitor your progress and adjust treatment as needed.",
+                  "We check in to see how you're feeling and adjust if needed. We're in this together.",
               },
             ].map((item, index) => (
               <div key={index} className="text-center">
@@ -333,11 +335,11 @@ export default function PainManagementPage() {
         <div className="container container-default mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-              Ready to Take Control of Your Pain?
+              You Don&apos;t Have to Keep Living Like This
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              Don&apos;t let chronic pain limit your life. Schedule a consultation
-              with our pain management specialists today.
+              Pain takes so much from you&mdash;your energy, your mood, your ability to
+              do the things you love. Let&apos;s see if we can help you get some of that back.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" asChild>

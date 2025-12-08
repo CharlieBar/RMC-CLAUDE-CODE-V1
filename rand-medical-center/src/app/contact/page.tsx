@@ -30,24 +30,24 @@ export const metadata: Metadata = {
 const CONTACT_REASONS = [
   {
     icon: Calendar,
-    title: "Schedule an Appointment",
-    description: "Book a new patient visit or follow-up appointment.",
+    title: "Book an Appointment",
+    description: "New patient or returning? Schedule online in under 2 minutes.",
     action: "Book Online",
     href: SITE_CONFIG.bookingUrl,
     primary: true,
   },
   {
     icon: FileText,
-    title: "Request Medical Records",
-    description: "Access or transfer your medical records.",
+    title: "Need Your Records?",
+    description: "Download forms or request records for a specialist or attorney.",
     action: "Patient Forms",
     href: "/patients/forms",
     primary: false,
   },
   {
     icon: MessageSquare,
-    title: "General Inquiries",
-    description: "Questions about our services or insurance.",
+    title: "Have Questions?",
+    description: "Insurance, services, what to expect&mdash;just ask. We're happy to help.",
     action: "Call Us",
     href: SITE_CONFIG.phoneTel,
     primary: false,
@@ -69,12 +69,13 @@ export default function ContactPage() {
             </Badge>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight">
-              Get in Touch
+              Let&apos;s Talk
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              Have questions or ready to schedule an appointment? We&apos;re here to
-              help. Reach out by phone, visit our office, or book online.
+              Whether you have questions, need to schedule an appointment, or just
+              want to know if we can help with your situation&mdash;give us a call.
+              Our staff is friendly, and we won&apos;t make you jump through hoops.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -103,7 +104,7 @@ export default function ContactPage() {
               How Can We Help?
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Choose Your Preferred Contact Method
+              What Do You Need?
             </h2>
           </div>
 
@@ -157,7 +158,7 @@ export default function ContactPage() {
                 Our Location
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-8">
-                Visit Our Office
+                Where to Find Us
               </h2>
 
               <div className="space-y-6">
@@ -246,11 +247,11 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-amber-900 mb-1">
-                      Same-Day Appointments
+                      Need to Be Seen Today?
                     </h3>
                     <p className="text-sm text-amber-800">
-                      Need to be seen today? Call us directly and we&apos;ll do our
-                      best to accommodate urgent needs.
+                      Call us directly. We try to fit in same-day appointments
+                      for urgent situations&mdash;no promises, but we&apos;ll do our best.
                     </p>
                   </div>
                 </CardContent>
@@ -287,10 +288,10 @@ export default function ContactPage() {
         <div className="container container-default mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Patient Resources
+              Before You Visit
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Find helpful information for your visit.
+              A few things that might be helpful before your first appointment.
             </p>
           </div>
 
@@ -340,11 +341,11 @@ export default function ContactPage() {
       <section className="py-16 bg-slate-900 text-white">
         <div className="container container-default mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">
-            Ready to Schedule Your Visit?
+            Ready When You Are
           </h2>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-8">
-            Our friendly team is here to help you book your appointment and
-            answer any questions you may have.
+            Book online in a couple minutes, or give us a call if you&apos;d
+            rather talk to a real person. Either way works for us.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button size="lg" className="bg-teal-500 hover:bg-teal-600" asChild>

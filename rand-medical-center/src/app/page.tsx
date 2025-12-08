@@ -90,15 +90,16 @@ export default function Home() {
 
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight">
-              Comprehensive Medical Care in{" "}
-              <span className="gradient-text-medical">Arlington Heights</span>
+              Get Back to Living{" "}
+              <span className="gradient-text-medical">Pain-Free</span>
             </h1>
 
             {/* Subheadline */}
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              Pain management, orthopedics, physical therapy, and immediate care
-              &mdash; all under one roof. Board-certified specialists with 15+
-              years of experience helping patients get back to their lives.
+              Whether you&apos;re dealing with chronic back pain, recovering from an
+              injury, or just need to see a doctor today&mdash;we&apos;re here to help.
+              Our Arlington Heights team treats over 5,000 patients each year,
+              and we&apos;d like to help you too.
             </p>
 
             {/* Trust indicators */}
@@ -145,11 +146,11 @@ export default function Home() {
               Our Services
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Complete Medical Care Under One Roof
+              Everything You Need in One Place
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              From urgent care to specialized treatments, we provide comprehensive
-              services to address all your healthcare needs.
+              No more driving across town for different specialists. Get your diagnosis,
+              treatment, and therapy all coordinated by one team who actually talks to each other.
             </p>
           </div>
 
@@ -182,34 +183,34 @@ export default function Home() {
         <div className="container container-default mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">
-              Get the Care You Need Today
+              Hurt? Let&apos;s Get You Feeling Better
             </h2>
             <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-              We specialize in injury treatment with same-day appointments and
-              streamlined documentation for insurance and legal cases.
+              We see patients the same day they call. If you need documentation for
+              insurance or a legal case, we handle that too&mdash;so you can focus on healing.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                title: "Auto Accident Injury?",
+                title: "Car Accident?",
                 description:
-                  "Get comprehensive documentation and treatment for your injury claim.",
-                cta: "Start Your Evaluation",
+                  "We'll document your injuries properly and get you the treatment you need. Most patients feel better within 4-6 weeks.",
+                cta: "Get Help Now",
                 href: "/services/injuries/motor-vehicle-accidents",
               },
               {
-                title: "Workplace Injury?",
+                title: "Hurt at Work?",
                 description:
-                  "Expert workers' compensation care with employer coordination.",
-                cta: "File Your Claim",
+                  "We've handled thousands of workers' comp cases. We know the paperwork and we'll coordinate with your employer.",
+                cta: "Start Your Claim",
                 href: "/services/injuries/workers-compensation",
               },
               {
-                title: "Chronic Pain?",
+                title: "Living with Pain?",
                 description:
-                  "Advanced pain management treatments from epidurals to nerve blocks.",
+                  "From epidural injections to nerve blocks, we have options when nothing else has worked. Many patients find relief after one visit.",
                 cta: "Find Relief",
                 href: "/services/pain-management",
               },
@@ -239,11 +240,11 @@ export default function Home() {
               Conditions We Treat
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Expert Treatment for Common Conditions
+              We Treat These Every Day
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Our specialists diagnose and treat a wide range of musculoskeletal
-              and pain conditions using evidence-based approaches.
+              If you&apos;re dealing with any of these, you&apos;re not alone&mdash;and
+              you don&apos;t have to keep suffering. Click any condition to learn how we can help.
             </p>
           </div>
 
@@ -281,11 +282,11 @@ export default function Home() {
               Our Team
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Meet Our Board-Certified Specialists
+              Doctors Who Actually Listen
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Our experienced medical team brings decades of combined expertise
-              in pain management, orthopedics, and primary care.
+              Our physicians have 15+ years of experience treating patients in Arlington Heights.
+              They&apos;ll take the time to understand your situation and explain your options clearly.
             </p>
           </div>
 
@@ -330,10 +331,10 @@ export default function Home() {
               Patient Stories
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">
-              What Our Patients Say
+              Don&apos;t Just Take Our Word For It
             </h2>
             <p className="text-lg text-teal-100 max-w-2xl mx-auto">
-              Real feedback from patients who have experienced our care.
+              Hear from real patients in Arlington Heights and the surrounding area.
             </p>
           </div>
 
@@ -373,13 +374,13 @@ export default function Home() {
                 Why Choose Us
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-                Trusted by Arlington Heights for 15+ Years
+                We&apos;ve Been Doing This a Long Time
               </h2>
               <p className="text-lg text-slate-600 mb-8">
-                At Rand Medical Center, we combine advanced treatments with
-                compassionate care. Our Joint Commission-accredited facility and
-                board-certified specialists ensure you receive the highest quality
-                medical care.
+                Since 2008, we&apos;ve helped thousands of patients in Arlington Heights
+                and the northwest suburbs. We&apos;re Joint Commission accredited, which means
+                we meet the same safety standards as major hospitals. But what really
+                matters is that you&apos;ll feel heard and cared for from the moment you walk in.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-4">
@@ -402,12 +403,12 @@ export default function Home() {
             <div className="relative">
               <Card className="p-8">
                 <CardHeader className="p-0 mb-6">
-                  <CardTitle>Ready to Feel Better?</CardTitle>
+                  <CardTitle>Ready to Feel Like Yourself Again?</CardTitle>
                 </CardHeader>
                 <CardContent className="p-0 space-y-4">
                   <p className="text-slate-600">
-                    Schedule your consultation today and take the first step toward
-                    relief.
+                    Let&apos;s figure out what&apos;s going on and get you on the path
+                    to feeling better. Most new patients are seen within 24-48 hours.
                   </p>
                   <div className="space-y-3">
                     <Button size="lg" className="w-full" asChild>
@@ -451,7 +452,7 @@ export default function Home() {
                 Visit Us
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-                Conveniently Located in Arlington Heights
+                Easy to Find, Easy to Get To
               </h2>
 
               <div className="space-y-6">
@@ -524,11 +525,11 @@ export default function Home() {
       <section className="py-16 bg-slate-900 text-white">
         <div className="container container-default mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">
-            Start Your Journey to Pain Relief Today
+            You Don&apos;t Have to Keep Living Like This
           </h2>
           <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-8">
-            Don&apos;t let pain control your life. Our experienced team is ready to help
-            you get back to doing what you love.
+            Whether it&apos;s pain that won&apos;t go away, an injury that needs attention,
+            or just time for a checkup&mdash;we&apos;re here when you&apos;re ready.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button size="lg" className="bg-teal-500 hover:bg-teal-600" asChild>

@@ -32,27 +32,27 @@ export const metadata: Metadata = {
 const CORE_VALUES = [
   {
     icon: Heart,
-    title: "Compassionate Care",
+    title: "We Actually Care",
     description:
-      "We treat every patient with empathy and respect, understanding that each person's health journey is unique.",
+      "You're not a number here. We take the time to learn your name, understand your situation, and treat you like family.",
   },
   {
     icon: Shield,
-    title: "Clinical Excellence",
+    title: "We Do Things Right",
     description:
-      "Our Joint Commission accreditation reflects our commitment to meeting the highest standards in healthcare.",
+      "Joint Commission accreditation means we meet the same safety standards as major hospitals. Your safety matters.",
   },
   {
     icon: Target,
-    title: "Patient-Centered Approach",
+    title: "Your Goals First",
     description:
-      "Your goals drive our treatment plans. We work with you to develop personalized care strategies.",
+      "Want to play golf again? Chase your grandkids? Get through a workday without pain? That's what we're working toward.",
   },
   {
     icon: Users,
-    title: "Team Collaboration",
+    title: "One Team, Not Silos",
     description:
-      "Our specialists work together, sharing expertise to provide comprehensive, coordinated care.",
+      "Your doctor talks to your physical therapist. Your PT talks to your specialist. Everyone's on the same page.",
   },
 ];
 
@@ -81,15 +81,15 @@ export default function AboutPage() {
             </Badge>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight">
-              Dedicated to Your{" "}
-              <span className="gradient-text-medical">Health & Recovery</span>
+              Real Doctors.{" "}
+              <span className="gradient-text-medical">Real Care.</span>
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              For over 15 years, Rand Medical Center has been Arlington Heights&apos;
-              trusted destination for comprehensive medical care. Our team of
-              board-certified specialists combines advanced treatments with
-              genuine compassion.
+              We started Rand Medical Center in 2008 with a simple idea: patients
+              deserve doctors who listen. Since then, we&apos;ve treated over 50,000
+              patients in Arlington Heights and the northwest suburbs. We&apos;re still
+              here, and we&apos;re still listening.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -119,20 +119,19 @@ export default function AboutPage() {
                 Our Mission
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-                Helping Patients Live Pain-Free, Active Lives
+                Get You Back to Your Life
               </h2>
               <p className="text-lg text-slate-600 mb-6">
-                At Rand Medical Center, our mission is to provide exceptional
-                medical care that addresses the root cause of your condition—not
-                just the symptoms. We believe everyone deserves access to
-                quality healthcare delivered with expertise and compassion.
+                When you&apos;re in pain, everything else takes a back seat. You can&apos;t
+                work the way you used to. You can&apos;t play with your kids. You can&apos;t
+                sleep through the night. We get it&mdash;and we&apos;re here to help you
+                get back to normal.
               </p>
               <p className="text-lg text-slate-600">
-                From your first consultation through recovery, our integrated
-                approach ensures you receive coordinated care across all our
-                specialties. Whether you&apos;re recovering from an injury, managing
-                chronic pain, or seeking preventive care, we&apos;re here to support
-                your health journey.
+                That means finding what&apos;s actually causing your pain, not just treating
+                symptoms. It means working with you on a treatment plan that fits your
+                life, not something generic. And it means having all your specialists
+                under one roof so you&apos;re not bouncing between different offices.
               </p>
             </div>
 
@@ -163,11 +162,11 @@ export default function AboutPage() {
               Credentials
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Why Patients Trust Us
+              The Boring-But-Important Stuff
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Our accreditations and certifications demonstrate our commitment
-              to excellence in patient care.
+              Credentials matter in healthcare. Here&apos;s what they mean for you: we&apos;re
+              held to the highest standards, and we take that seriously.
             </p>
           </div>
 
@@ -195,11 +194,11 @@ export default function AboutPage() {
               Our Team
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Meet Our Board-Certified Specialists
+              The People Behind the Care
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Our physicians bring decades of combined experience in pain
-              management, orthopedics, and primary care.
+              Our doctors aren&apos;t just well-trained&mdash;they&apos;re the kind of people
+              who got into medicine because they actually want to help. Get to know them.
             </p>
           </div>
 
@@ -243,14 +242,14 @@ export default function AboutPage() {
         <div className="container container-default mx-auto">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4 border-white/30 text-white">
-              Our History
+              Our Story
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">
-              15+ Years of Serving Our Community
+              How We Got Here
             </h2>
             <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-              From our founding to today, we&apos;ve continuously evolved to meet the
-              healthcare needs of Arlington Heights and surrounding communities.
+              We started small in 2008 with a focus on doing one thing well: treating patients with
+              respect and expertise. Here&apos;s how we&apos;ve grown over the years.
             </p>
           </div>
 
@@ -295,12 +294,11 @@ export default function AboutPage() {
         <div className="container container-default mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-              Ready to Experience the Difference?
+              Come See for Yourself
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              Schedule your appointment today and discover why patients
-              throughout Arlington Heights trust Rand Medical Center for their
-              healthcare needs.
+              We know you have options. But we think once you meet us, you&apos;ll
+              understand why so many patients in Arlington Heights keep coming back.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" asChild>

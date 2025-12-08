@@ -44,7 +44,7 @@ const DETAILED_SERVICES = [
     id: "immediate-care",
     name: "Immediate Care",
     description:
-      "Walk-in and same-day appointments for urgent medical needs. From minor injuries to illness evaluation, get the care you need without the ER wait.",
+      "Need to see a doctor today? Walk in or book same-day. We handle everything from sprains and strains to infections and minor injuries—without the ER price tag or wait.",
     icon: "Clock",
     href: "/immediate-care",
     features: [
@@ -59,7 +59,7 @@ const DETAILED_SERVICES = [
     id: "pain-management",
     name: "Pain Management",
     description:
-      "Advanced interventional treatments for chronic and acute pain. Our board-certified specialists use minimally invasive techniques to help you find lasting relief.",
+      "When pain pills and stretches aren't cutting it, we have options. Epidural injections, nerve blocks, and other treatments that actually target what's causing your pain.",
     icon: "Activity",
     href: "/services/pain-management",
     features: [
@@ -74,7 +74,7 @@ const DETAILED_SERVICES = [
     id: "orthopedics",
     name: "Orthopedics",
     description:
-      "Expert surgical and non-surgical care for bones, joints, and musculoskeletal conditions. From sports injuries to joint replacement, we help restore your mobility.",
+      "Bones, joints, sports injuries, arthritis—if it involves your skeleton or muscles, our orthopedic surgeons can help. Surgery when you need it, conservative care when you don't.",
     icon: "Bone",
     href: "/services/orthopedics",
     features: [
@@ -89,7 +89,7 @@ const DETAILED_SERVICES = [
     id: "physical-therapy",
     name: "Physical Therapy",
     description:
-      "Personalized rehabilitation programs to help you recover from injury, surgery, or chronic conditions. Our therapists work with you to restore strength and function.",
+      "Getting stronger after surgery, recovering from an injury, or just trying to move without pain—our PTs create a plan that actually works for your body and your schedule.",
     icon: "Dumbbell",
     href: "/services/physical-therapy",
     features: [
@@ -104,7 +104,7 @@ const DETAILED_SERVICES = [
     id: "internal-medicine",
     name: "Internal Medicine",
     description:
-      "Comprehensive primary care for adults. From annual physicals to chronic disease management, we focus on preventive care and overall wellness.",
+      "Need a regular doctor? We do annual checkups, manage chronic conditions like diabetes and high blood pressure, and coordinate with our specialists when needed.",
     icon: "Stethoscope",
     href: "/services/internal-medicine",
     features: [
@@ -119,7 +119,7 @@ const DETAILED_SERVICES = [
     id: "surgery-center",
     name: "Surgery Center",
     description:
-      "Joint Commission-accredited outpatient surgical facility. Experience advanced procedures in a comfortable, efficient setting with faster recovery times.",
+      "When you need a procedure, you want to get in, get it done, and go home. Our outpatient surgery center does just that—safely and efficiently.",
     icon: "Hospital",
     href: "/surgery-center",
     features: [
@@ -135,21 +135,21 @@ const DETAILED_SERVICES = [
 // Injury & Claims section
 const INJURY_SERVICES = [
   {
-    title: "Motor Vehicle Accidents",
+    title: "Car Accidents",
     description:
-      "Comprehensive documentation and treatment for auto accident injuries. We work with your attorney and insurance to streamline your care.",
+      "Got rear-ended? T-boned? We'll document everything properly for your insurance claim and get you the treatment you need to feel better.",
     href: "/services/injuries/motor-vehicle-accidents",
   },
   {
-    title: "Workers' Compensation",
+    title: "Hurt at Work",
     description:
-      "Expert care for workplace injuries with employer coordination and timely return-to-work planning.",
+      "Workers' comp can be a headache. We handle the paperwork, coordinate with your employer, and focus on getting you back on your feet.",
     href: "/services/injuries/workers-compensation",
   },
   {
     title: "Personal Injury",
     description:
-      "Medical documentation and treatment for slip-and-fall, premises liability, and other personal injury cases.",
+      "Slipped and fell? Injured on someone's property? We provide the medical documentation you need while treating your injuries.",
     href: "/services/injuries/personal-injury",
   },
 ];
@@ -169,15 +169,14 @@ export default function ServicesPage() {
             </Badge>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight">
-              Comprehensive{" "}
-              <span className="gradient-text-medical">Medical Care</span>
+              What We{" "}
+              <span className="gradient-text-medical">Actually Do</span>
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              From urgent care to specialized treatments, Rand Medical Center
-              provides a full spectrum of healthcare services under one roof.
-              Our board-certified specialists work together to deliver
-              coordinated, patient-centered care.
+              Whether you threw out your back, got hurt at work, or have been dealing
+              with chronic pain for years&mdash;we&apos;ve probably seen your situation before.
+              Here&apos;s how we can help.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -206,11 +205,12 @@ export default function ServicesPage() {
               Specialties
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Our Medical Specialties
+              Six Specialties, One Team
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Each specialty works together to provide integrated care for your
-              complete health needs.
+              The best part? We all work together. Your pain doctor talks to your
+              physical therapist. Your surgeon coordinates with your primary care.
+              No more playing phone tag between offices.
             </p>
           </div>
 
@@ -269,11 +269,11 @@ export default function ServicesPage() {
               Injury Treatment
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">
-              Injury & Claims Services
+              Injured? We&apos;ve Got Your Back
             </h2>
             <p className="text-lg text-slate-400 max-w-2xl mx-auto">
-              Specialized care for accident and injury cases with comprehensive
-              documentation for insurance and legal proceedings.
+              We treat hundreds of injury cases every year. That means we know what
+              documentation insurers and attorneys need, and we know how to get you feeling better.
             </p>
           </div>
 
@@ -305,12 +305,11 @@ export default function ServicesPage() {
                 On-Site Diagnostics
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-                Complete Diagnostic Services
+                Get Answers Fast
               </h2>
               <p className="text-lg text-slate-600 mb-6">
-                Get answers quickly with our on-site diagnostic capabilities.
-                From imaging to lab work, we provide the tests you need to guide
-                your treatment—often during the same visit.
+                Waiting days for test results? Not here. We have X-ray and lab
+                services on-site, which means you often get answers during the same visit.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-4">
@@ -364,12 +363,11 @@ export default function ServicesPage() {
         <div className="container container-default mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-              Not Sure Which Service You Need?
+              Not Sure Where to Start?
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              Our team can help determine the best course of care for your
-              condition. Schedule a consultation and let our specialists create
-              a personalized treatment plan.
+              That&apos;s okay. Call us or book a general consultation, and we&apos;ll
+              figure out together what you need. No runaround, no guessing.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" asChild>
