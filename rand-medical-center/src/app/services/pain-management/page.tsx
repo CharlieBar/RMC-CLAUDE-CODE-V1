@@ -68,18 +68,18 @@ const TREATMENTS = [
 ];
 
 const CONDITIONS = [
-  "Chronic back pain",
-  "Neck pain",
-  "Sciatica",
-  "Herniated disc",
-  "Spinal stenosis",
-  "Degenerative disc disease",
-  "Arthritis pain",
-  "Joint pain",
-  "Neuropathy",
-  "Post-surgical pain",
-  "Complex regional pain syndrome",
-  "Fibromyalgia",
+  { name: "Chronic back pain", href: "/conditions/back-pain" },
+  { name: "Neck pain", href: "/conditions/neck-pain" },
+  { name: "Sciatica", href: "/conditions/sciatica" },
+  { name: "Herniated disc", href: "/conditions/herniated-disc" },
+  { name: "Spinal stenosis", href: "/conditions/spinal-stenosis" },
+  { name: "Degenerative disc disease", href: null },
+  { name: "Arthritis pain", href: "/conditions/arthritis" },
+  { name: "Joint pain", href: "/conditions/knee-pain" },
+  { name: "Neuropathy", href: null },
+  { name: "Post-surgical pain", href: null },
+  { name: "Complex regional pain syndrome", href: null },
+  { name: "Fibromyalgia", href: null },
 ];
 
 export default function PainManagementPage() {
@@ -266,15 +266,28 @@ export default function PainManagementPage() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {CONDITIONS.map((condition, index) => (
-              <div
-                key={index}
-                className="flex items-center gap-3 p-4 bg-slate-50 rounded-xl"
-              >
-                <CheckCircle className="h-5 w-5 text-teal-500 flex-shrink-0" />
-                <span className="text-slate-700">{condition}</span>
-              </div>
-            ))}
+            {CONDITIONS.map((condition, index) =>
+              condition.href ? (
+                <Link
+                  key={index}
+                  href={condition.href}
+                  className="group flex items-center gap-3 p-4 bg-slate-50 rounded-xl hover:bg-teal-50 hover:border-teal-200 border border-transparent transition-all"
+                >
+                  <CheckCircle className="h-5 w-5 text-teal-500 flex-shrink-0" />
+                  <span className="text-slate-700 group-hover:text-teal-600 transition-colors">
+                    {condition.name}
+                  </span>
+                </Link>
+              ) : (
+                <div
+                  key={index}
+                  className="flex items-center gap-3 p-4 bg-slate-50 rounded-xl"
+                >
+                  <CheckCircle className="h-5 w-5 text-teal-500 flex-shrink-0" />
+                  <span className="text-slate-700">{condition.name}</span>
+                </div>
+              )
+            )}
           </div>
         </div>
       </section>
@@ -330,8 +343,112 @@ export default function PainManagementPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Related Services & Resources */}
       <section className="section bg-white">
+        <div className="container container-default mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Related Services */}
+            <div>
+              <Badge variant="secondary" className="mb-4">
+                Works Well With
+              </Badge>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                Often Combined With Pain Management
+              </h3>
+              <p className="text-slate-600 mb-6">
+                Pain treatment often works best as part of a bigger picture. Here&apos;s what else we offer:
+              </p>
+              <div className="space-y-4">
+                <Link
+                  href="/services/physical-therapy"
+                  className="group flex items-center gap-4 p-4 bg-slate-50 rounded-xl hover:bg-green-50 transition-colors"
+                >
+                  <div className="p-3 bg-green-100 rounded-lg text-green-600">
+                    <Activity className="h-5 w-5" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-slate-900 group-hover:text-green-600">
+                      Physical Therapy
+                    </h4>
+                    <p className="text-sm text-slate-600">
+                      Strengthen muscles and improve mobility to support your treatment
+                    </p>
+                  </div>
+                  <ChevronRight className="h-5 w-5 text-slate-400 group-hover:text-green-500" />
+                </Link>
+                <Link
+                  href="/services/orthopedics"
+                  className="group flex items-center gap-4 p-4 bg-slate-50 rounded-xl hover:bg-blue-50 transition-colors"
+                >
+                  <div className="p-3 bg-blue-100 rounded-lg text-blue-600">
+                    <Activity className="h-5 w-5" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-slate-900 group-hover:text-blue-600">
+                      Orthopedics
+                    </h4>
+                    <p className="text-sm text-slate-600">
+                      For joint, bone, or structural issues that may need surgical evaluation
+                    </p>
+                  </div>
+                  <ChevronRight className="h-5 w-5 text-slate-400 group-hover:text-blue-500" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Related Articles */}
+            <div>
+              <Badge variant="secondary" className="mb-4">
+                Learn More
+              </Badge>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                Helpful Resources
+              </h3>
+              <p className="text-slate-600 mb-6">
+                Want to know more before your appointment? These articles might help:
+              </p>
+              <div className="space-y-4">
+                <Link
+                  href="/blog/understanding-epidural-steroid-injections"
+                  className="group block p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors"
+                >
+                  <h4 className="font-semibold text-slate-900 group-hover:text-teal-600 mb-1">
+                    Epidural Steroid Injections: What Actually Happens
+                  </h4>
+                  <p className="text-sm text-slate-600">
+                    The honest breakdown of what to expect during and after
+                  </p>
+                </Link>
+                <Link
+                  href="/blog/when-to-see-doctor-for-back-pain"
+                  className="group block p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors"
+                >
+                  <h4 className="font-semibold text-slate-900 group-hover:text-teal-600 mb-1">
+                    Back Pain: When to Actually See a Doctor
+                  </h4>
+                  <p className="text-sm text-slate-600">
+                    How to tell if your back pain needs professional attention
+                  </p>
+                </Link>
+                <Link
+                  href="/patients/insurance-pricing"
+                  className="group block p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors"
+                >
+                  <h4 className="font-semibold text-slate-900 group-hover:text-teal-600 mb-1">
+                    Insurance & Pricing Information
+                  </h4>
+                  <p className="text-sm text-slate-600">
+                    What&apos;s covered, what to expect cost-wise, payment options
+                  </p>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="section bg-slate-50">
         <div className="container container-default mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">

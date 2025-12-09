@@ -232,6 +232,68 @@ export default async function ConditionPage({ params }: ConditionPageProps) {
         </section>
       )}
 
+      {/* Resources Section */}
+      <section className="section bg-white">
+        <div className="container container-default mx-auto">
+          <div className="text-center mb-12">
+            <Badge variant="secondary" className="mb-4">
+              Resources
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
+              Learn More
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <Link
+              href="/blog/when-to-see-doctor-for-back-pain"
+              className="group p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-teal-300 hover:shadow-md transition-all"
+            >
+              <h3 className="font-semibold text-slate-900 mb-2 group-hover:text-teal-600 transition-colors">
+                When to See a Doctor
+              </h3>
+              <p className="text-sm text-slate-600 mb-3">
+                How to know if your pain needs professional attention
+              </p>
+              <span className="inline-flex items-center text-teal-600 text-sm font-medium">
+                Read Article
+                <ChevronRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </span>
+            </Link>
+            <Link
+              href="/patients/insurance-pricing"
+              className="group p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-teal-300 hover:shadow-md transition-all"
+            >
+              <h3 className="font-semibold text-slate-900 mb-2 group-hover:text-teal-600 transition-colors">
+                Insurance & Cost Info
+              </h3>
+              <p className="text-sm text-slate-600 mb-3">
+                What to expect for coverage and payment options
+              </p>
+              <span className="inline-flex items-center text-teal-600 text-sm font-medium">
+                View Details
+                <ChevronRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </span>
+            </Link>
+            <Link
+              href="/patients/forms"
+              className="group p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-teal-300 hover:shadow-md transition-all"
+            >
+              <h3 className="font-semibold text-slate-900 mb-2 group-hover:text-teal-600 transition-colors">
+                New Patient Forms
+              </h3>
+              <p className="text-sm text-slate-600 mb-3">
+                Save time by completing forms before your visit
+              </p>
+              <span className="inline-flex items-center text-teal-600 text-sm font-medium">
+                Get Forms
+                <ChevronRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="section bg-slate-900 text-white">
         <div className="container container-default mx-auto">

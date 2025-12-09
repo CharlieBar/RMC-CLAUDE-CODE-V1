@@ -293,8 +293,112 @@ export default function OrthopedicsPage() {
         </div>
       </section>
 
-      {/* CTA */}
+      {/* Related Services & Resources */}
       <section className="section bg-white">
+        <div className="container container-default mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Related Services */}
+            <div>
+              <Badge variant="secondary" className="mb-4">
+                Complete Care
+              </Badge>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                Everything Under One Roof
+              </h3>
+              <p className="text-slate-600 mb-6">
+                Orthopedic care often involves more than just surgery. Here&apos;s what else we offer:
+              </p>
+              <div className="space-y-4">
+                <Link
+                  href="/services/physical-therapy"
+                  className="group flex items-center gap-4 p-4 bg-slate-50 rounded-xl hover:bg-green-50 transition-colors"
+                >
+                  <div className="p-3 bg-green-100 rounded-lg text-green-600">
+                    <Bone className="h-5 w-5" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-slate-900 group-hover:text-green-600">
+                      Physical Therapy
+                    </h4>
+                    <p className="text-sm text-slate-600">
+                      Post-surgical rehab and injury recovery programs
+                    </p>
+                  </div>
+                  <ChevronRight className="h-5 w-5 text-slate-400 group-hover:text-green-500" />
+                </Link>
+                <Link
+                  href="/services/pain-management"
+                  className="group flex items-center gap-4 p-4 bg-slate-50 rounded-xl hover:bg-teal-50 transition-colors"
+                >
+                  <div className="p-3 bg-teal-100 rounded-lg text-teal-600">
+                    <Bone className="h-5 w-5" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-slate-900 group-hover:text-teal-600">
+                      Pain Management
+                    </h4>
+                    <p className="text-sm text-slate-600">
+                      Joint injections and non-surgical pain treatments
+                    </p>
+                  </div>
+                  <ChevronRight className="h-5 w-5 text-slate-400 group-hover:text-teal-500" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Related Articles */}
+            <div>
+              <Badge variant="secondary" className="mb-4">
+                Learn More
+              </Badge>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                Helpful Resources
+              </h3>
+              <p className="text-slate-600 mb-6">
+                Thinking about surgery? These resources might help:
+              </p>
+              <div className="space-y-4">
+                <Link
+                  href="/blog/preparing-for-knee-replacement-surgery"
+                  className="group block p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors"
+                >
+                  <h4 className="font-semibold text-slate-900 group-hover:text-blue-600 mb-1">
+                    Getting Ready for Knee Replacement
+                  </h4>
+                  <p className="text-sm text-slate-600">
+                    A practical guide to preparing for surgery and recovery
+                  </p>
+                </Link>
+                <Link
+                  href="/blog/benefits-of-physical-therapy-after-surgery"
+                  className="group block p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors"
+                >
+                  <h4 className="font-semibold text-slate-900 group-hover:text-blue-600 mb-1">
+                    Why PT After Surgery Matters
+                  </h4>
+                  <p className="text-sm text-slate-600">
+                    How physical therapy speeds your recovery
+                  </p>
+                </Link>
+                <Link
+                  href="/conditions/knee-pain"
+                  className="group block p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors"
+                >
+                  <h4 className="font-semibold text-slate-900 group-hover:text-blue-600 mb-1">
+                    Knee Pain Treatment Options
+                  </h4>
+                  <p className="text-sm text-slate-600">
+                    From conservative care to surgery&mdash;all your options
+                  </p>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="section bg-slate-50">
         <div className="container container-default mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">

@@ -302,6 +302,110 @@ export default function PhysicalTherapyPage() {
         </div>
       </section>
 
+      {/* Related Services & Resources */}
+      <section className="section bg-white">
+        <div className="container container-default mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Related Services */}
+            <div>
+              <Badge variant="secondary" className="mb-4">
+                Works With
+              </Badge>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                PT Often Pairs With
+              </h3>
+              <p className="text-slate-600 mb-6">
+                We&apos;re part of a bigger picture. Here&apos;s what else we offer that works hand-in-hand with PT:
+              </p>
+              <div className="space-y-4">
+                <Link
+                  href="/services/pain-management"
+                  className="group flex items-center gap-4 p-4 bg-slate-50 rounded-xl hover:bg-teal-50 transition-colors"
+                >
+                  <div className="p-3 bg-teal-100 rounded-lg text-teal-600">
+                    <Target className="h-5 w-5" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-slate-900 group-hover:text-teal-600">
+                      Pain Management
+                    </h4>
+                    <p className="text-sm text-slate-600">
+                      Injections can calm pain so you can participate fully in PT
+                    </p>
+                  </div>
+                  <ChevronRight className="h-5 w-5 text-slate-400 group-hover:text-teal-500" />
+                </Link>
+                <Link
+                  href="/services/orthopedics"
+                  className="group flex items-center gap-4 p-4 bg-slate-50 rounded-xl hover:bg-blue-50 transition-colors"
+                >
+                  <div className="p-3 bg-blue-100 rounded-lg text-blue-600">
+                    <Target className="h-5 w-5" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-slate-900 group-hover:text-blue-600">
+                      Orthopedics
+                    </h4>
+                    <p className="text-sm text-slate-600">
+                      Post-surgical rehab is one of our specialties
+                    </p>
+                  </div>
+                  <ChevronRight className="h-5 w-5 text-slate-400 group-hover:text-blue-500" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Related Articles */}
+            <div>
+              <Badge variant="secondary" className="mb-4">
+                Learn More
+              </Badge>
+              <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                Helpful Resources
+              </h3>
+              <p className="text-slate-600 mb-6">
+                Learn more about what to expect from physical therapy:
+              </p>
+              <div className="space-y-4">
+                <Link
+                  href="/blog/benefits-of-physical-therapy-after-surgery"
+                  className="group block p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors"
+                >
+                  <h4 className="font-semibold text-slate-900 group-hover:text-green-600 mb-1">
+                    Why PT After Surgery Actually Matters
+                  </h4>
+                  <p className="text-sm text-slate-600">
+                    Why skipping PT is one of the biggest mistakes you can make
+                  </p>
+                </Link>
+                <Link
+                  href="/blog/preparing-for-knee-replacement-surgery"
+                  className="group block p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors"
+                >
+                  <h4 className="font-semibold text-slate-900 group-hover:text-green-600 mb-1">
+                    Getting Ready for Knee Replacement
+                  </h4>
+                  <p className="text-sm text-slate-600">
+                    How to prepare for surgery and recovery
+                  </p>
+                </Link>
+                <Link
+                  href="/conditions/sports-injuries"
+                  className="group block p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors"
+                >
+                  <h4 className="font-semibold text-slate-900 group-hover:text-green-600 mb-1">
+                    Sports Injuries Overview
+                  </h4>
+                  <p className="text-sm text-slate-600">
+                    Common injuries and how we help you recover
+                  </p>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="section bg-green-50">
         <div className="container container-default mx-auto">
