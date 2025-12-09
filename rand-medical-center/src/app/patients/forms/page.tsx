@@ -27,49 +27,49 @@ const FORMS = [
   {
     name: "New Patient Registration",
     description:
-      "Complete your personal information, emergency contacts, and demographic details.",
+      "The basics: who you are, how to reach you, and who to call in an emergency. Takes about 2 minutes.",
     required: true,
   },
   {
     name: "Medical History Form",
     description:
-      "Document your health history, past surgeries, current medications, and allergies.",
+      "What surgeries have you had? What medications do you take? Any allergies? This helps us treat you safely.",
     required: true,
   },
   {
     name: "HIPAA Privacy Notice",
     description:
-      "Review our privacy practices and sign to acknowledge receipt.",
+      "This explains how we protect your medical information. Federal law requires us to share this with you.",
     required: true,
   },
   {
     name: "Consent for Treatment",
     description:
-      "Authorization for medical examination, treatment, and procedures.",
+      "Your OK for us to examine and treat you. Pretty straightforward.",
     required: true,
   },
   {
     name: "Insurance Information",
     description:
-      "Provide your insurance details and authorize us to bill on your behalf.",
+      "Your insurance details so we can bill them instead of you. (We'll verify coverage before your visit.)",
     required: true,
   },
   {
     name: "Workers' Compensation Form",
     description:
-      "For work-related injuries, provide employer and injury information.",
+      "Got hurt on the job? This form has the details we need to coordinate with your employer's insurance.",
     required: false,
   },
   {
     name: "Auto Accident Information",
     description:
-      "For auto accident injuries, document accident details and insurance information.",
+      "Car accident injury? We need the accident details and your auto insurance info for billing.",
     required: false,
   },
   {
     name: "Medical Records Release",
     description:
-      "Authorize the release of your medical records to/from other providers.",
+      "If you want us to get records from another doctor (or send ours to them), this form gives us permission.",
     required: false,
   },
 ];
@@ -89,14 +89,14 @@ export default function PatientFormsPage() {
             </Badge>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight">
-              Save Time at Your{" "}
-              <span className="gradient-text-medical">Appointment</span>
+              Skip the{" "}
+              <span className="gradient-text-medical">Waiting Room Paperwork</span>
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              Download and complete your forms before your visit. Bringing
-              completed forms helps us get you seen faster and ensures we have
-              all the information needed to provide the best care.
+              Fill these out at home and you&apos;ll spend less time with a clipboard
+              when you arrive. Don&apos;t have time? No worries—you can do them here
+              when you check in.
             </p>
           </div>
         </div>
@@ -107,10 +107,10 @@ export default function PatientFormsPage() {
         <div className="container container-default mx-auto">
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-slate-900 mb-2">
-              Required Forms for New Patients
+              First Visit? Start Here
             </h2>
             <p className="text-slate-600">
-              Please complete these forms before your first visit.
+              These are the ones everyone needs to fill out. About 10-15 minutes total.
             </p>
           </div>
 
@@ -143,10 +143,10 @@ export default function PatientFormsPage() {
 
           <div className="mb-8">
             <h2 className="text-2xl font-bold text-slate-900 mb-2">
-              Additional Forms
+              Only If They Apply to You
             </h2>
             <p className="text-slate-600">
-              These forms are needed for specific situations.
+              You don&apos;t need these unless your visit involves a work injury, car accident, or records transfer.
             </p>
           </div>
 
@@ -179,12 +179,12 @@ export default function PatientFormsPage() {
               <FileText className="h-6 w-6 text-amber-600 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold text-amber-900 mb-1">
-                  Need Help With Forms?
+                  Don&apos;t Stress About the Paperwork
                 </h3>
                 <p className="text-sm text-amber-800">
-                  If you have questions about any forms or need assistance,
-                  please call us at {SITE_CONFIG.phoneDisplay}. You can also
-                  complete forms when you arrive for your appointment.
+                  If you don&apos;t have time to do these at home, just come 15-20
+                  minutes early and we&apos;ll get you set up. Or call us at{" "}
+                  {SITE_CONFIG.phoneDisplay} if you have questions.
                 </p>
               </div>
             </CardContent>
@@ -198,11 +198,14 @@ export default function PatientFormsPage() {
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
               <Badge variant="secondary" className="mb-4">
-                First Visit Checklist
+                Quick Checklist
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-                What to Bring to Your Appointment
+                Before You Head Out the Door
               </h2>
+              <p className="text-lg text-slate-600">
+                Grab these before your appointment so you&apos;re not scrambling last minute.
+              </p>
             </div>
 
             <div className="space-y-4">
@@ -236,11 +239,10 @@ export default function PatientFormsPage() {
         <div className="container container-default mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-              Ready to Schedule Your Appointment?
+              All Set?
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              Once you&apos;ve completed your forms, schedule your appointment
-              online or give us a call.
+              Forms done? Let&apos;s get your appointment on the calendar.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" asChild>

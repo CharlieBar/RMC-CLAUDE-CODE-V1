@@ -55,14 +55,14 @@ export default function InsurancePricingPage() {
             </Badge>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight">
-              We Accept{" "}
-              <span className="gradient-text-medical">Most Insurance Plans</span>
+              Let&apos;s Talk About{" "}
+              <span className="gradient-text-medical">Paying for Care</span>
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              Quality healthcare shouldn&apos;t be complicated. We work with most
-              major insurance providers and offer flexible payment options for
-              self-pay patients.
+              Nobody likes surprise bills. We&apos;ll tell you what to expect before
+              your appointment—whether you&apos;re using insurance, paying out of
+              pocket, or dealing with an injury claim.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -93,13 +93,12 @@ export default function InsurancePricingPage() {
                 Accepted Insurance
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-                Insurance Plans We Accept
+                We Probably Take Your Insurance
               </h2>
               <p className="text-lg text-slate-600 mb-8">
-                We accept most major insurance plans. If you don&apos;t see your
-                insurance listed, please call us to verify coverage. Our staff
-                will work with you to understand your benefits and out-of-pocket
-                costs before your appointment.
+                Here are the plans we work with most often. Don&apos;t see yours? Give
+                us a call—we may still accept it. And if your plan requires a
+                referral or prior authorization, we&apos;ll help you figure that out.
               </p>
 
               <Card className="p-6 bg-amber-50 border-amber-200">
@@ -147,11 +146,11 @@ export default function InsurancePricingPage() {
               Self-Pay Options
             </Badge>
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Affordable Care Without Insurance
+              No Insurance? No Problem.
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Don&apos;t have insurance? We offer competitive self-pay rates and
-              flexible payment options to make healthcare accessible.
+              We get it—not everyone has insurance, and that shouldn&apos;t stop you
+              from getting care. Here&apos;s how we make it work.
             </p>
           </div>
 
@@ -162,11 +161,11 @@ export default function InsurancePricingPage() {
                   <DollarSign className="h-8 w-8" />
                 </div>
                 <h3 className="font-semibold text-slate-900 mb-2">
-                  Transparent Pricing
+                  No Surprise Bills
                 </h3>
                 <p className="text-sm text-slate-600">
-                  We provide upfront cost estimates before your appointment so
-                  there are no surprises.
+                  We&apos;ll tell you the cost upfront, before your appointment. You&apos;ll
+                  know exactly what you&apos;re paying for.
                 </p>
               </CardContent>
             </Card>
@@ -177,11 +176,11 @@ export default function InsurancePricingPage() {
                   <CreditCard className="h-8 w-8" />
                 </div>
                 <h3 className="font-semibold text-slate-900 mb-2">
-                  Payment Plans
+                  Payment Plans Available
                 </h3>
                 <p className="text-sm text-slate-600">
-                  We offer payment plans to help spread the cost of care over
-                  time.
+                  Can&apos;t pay all at once? We can set up a payment plan that works
+                  for your budget.
                 </p>
               </CardContent>
             </Card>
@@ -192,11 +191,11 @@ export default function InsurancePricingPage() {
                   <FileText className="h-8 w-8" />
                 </div>
                 <h3 className="font-semibold text-slate-900 mb-2">
-                  Good Faith Estimates
+                  It&apos;s Your Right
                 </h3>
                 <p className="text-sm text-slate-600">
-                  Per federal law, you have the right to a Good Faith Estimate
-                  of expected charges.
+                  Federal law says you can ask for a written estimate before
+                  your appointment. Just ask—we&apos;re happy to provide one.
                 </p>
               </CardContent>
             </Card>
@@ -213,13 +212,13 @@ export default function InsurancePricingPage() {
                 Injury Cases
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold font-display mb-6">
-                Auto Accidents & Workers&apos; Comp
+                Injured in an Accident or at Work?
               </h2>
               <p className="text-lg text-slate-300 mb-6">
-                If you&apos;ve been injured in an auto accident or at work, you may
-                have coverage through auto insurance (PIP/MedPay) or workers&apos;
-                compensation. We work directly with insurance companies and
-                attorneys to ensure your treatment is covered.
+                Don&apos;t worry about how to pay right now—focus on getting better.
+                Your car insurance (PIP/MedPay) or workers&apos; comp should cover
+                treatment. We deal with the paperwork and the insurance companies
+                so you don&apos;t have to.
               </p>
               <div className="space-y-4">
                 {[
@@ -270,29 +269,29 @@ export default function InsurancePricingPage() {
         <div className="container container-default mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4">
-              Common Insurance Questions
+              Quick Answers to Money Questions
             </h2>
           </div>
 
           <div className="max-w-3xl mx-auto space-y-6">
             {[
               {
-                q: "How do I know if you accept my insurance?",
-                a: "Call us at " +
+                q: "How do I know if you take my insurance?",
+                a: "Give us a call at " +
                   SITE_CONFIG.phoneDisplay +
-                  " with your insurance information, and our team will verify your coverage before your appointment.",
+                  " and have your insurance card handy. We'll check your coverage and tell you what to expect for out-of-pocket costs.",
               },
               {
-                q: "What if I don't have insurance?",
-                a: "We offer competitive self-pay rates and payment plans. We'll provide you with a cost estimate upfront so you can plan accordingly.",
+                q: "I don't have insurance. Can I still come in?",
+                a: "Absolutely. We'll give you an upfront price before your appointment, and we can set up a payment plan if you need one.",
               },
               {
-                q: "Do I need a referral to see a specialist?",
-                a: "It depends on your insurance plan. Some HMO plans require referrals while PPO plans typically don't. We can help you determine if you need one.",
+                q: "Do I need a referral from my primary care doctor?",
+                a: "Depends on your plan. HMOs usually need a referral; PPOs usually don't. Not sure? We can look it up for you.",
               },
               {
-                q: "What should I bring to my first appointment?",
-                a: "Please bring your insurance card, photo ID, any referral forms, recent imaging or test results, and a list of current medications.",
+                q: "What should I bring to my appointment?",
+                a: "Your insurance card, photo ID, any referral or prior authorization forms, recent imaging (X-rays, MRIs), and a list of your current medications.",
               },
             ].map((item, index) => (
               <Card key={index} className="p-6">
@@ -321,11 +320,11 @@ export default function InsurancePricingPage() {
         <div className="container container-default mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-6">
-              Questions About Your Coverage?
+              Still Have Questions?
             </h2>
             <p className="text-lg text-slate-600 mb-8">
-              Our team is happy to help you understand your insurance benefits
-              and out-of-pocket costs before your visit.
+              Insurance is confusing—we get it. Call us and we&apos;ll walk you through
+              your coverage, what you&apos;ll owe, and any paperwork you need.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button size="lg" asChild>

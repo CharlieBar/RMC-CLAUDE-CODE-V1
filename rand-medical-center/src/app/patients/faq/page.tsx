@@ -24,92 +24,91 @@ export const metadata: Metadata = {
 
 const FAQ_CATEGORIES = [
   {
-    name: "Appointments & Scheduling",
+    name: "Scheduling & Your First Visit",
     faqs: [
       {
-        q: "How do I schedule an appointment?",
-        a: "You can schedule an appointment by calling us at " +
+        q: "How do I make an appointment?",
+        a: "Call us at " +
           SITE_CONFIG.phoneDisplay +
-          " or booking online through our patient portal. Same-day appointments are available for urgent needs.",
+          " or book online. Need to be seen today? We often have same-day slots for urgent issues.",
       },
       {
-        q: "What should I bring to my first appointment?",
-        a: "Please bring your photo ID, insurance card, any referral forms, recent imaging or test results (X-rays, MRIs), a list of current medications, and any relevant medical records.",
+        q: "What do I need to bring?",
+        a: "Your ID, insurance card, any referral forms, recent imaging (X-rays, MRIs) if you have them, and a list of medications you're taking. Don't have the imaging? That's okay—we can get it.",
       },
       {
-        q: "How early should I arrive for my appointment?",
-        a: "We recommend arriving 15-20 minutes before your scheduled appointment time to complete any necessary paperwork, especially for first-time visits.",
+        q: "How early should I get there?",
+        a: "Come 15-20 minutes early for your first visit so you can fill out paperwork. If you download our forms ahead of time, you can show up right on time.",
       },
       {
-        q: "What is your cancellation policy?",
-        a: "We ask that you provide at least 24 hours notice if you need to cancel or reschedule your appointment. This allows us to offer the time slot to other patients who may need care.",
+        q: "What if I need to cancel?",
+        a: "Life happens—just give us 24 hours notice if you can. That way we can give your slot to someone else who needs it.",
       },
     ],
   },
   {
-    name: "Insurance & Billing",
+    name: "Insurance & Paying for Care",
     faqs: [
       {
-        q: "What insurance plans do you accept?",
-        a: "We accept most major insurance plans including Aetna, Blue Cross Blue Shield, Cigna, Humana, Medicare, United Healthcare, and more. Contact us to verify your specific plan.",
+        q: "Do you take my insurance?",
+        a: "Probably! We work with Aetna, Blue Cross Blue Shield, Cigna, Humana, Medicare, United Healthcare, and many others. Call us with your card info and we'll check for you.",
       },
       {
-        q: "Do I need a referral to see a specialist?",
-        a: "It depends on your insurance plan. HMO plans typically require a referral from your primary care physician, while PPO plans usually don't. We can help determine if you need one.",
+        q: "Do I need a referral?",
+        a: "HMO plans usually need one; PPO plans usually don't. Not sure what you have? We can look it up when you call.",
       },
       {
         q: "What if I don't have insurance?",
-        a: "We offer competitive self-pay rates and payment plans to make care accessible. We'll provide you with a cost estimate before your appointment.",
+        a: "We work with you. We'll give you an upfront price and can set up a payment plan if needed. More details on our insurance & pricing page.",
       },
       {
-        q: "Do you handle workers' compensation cases?",
-        a: "Yes, we have extensive experience with workers' compensation cases and coordinate directly with employers and insurance carriers to ensure your treatment is covered.",
+        q: "I got hurt at work. Do you handle that?",
+        a: "Yes—workers' comp is actually one of our specialties. We know the system and handle the paperwork so you can focus on getting better.",
       },
     ],
   },
   {
-    name: "Treatments & Services",
+    name: "Treatments & What We Do",
     faqs: [
       {
         q: "What conditions do you treat?",
-        a: "We treat a wide range of conditions including back pain, neck pain, sciatica, arthritis, sports injuries, and more. Visit our Conditions page for a complete list.",
+        a: "Back pain, neck pain, sciatica, arthritis, sports injuries, knee problems, shoulder issues—basically anything that hurts when it shouldn't. Check out our conditions page for the full list.",
       },
       {
-        q: "Do you perform surgery?",
-        a: "Yes, we have a Joint Commission-accredited outpatient surgery center where we perform minimally invasive pain management procedures and orthopedic surgeries.",
+        q: "Do you do surgery here?",
+        a: "Yes, we have an accredited outpatient surgery center right here. Many procedures can be done without a hospital stay—you go home the same day.",
       },
       {
-        q: "What should I expect during an injection procedure?",
-        a: "Most injections take 15-30 minutes and are performed using local anesthesia and image guidance. You can typically return to normal activities within 24-48 hours.",
+        q: "What are injections like? Do they hurt?",
+        a: "We numb the area first, and use X-ray guidance so we know exactly where the needle goes. The whole thing takes 15-30 minutes, and most people are back to their normal routine in a day or two.",
       },
       {
-        q: "How long does physical therapy take?",
-        a: "Treatment duration varies based on your condition and goals. A typical course of physical therapy is 6-12 weeks with 2-3 sessions per week, but your therapist will create a plan specific to your needs.",
+        q: "How long will I need physical therapy?",
+        a: "Depends on what's going on. Usually 6-12 weeks, 2-3 times a week. Your therapist will give you a better estimate after evaluating you.",
       },
     ],
   },
   {
-    name: "Office & Location",
+    name: "Our Office",
     faqs: [
       {
-        q: "What are your office hours?",
-        a: "We are open Monday through Friday, " +
+        q: "What are your hours?",
+        a: "Monday through Friday, " +
           SITE_CONFIG.hours.weekdays +
-          ". We are closed on weekends and major holidays.",
+          ". We're closed weekends and holidays.",
       },
       {
-        q: "Where are you located?",
-        a: "We are located at " +
-          SITE_CONFIG.address.full +
-          ". Free parking is available on-site.",
+        q: "Where exactly are you?",
+        a: SITE_CONFIG.address.full +
+          ". There's free parking right in front of the building.",
       },
       {
-        q: "Do you offer telehealth appointments?",
-        a: "We offer telehealth consultations for follow-up appointments when appropriate. Contact us to determine if a virtual visit is suitable for your needs.",
+        q: "Can I do a video visit?",
+        a: "For some follow-ups, yes. It depends on what you're being seen for. Ask us when you call and we'll let you know if it makes sense for your situation.",
       },
       {
-        q: "Is your facility wheelchair accessible?",
-        a: "Yes, our facility is fully ADA compliant with wheelchair-accessible entrances, restrooms, and examination rooms.",
+        q: "Is the building wheelchair accessible?",
+        a: "Completely. Accessible entrances, restrooms, exam rooms—the whole building.",
       },
     ],
   },
@@ -130,14 +129,13 @@ export default function FAQPage() {
             </Badge>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight">
-              Frequently Asked{" "}
-              <span className="gradient-text-medical">Questions</span>
+              Got{" "}
+              <span className="gradient-text-medical">Questions?</span>
             </h1>
 
             <p className="text-xl text-slate-600 mb-8 leading-relaxed">
-              Find answers to common questions about appointments, insurance,
-              treatments, and more. Can&apos;t find what you&apos;re looking for? Contact
-              us directly.
+              Here are the things people ask us most. If you don&apos;t see your
+              question, just give us a call—we&apos;re happy to help.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -188,11 +186,11 @@ export default function FAQPage() {
         <div className="container container-default mx-auto">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-display mb-6">
-              Still Have Questions?
+              Didn&apos;t Find Your Answer?
             </h2>
             <p className="text-lg text-slate-400 mb-8">
-              Our team is here to help. Contact us with any questions about your
-              care or our services.
+              No problem—just give us a call. Real people answer the phone here,
+              and we&apos;re happy to help.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button
