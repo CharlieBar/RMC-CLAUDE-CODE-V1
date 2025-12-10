@@ -262,6 +262,132 @@ export const CONDITIONS: Condition[] = [
     metaDescription:
       "Sports injury care in Arlington Heights. Torn ACL, rotator cuff, or overuse injury—we diagnose it, treat it, and get you back in the game safely.",
   },
+  {
+    slug: "hip-pain",
+    name: "Hip Pain",
+    description:
+      "Hip pain can make everything harder—walking, climbing stairs, even sitting comfortably. Whether it's from arthritis wearing down the joint, a sports injury, or just years of use catching up with you, hip problems don't get better by ignoring them. Let's figure out what's going on and what we can do about it.",
+    causes: [
+      "Arthritis wearing down the hip joint cartilage",
+      "Bursitis from overuse or pressure on the hip",
+      "A labral tear from sports or repetitive motion",
+      "Muscle strains around the hip and groin",
+      "Hip impingement (bones rubbing together)",
+      "Referred pain from your lower back",
+      "An old injury that never healed properly",
+    ],
+    symptoms: [
+      "Pain in your groin, outer hip, thigh, or buttock",
+      "Stiffness that makes it hard to bend or rotate your leg",
+      "Limping or difficulty walking",
+      "Pain that gets worse with activity or prolonged sitting",
+      "Clicking, locking, or catching sensations",
+      "Reduced range of motion—can't cross your legs or tie your shoes",
+    ],
+    treatments: [
+      { name: "Joint Injections", href: "/services/pain-management/joint-injections" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Hip Arthroscopy", href: "/services/orthopedics" },
+      { name: "Hip Replacement", href: "/services/orthopedics" },
+    ],
+    relatedConditions: ["arthritis", "back-pain"],
+    metaDescription:
+      "Hip pain treatment in Arlington Heights. From arthritis to sports injuries, we diagnose what's causing your hip pain and offer real solutions—from PT and injections to surgery if needed.",
+  },
+  {
+    slug: "whiplash",
+    name: "Whiplash",
+    description:
+      "Whiplash happens when your head snaps forward and backward suddenly—usually in a car accident, but sometimes from sports or falls. The tricky thing about whiplash is that symptoms often don't show up for hours or even days. If you've been in an accident, getting checked out early matters for both your health and your insurance claim.",
+    causes: [
+      "Rear-end car accidents (most common)",
+      "Side-impact collisions",
+      "Sports collisions or tackles",
+      "Falls that jerk your head suddenly",
+      "Amusement park rides or roller coasters",
+      "Physical abuse or assault",
+    ],
+    symptoms: [
+      "Neck pain and stiffness that gets worse over time",
+      "Headaches starting at the base of your skull",
+      "Pain or tenderness in your shoulders and upper back",
+      "Tingling or numbness in your arms",
+      "Dizziness or feeling off-balance",
+      "Fatigue and difficulty concentrating",
+      "Blurred vision or ringing in your ears",
+    ],
+    treatments: [
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Trigger Point Injections", href: "/services/pain-management/trigger-point-injections" },
+      { name: "Cervical Epidural Injections", href: "/services/pain-management/epidural-steroid-injections" },
+      { name: "Facet Joint Injections", href: "/services/pain-management/facet-joint-injections" },
+    ],
+    relatedConditions: ["neck-pain", "herniated-disc"],
+    metaDescription:
+      "Whiplash treatment after car accidents in Arlington Heights. Don't wait for symptoms to get worse—get evaluated early and document your injuries properly for insurance.",
+  },
+  {
+    slug: "carpal-tunnel",
+    name: "Carpal Tunnel Syndrome",
+    description:
+      "That tingling, numbness, or pain in your hand? It might be carpal tunnel syndrome—a condition where the nerve running through your wrist gets squeezed. It's common in people who do repetitive hand work, from typing to assembly line jobs. The good news: if caught early, it often responds well to treatment without surgery.",
+    causes: [
+      "Repetitive hand and wrist motions (typing, assembly work)",
+      "Wrist anatomy—some people have narrower tunnels",
+      "Inflammatory conditions like rheumatoid arthritis",
+      "Fluid retention during pregnancy or menopause",
+      "Diabetes or thyroid disorders",
+      "Wrist injuries or fractures",
+    ],
+    symptoms: [
+      "Tingling or numbness in your thumb, index, middle, and ring fingers",
+      "Pain that radiates from your wrist up your arm",
+      "Weakness in your hand—dropping things more often",
+      "Shock-like sensations in your fingers",
+      "Symptoms that wake you up at night",
+      "Difficulty with fine motor tasks like buttoning shirts",
+    ],
+    treatments: [
+      { name: "Wrist Splinting", href: "/services/orthopedics" },
+      { name: "Corticosteroid Injections", href: "/services/pain-management/joint-injections" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Carpal Tunnel Release Surgery", href: "/services/surgery-center" },
+    ],
+    relatedConditions: ["arthritis"],
+    metaDescription:
+      "Carpal tunnel treatment in Arlington Heights. Tingling, numbness, or weakness in your hand? We offer non-surgical and surgical options to relieve your symptoms.",
+  },
+  {
+    slug: "spinal-stenosis",
+    name: "Spinal Stenosis",
+    description:
+      "Spinal stenosis means the spaces in your spine are narrowing and putting pressure on your nerves. It usually develops gradually—often from arthritis—and gets worse over time. If you're finding that walking is harder than it used to be, or you feel better when you lean forward or sit down, stenosis might be the culprit.",
+    causes: [
+      "Osteoarthritis and bone spurs in the spine",
+      "Thickening of spinal ligaments over time",
+      "Herniated or bulging discs",
+      "Tumors (rare)",
+      "Previous spinal injuries",
+      "You were born with a narrow spinal canal",
+    ],
+    symptoms: [
+      "Pain in your lower back or neck",
+      "Numbness, tingling, or weakness in your legs or arms",
+      "Cramping in your legs when walking or standing (claudication)",
+      "Relief when you bend forward, sit, or lean on a shopping cart",
+      "Balance problems or difficulty walking",
+      "In severe cases, bladder or bowel issues (get help immediately)",
+    ],
+    treatments: [
+      { name: "Epidural Steroid Injections", href: "/services/pain-management/epidural-steroid-injections" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Nerve Block Injections", href: "/services/pain-management/selective-nerve-root-block" },
+      { name: "Spinal Decompression Surgery", href: "/services/surgery-center" },
+    ],
+    relatedConditions: ["back-pain", "sciatica", "arthritis"],
+    metaDescription:
+      "Spinal stenosis treatment in Arlington Heights. If walking has become painful and sitting brings relief, we can help—with injections, therapy, or surgery when needed.",
+  },
 ];
 
 export function getConditionBySlug(slug: string): Condition | undefined {

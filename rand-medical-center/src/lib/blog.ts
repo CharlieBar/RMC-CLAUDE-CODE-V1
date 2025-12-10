@@ -231,6 +231,450 @@ Back pain is super common, and most of the time it's nothing to worry about. But
     metaDescription:
       "Not sure if your back pain needs a doctor? Here's how to tell the difference between normal aches and something that needs attention.",
   },
+  {
+    slug: "first-pain-management-appointment",
+    title: "Your First Pain Management Appointment: What to Expect",
+    excerpt:
+      "Never seen a pain specialist before? Here's exactly what happens during your first visit—the questions we'll ask, the tests we might do, and how we figure out what's causing your pain.",
+    content: `
+## Why See a Pain Specialist?
+
+You're here because something hurts and it's not getting better. Maybe you've tried rest, ice, and ibuprofen. Maybe your primary care doctor has run out of ideas. Pain management specialists focus specifically on figuring out what's causing your pain and treating it—often with options your regular doctor doesn't offer.
+
+## Before Your Appointment
+
+### What to Bring
+
+- **Your ID and insurance card**
+- **A list of current medications** (including over-the-counter stuff and supplements)
+- **Any imaging you have** (X-rays, MRIs, CT scans)—on disc or we can pull them electronically
+- **Records from other doctors** who have treated this problem
+- **A written summary of your pain**—when it started, what makes it better or worse, what you've already tried
+
+### Think About Your Pain
+
+Before you come in, spend a few minutes thinking about:
+
+- Where exactly does it hurt? Can you point to one spot, or is it more spread out?
+- When did it start? Was there a specific injury?
+- What does it feel like? Sharp? Burning? Aching? Numbness?
+- What makes it worse? Sitting? Standing? Certain movements?
+- What helps, even a little?
+- On a scale of 0-10, how bad is it on average?
+
+## What Happens During Your Visit
+
+### The Interview
+
+We'll spend a lot of time talking. This isn't us being nosy—the details of your pain story tell us a lot about what might be causing it. We'll ask about:
+
+- Your pain history in detail
+- Your overall health and medical history
+- Past surgeries and injuries
+- What treatments you've already tried
+- How pain is affecting your daily life and work
+
+### The Physical Exam
+
+Then we'll do an exam focused on your painful area. This might include:
+
+- Watching how you move
+- Testing your range of motion
+- Checking your reflexes and strength
+- Pressing on certain areas to pinpoint the pain source
+- Special tests specific to your symptoms
+
+### Imaging Review
+
+If you brought X-rays or MRIs, we'll look at them together and explain what we see. Sometimes we'll order additional imaging if we need a clearer picture.
+
+## What Comes Next
+
+After the evaluation, we'll discuss:
+
+- What we think is causing your pain
+- Treatment options that make sense for your situation
+- A plan going forward
+
+This might include physical therapy, medications, injections, or other procedures. We'll explain each option, the pros and cons, and answer your questions.
+
+## The Goal
+
+Our goal isn't just to reduce your pain number—it's to help you get back to doing the things you want to do. We'll work together to find what works for you.
+    `.trim(),
+    author: "Dr. Krishna C. Chunduri",
+    authorTitle: "Pain Management Specialist",
+    publishedAt: "2024-12-01",
+    category: "Pain Management",
+    tags: ["first visit", "pain management", "what to expect", "consultation"],
+    readTime: "5 min read",
+    metaDescription:
+      "Nervous about your first pain management appointment? Here's exactly what to expect—what to bring, what questions we'll ask, and how we create your treatment plan.",
+  },
+  {
+    slug: "sciatica-stretches-that-help-and-hurt",
+    title: "5 Stretches That Help Sciatica (And 3 That Make It Worse)",
+    excerpt:
+      "Not all stretches are created equal when you have sciatica. Some can help relieve that shooting leg pain. Others can make it way worse. Here's how to tell the difference.",
+    content: `
+## Why Stretching Helps (Sometimes)
+
+Sciatica happens when something irritates your sciatic nerve—usually a herniated disc or tight muscles in your hip. Gentle stretching can help by:
+
+- Reducing muscle tension that's compressing the nerve
+- Improving blood flow to the affected area
+- Keeping your spine mobile and flexible
+
+But the key word is *gentle*. Aggressive stretching or the wrong movements can actually inflame the nerve more.
+
+## 5 Stretches That Usually Help
+
+### 1. Knee to Opposite Shoulder
+
+Lie on your back. Bring your right knee toward your left shoulder (not straight up—across your body). Hold for 30 seconds, then switch sides. This stretches the piriformis muscle, which often contributes to sciatica.
+
+### 2. Seated Spinal Twist
+
+Sit on the floor with legs straight. Bend your right knee and cross it over your left leg. Twist gently toward your bent knee. This helps open up the lower spine without putting pressure on the disc.
+
+### 3. Figure-4 Stretch
+
+Lie on your back. Cross your right ankle over your left knee (making a "4" shape). Pull your left thigh toward your chest. Great for stretching the hip rotators.
+
+### 4. Cat-Cow
+
+On hands and knees, alternate between arching your back up (cat) and letting your belly drop down (cow). Move slowly and gently. This keeps your spine mobile without extreme positions.
+
+### 5. Child's Pose
+
+Kneel and sit back on your heels, then fold forward with arms extended. This gently stretches the lower back and can relieve pressure on the nerve. If it hurts, don't force it.
+
+## 3 Stretches to Avoid
+
+### 1. Standing Toe Touches
+
+Bending forward to touch your toes puts enormous pressure on your discs—exactly what you don't want if a disc is pressing on your nerve.
+
+### 2. Seated Forward Fold
+
+Same problem as above. That forward bend position compresses the front of the disc and can push it further into the nerve.
+
+### 3. Double Leg Raises
+
+Lying on your back and raising both legs puts major strain on your lower back. If your core isn't strong enough (and most people's isn't), this can worsen disc problems.
+
+## When to Stop
+
+If any stretch increases your pain—especially the shooting pain down your leg—stop immediately. A little muscle stretch sensation is okay. Nerve pain is not.
+
+## When Stretching Isn't Enough
+
+If you've been stretching regularly for 2-3 weeks and your sciatica isn't improving, it's time to see someone. You might need:
+
+- Physical therapy with a professional
+- Anti-inflammatory treatment
+- Injections to calm down the nerve
+- Further evaluation to make sure nothing more serious is going on
+
+Stretching is a great starting point, but it's not always enough on its own.
+    `.trim(),
+    author: "Physical Therapy Team",
+    authorTitle: "Rand Medical Center",
+    publishedAt: "2024-11-20",
+    category: "Health Education",
+    tags: ["sciatica", "stretches", "exercises", "nerve pain", "home treatment"],
+    readTime: "5 min read",
+    metaDescription:
+      "Which stretches help sciatica and which make it worse? Learn 5 safe stretches for sciatic nerve pain and 3 common ones to avoid.",
+  },
+  {
+    slug: "rotator-cuff-surgery-recovery-timeline",
+    title: "Rotator Cuff Surgery Recovery: A Week-by-Week Timeline",
+    excerpt:
+      "Just had rotator cuff surgery, or getting ready for it? Here's an honest timeline of what to expect—week by week—from surgery day through getting back to normal.",
+    content: `
+## The Reality of Rotator Cuff Recovery
+
+Let's be real: rotator cuff surgery is not a quick fix. Full recovery takes 4-6 months, and some people take even longer. But here's the good news—most people eventually get back to doing everything they did before, often with less pain than they've had in years.
+
+## Week 1: The Worst Part
+
+### Days 1-3
+- You'll be in a sling. Don't take it off except to shower and do the gentle exercises your surgeon showed you.
+- Pain is real. Take your medications as prescribed—don't try to tough it out.
+- Ice frequently (20 minutes on, 20 off).
+- Sleep in a recliner or propped up with pillows. Lying flat is usually uncomfortable.
+
+### Days 4-7
+- Pain starts to improve but you're still sore.
+- Start gentle pendulum exercises (letting your arm hang and swing in small circles).
+- Someone else is still doing most things for you. Accept the help.
+
+## Weeks 2-4: Slow Progress
+
+- Still wearing the sling, but you can start moving your arm more during exercises.
+- Physical therapy usually starts around week 2.
+- Your therapist moves your arm for you (passive range of motion)—you're not using your own muscles yet.
+- Sleeping gets a bit easier but you might still prefer the recliner.
+
+## Weeks 4-6: More Movement
+
+- Depending on your repair, you might start coming out of the sling more.
+- Active-assisted exercises begin—you help your arm move with your other arm or a pulley.
+- Still no lifting anything with the surgical arm.
+- Driving is usually possible around week 6 if you're off pain meds.
+
+## Weeks 6-12: Building Strength
+
+- Sling is usually gone (but check with your surgeon).
+- Active range of motion exercises—using your own muscles to move your arm.
+- Light strengthening begins.
+- Many people return to desk work around this time.
+- Still no heavy lifting, pushing, or pulling.
+
+## Months 3-6: Getting Back to Normal
+
+- Progressive strengthening continues.
+- Range of motion should be close to normal.
+- Light recreational activities may be okay (walking, stationary bike).
+- Return to sports and heavy labor typically happens at 4-6 months, depending on your repair.
+
+## Tips for a Better Recovery
+
+### Do:
+- Go to every PT session
+- Do your home exercises daily
+- Be patient—this takes time
+- Tell your surgeon if something feels wrong
+
+### Don't:
+- Skip your sling in the early weeks
+- Lift anything heavier than a coffee cup until cleared
+- Rush back to activities before you're ready
+- Compare your recovery to someone else's
+
+## When to Call Your Doctor
+
+- Increasing pain or swelling after the first week
+- Fever over 101°F
+- Redness or drainage from incisions
+- Numbness or tingling that gets worse
+- Feeling like something "popped" or tore
+
+## The Bottom Line
+
+Recovery is a marathon, not a sprint. Most people who follow their rehab program get excellent results—but it requires patience and commitment. Six months from now, you'll be glad you put in the work.
+    `.trim(),
+    author: "Dr. Christos S. Giannoulias",
+    authorTitle: "Orthopedic Surgeon",
+    publishedAt: "2024-11-08",
+    category: "Orthopedics",
+    tags: ["rotator cuff", "surgery recovery", "shoulder", "physical therapy", "timeline"],
+    readTime: "6 min read",
+    metaDescription:
+      "Week-by-week rotator cuff surgery recovery timeline. What to expect from day 1 through returning to normal activities, plus tips for a smoother recovery.",
+  },
+  {
+    slug: "workers-comp-rights-treatment",
+    title: "Workers' Comp 101: Your Rights and How to Get Treatment",
+    excerpt:
+      "Got hurt at work? The workers' comp system can be confusing. Here's what you actually need to know—your rights, how to get treatment, and what to do if things go wrong.",
+    content: `
+## You Got Hurt at Work. Now What?
+
+First things first: getting hurt at work happens. Construction workers, nurses, office employees, warehouse staff—injuries don't discriminate. What matters now is knowing your rights and getting the treatment you need.
+
+## Your Basic Rights (In Most States)
+
+### You Can Choose Your Own Doctor
+
+In many states, including Illinois, you have the right to choose your own treating physician. Your employer might suggest a doctor, but you're not required to see them. Pick someone who specializes in your type of injury and has experience with workers' comp cases.
+
+### You're Entitled to Treatment
+
+If your injury is work-related, workers' comp covers your medical treatment. That includes:
+- Doctor visits
+- Physical therapy
+- Medications
+- Surgery if needed
+- Diagnostic tests (X-rays, MRIs)
+
+### You Can't Be Fired for Filing
+
+It's illegal for your employer to retaliate against you for filing a workers' comp claim. If you feel you're being treated differently after filing, document everything and consider talking to an attorney.
+
+## How to Protect Yourself
+
+### Report Your Injury Immediately
+
+Tell your supervisor about your injury as soon as possible—ideally the same day. In Illinois, you have 45 days to report, but waiting makes everything harder. Report it in writing if you can.
+
+### Get Medical Treatment
+
+See a doctor promptly. Even if you think you're fine, get evaluated. Some injuries get worse over time, and early documentation is crucial.
+
+### Document Everything
+
+- Keep copies of all paperwork
+- Write down what happened and when
+- Take photos of your injuries
+- Save text messages and emails about your injury
+- Keep a log of your symptoms and how they affect you
+
+## What Your Doctor Needs to Do
+
+An experienced workers' comp doctor will:
+
+- Document your injuries thoroughly
+- Explain how the injury relates to your work activities
+- Provide a treatment plan
+- Write work restrictions if needed
+- Complete all required forms correctly
+
+Bad documentation is one of the top reasons claims get denied. Your doctor's records need to clearly connect your injury to your job.
+
+## Common Problems and Solutions
+
+### "My claim was denied"
+
+This happens. Common reasons include:
+- Employer disputes that the injury happened at work
+- Missing or incorrect paperwork
+- Delays in reporting
+
+You can appeal. Get your medical records in order and consider consulting with a workers' comp attorney.
+
+### "The insurance company wants me to see their doctor"
+
+They might request an Independent Medical Examination (IME). This doctor works for the insurance company, not you. You typically have to go, but:
+- You can have someone accompany you
+- Keep seeing your own doctor too
+- If the IME disagrees with your doctor, your doctor can write a rebuttal
+
+### "They want me to go back to work but I'm not ready"
+
+Your treating doctor determines when you can return to work, not your employer or the insurance company. If you're not ready, your doctor should document why and provide appropriate work restrictions.
+
+## When to Get Legal Help
+
+Consider consulting a workers' comp attorney if:
+- Your claim was denied
+- You're not getting the treatment you need
+- You're being pressured to return to work too soon
+- Your employer is retaliating against you
+- Your injury is serious or will require ongoing care
+
+Most workers' comp attorneys offer free consultations and work on contingency (they get paid only if you win).
+
+## The Bottom Line
+
+Workers' comp exists to help you get treatment and recover from work injuries. Know your rights, document everything, and don't be afraid to advocate for yourself.
+    `.trim(),
+    author: "Dr. Demetrios Giokaris",
+    authorTitle: "Chief Physician",
+    publishedAt: "2024-10-10",
+    category: "Health Education",
+    tags: ["workers compensation", "work injury", "employee rights", "legal"],
+    readTime: "6 min read",
+    metaDescription:
+      "Hurt at work? Know your workers' comp rights. Learn how to report injuries, get treatment, and protect yourself if your claim is denied.",
+  },
+  {
+    slug: "arthritis-not-just-for-old-people",
+    title: "Arthritis Isn't Just for Old People: Managing Joint Pain at Any Age",
+    excerpt:
+      "Think arthritis only affects grandparents? Think again. Joint problems can start in your 20s and 30s. Here's what causes early arthritis, warning signs to watch for, and what you can do about it.",
+    content: `
+## Arthritis Doesn't Check Your ID
+
+When most people hear "arthritis," they picture someone elderly with creaky knees. But here's the reality: arthritis affects over 50 million Americans, and nearly half of them are under 65. Some types of arthritis, like rheumatoid arthritis, commonly start between ages 30-50.
+
+## Types of Arthritis That Affect Younger People
+
+### Osteoarthritis
+
+The "wear and tear" kind. While more common with age, it can start early if you:
+- Had a joint injury (torn ACL, meniscus damage)
+- Do repetitive motions at work or in sports
+- Are significantly overweight
+- Have a family history
+
+Athletes who had knee or shoulder injuries in their 20s often develop arthritis in those joints by their 40s.
+
+### Rheumatoid Arthritis
+
+An autoimmune condition where your immune system attacks your joints. It typically starts between ages 30-50 and affects women more than men. This isn't about wear and tear—it's your body attacking itself.
+
+### Psoriatic Arthritis
+
+Related to the skin condition psoriasis. Often appears between ages 30-50. You might have joint pain along with skin patches.
+
+### Ankylosing Spondylitis
+
+A type of arthritis affecting the spine, usually starting in the late teens to early 30s. Common symptoms include lower back pain and stiffness, especially in the morning.
+
+## Warning Signs to Watch For
+
+### In Your Joints
+- Persistent pain that lasts more than a few weeks
+- Stiffness, especially in the morning or after sitting
+- Swelling that comes and goes
+- Reduced range of motion
+- Grinding, clicking, or popping sensations
+
+### Other Signs
+- Fatigue that won't quit
+- Stiffness that takes more than 30 minutes to loosen up in the morning
+- Symptoms in multiple joints, especially if symmetrical (both hands, both knees)
+- Joint pain without any injury
+
+## What You Can Do
+
+### Lifestyle Changes That Actually Help
+
+**Move more**: It sounds backwards, but exercise is one of the best treatments for arthritis. Low-impact activities like swimming, cycling, and walking keep joints mobile and strengthen supporting muscles.
+
+**Maintain a healthy weight**: Every extra pound puts 4 pounds of pressure on your knees. Losing even 10 pounds can significantly reduce joint stress.
+
+**Protect your joints**: Use proper form when exercising. Vary your activities to avoid repetitive stress. Use ergonomic equipment if your job requires repetitive motions.
+
+### Medical Treatments
+
+**Medications**: Anti-inflammatories (NSAIDs), prescription options for inflammatory types, topical creams
+
+**Injections**: Corticosteroid shots can reduce inflammation; hyaluronic acid can help lubricate joints
+
+**Physical therapy**: Strengthens muscles around joints and improves flexibility
+
+**Surgery**: When joints are severely damaged, options include arthroscopy, joint repair, or replacement
+
+### What Works for Inflammatory Arthritis
+
+If you have rheumatoid, psoriatic, or other autoimmune types, early treatment is crucial. Disease-modifying drugs can slow or stop joint damage if started early. Don't wait to see a rheumatologist.
+
+## When to See a Doctor
+
+- Joint pain or stiffness lasting more than 2-3 weeks
+- Significant swelling, redness, or warmth in a joint
+- Joint pain with fever or unintentional weight loss
+- Family history of rheumatoid or autoimmune arthritis
+- Joint problems that are affecting your work or daily activities
+
+## The Bottom Line
+
+Arthritis at a young age doesn't mean life is over—but it does mean you need to take it seriously. The sooner you address it, the more options you have for slowing its progression and maintaining your quality of life.
+
+Don't ignore persistent joint pain just because you're "too young" for arthritis. You're not.
+    `.trim(),
+    author: "Dr. Krishna C. Chunduri",
+    authorTitle: "Pain Management Specialist",
+    publishedAt: "2024-09-25",
+    category: "Health Education",
+    tags: ["arthritis", "joint pain", "young adults", "rheumatoid", "prevention"],
+    readTime: "6 min read",
+    metaDescription:
+      "Arthritis isn't just for seniors. Learn about types of arthritis that affect younger people, warning signs to watch for, and treatment options at any age.",
+  },
 ];
 
 export const BLOG_CATEGORIES = [
