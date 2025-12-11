@@ -31,19 +31,23 @@
 
 ---
 
+## RECENTLY COMPLETED (This Session)
+
+### Quick Wins Completed
+- [x] Patient sub-pages already existed and are complete (/patients/faq, /patients/forms, /patients/insurance-pricing)
+- [x] Fixed all treatment links in conditions.ts to point to `/treatments/*` pages
+- [x] Fixed broken orthopedics sub-page links (pointed to non-existent pages)
+- [x] Schema markup (JSON-LD) already implemented in layout.tsx
+- [x] Added Google Maps iframe embeds to homepage and contact page
+- [x] Fixed broken `/patients/new-patients` link in contact page
+
+---
+
 ## REMAINING TASKS
 
 ### 1. CONTENT GAPS (Priority: High)
 
-#### 1.1 Missing Patient Sub-Pages
-Create the following pages that are referenced but don't exist:
-- [ ] `/patients/insurance-pricing/page.tsx` - Detailed insurance info, accepted plans, pricing transparency
-- [ ] `/patients/forms/page.tsx` - Downloadable patient forms (PDF links or form content)
-- [ ] `/patients/faq/page.tsx` - Comprehensive FAQ page with accordion
-
-**Source Content**: Check `rand-pages-content.json` for any pre-written content
-
-#### 1.2 Blog Content Enhancement
+#### 1.1 Blog Content Enhancement
 Current blog has 4 articles. Consider:
 - [ ] Add 4-6 more blog articles from content in `rand-pages-content.json` or `services-conditions.json`
 - [ ] Topics to cover:
@@ -54,14 +58,12 @@ Current blog has 4 articles. Consider:
   - When to see an orthopedic specialist
   - Preparing for your first visit
 
-#### 1.3 Treatment Links in Conditions
-Many conditions reference treatments that don't link correctly:
-- [ ] Audit `src/lib/conditions.ts` - ensure all treatment `href` values point to existing `/treatments/*` pages
-- [ ] Add any missing treatments to `src/lib/treatments.ts` if referenced frequently:
-  - Occipital nerve block
-  - SI joint injections
-  - Spinal cord stimulation
-  - Medial branch blocks
+#### 1.2 Additional Treatments (Optional)
+Add these to `src/lib/treatments.ts` if frequently referenced:
+- [ ] Occipital nerve block
+- [ ] SI joint injections
+- [ ] Spinal cord stimulation
+- [ ] Medial branch blocks
 
 ---
 
@@ -85,15 +87,6 @@ Many conditions reference treatments that don't link correctly:
   ```
 - [ ] Replace `<UserCircle />` placeholders with actual images or higher-quality medical stock images
 - [ ] Add OG image for social media previews
-
-#### 2.2 Map Integration
-Replace map placeholders with actual embedded maps:
-- [ ] Homepage location section (line ~441 in `src/app/page.tsx`)
-- [ ] Contact page map section
-- [ ] Options:
-  - Google Maps embed iframe
-  - Mapbox static image
-  - Simple link to Google Maps directions
 
 #### 2.3 Component Polish
 - [ ] Review Card hover states for consistency
