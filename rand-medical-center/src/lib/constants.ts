@@ -42,62 +42,57 @@ export const NAV_ITEMS = {
         {
           category: "Internal Medicine",
           items: [
-            { label: "Physicals", href: "/services/internal-medicine/physicals" },
-            { label: "Preventive Care", href: "/services/internal-medicine/preventive-care" },
-            { label: "Chronic Disease Management", href: "/services/internal-medicine/chronic-disease-management" },
-            { label: "Vaccinations", href: "/services/internal-medicine/vaccinations" },
+            { label: "Primary Care", href: "/services/internal-medicine" },
+            { label: "View All Services", href: "/services/internal-medicine" },
           ],
         },
         {
           category: "Pain Management",
           items: [
-            { label: "Epidural Injections", href: "/services/pain-management/epidural-steroid-injections" },
-            { label: "Radiofrequency Ablation", href: "/services/pain-management/radiofrequency-ablation" },
-            { label: "Joint Injections", href: "/services/pain-management/joint-injections" },
-            { label: "Nerve Blocks", href: "/services/pain-management/selective-nerve-root-block" },
+            { label: "Epidural Injections", href: "/treatments/epidural-steroid-injections" },
+            { label: "Radiofrequency Ablation", href: "/treatments/radiofrequency-ablation" },
+            { label: "Joint Injections", href: "/treatments/joint-injections" },
+            { label: "Nerve Blocks", href: "/treatments/selective-nerve-root-block" },
             { label: "View All", href: "/services/pain-management" },
           ],
         },
         {
           category: "Orthopedics",
           items: [
-            { label: "Shoulder & Rotator Cuff", href: "/services/orthopedics/shoulder-rotator-cuff" },
-            { label: "Knee", href: "/services/orthopedics/knee" },
-            { label: "Hip", href: "/services/orthopedics/hip" },
-            { label: "Sports Injuries", href: "/services/orthopedics/sports-injuries" },
+            { label: "Shoulder Pain", href: "/conditions/shoulder-pain" },
+            { label: "Knee Pain", href: "/conditions/knee-pain" },
+            { label: "Hip Pain", href: "/conditions/hip-pain" },
+            { label: "Sports Injuries", href: "/conditions/sports-injuries" },
             { label: "View All", href: "/services/orthopedics" },
           ],
         },
         {
           category: "Physical Therapy",
           items: [
-            { label: "Post-Surgical Rehab", href: "/services/physical-therapy/post-surgical-rehab" },
-            { label: "Spine Rehab", href: "/services/physical-therapy/spine-rehab" },
-            { label: "Sports Rehab", href: "/services/physical-therapy/sports-rehab" },
+            { label: "Physical Therapy", href: "/treatments/physical-therapy" },
             { label: "View All", href: "/services/physical-therapy" },
           ],
         },
         {
-          category: "Diagnostics",
+          category: "Treatments",
           items: [
-            { label: "X-Ray", href: "/services/diagnostics/x-ray" },
-            { label: "Lab Services", href: "/services/diagnostics/lab" },
+            { label: "PRP Therapy", href: "/treatments/prp-therapy" },
+            { label: "Trigger Point Injections", href: "/treatments/trigger-point-injections" },
+            { label: "View All Treatments", href: "/treatments" },
           ],
         },
         {
           category: "Injuries & Claims",
           items: [
-            { label: "Auto Accidents", href: "/services/injuries/motor-vehicle-accidents" },
-            { label: "Workers' Comp", href: "/services/injuries/workers-compensation" },
-            { label: "Personal Injury", href: "/services/injuries/personal-injury" },
+            { label: "Auto Accidents", href: "/conditions/auto-injury" },
+            { label: "Workers' Comp", href: "/conditions/workplace-injury" },
+            { label: "Immediate Care", href: "/immediate-care" },
           ],
         },
         {
           category: "Surgery Center",
           items: [
-            { label: "Overview", href: "/surgery-center" },
-            { label: "Pain Procedures", href: "/surgery-center/pain-procedures" },
-            { label: "Orthopedic Procedures", href: "/surgery-center/orthopedic-procedures" },
+            { label: "Surgery Center", href: "/surgery-center" },
           ],
         },
       ],
@@ -111,7 +106,6 @@ export const NAV_ITEMS = {
       children: [
         { label: "Insurance & Pricing", href: "/patients/insurance-pricing" },
         { label: "Patient Forms", href: "/patients/forms" },
-        { label: "Referrals", href: "/patients/referrals" },
         { label: "FAQs", href: "/patients/faq" },
       ],
     },
@@ -122,7 +116,6 @@ export const NAV_ITEMS = {
         { label: "Our Mission", href: "/about/mission" },
         { label: "Accreditation", href: "/about/accreditation" },
         { label: "Our Facility", href: "/about/facility" },
-        { label: "Careers", href: "/careers" },
       ],
     },
     { label: "Blog", href: "/blog" },
@@ -130,7 +123,7 @@ export const NAV_ITEMS = {
   utility: [
     { label: "Insurance & Pricing", href: "/patients/insurance-pricing" },
     { label: "Patient Forms", href: "/patients/forms" },
-    { label: "Referrals", href: "/patients/referrals" },
+    { label: "FAQs", href: "/patients/faq" },
   ],
   footer: {
     services: [
@@ -153,7 +146,7 @@ export const NAV_ITEMS = {
       { label: "Insurance & Pricing", href: "/patients/insurance-pricing" },
       { label: "Patient Forms", href: "/patients/forms" },
       { label: "FAQs", href: "/patients/faq" },
-      { label: "Book Appointment", href: "/book" },
+      { label: "Contact Us", href: "/contact" },
     ],
     legal: [
       { label: "Privacy Policy", href: "/legal/privacy-policy" },

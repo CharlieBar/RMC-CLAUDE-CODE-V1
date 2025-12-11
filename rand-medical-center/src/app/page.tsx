@@ -44,8 +44,8 @@ const CONDITIONS = [
   { name: "Hip Pain", href: "/conditions/hip-pain" },
   { name: "Arthritis", href: "/conditions/arthritis" },
   { name: "Sports Injuries", href: "/conditions/sports-injuries" },
-  { name: "Whiplash", href: "/conditions/whiplash" },
-  { name: "Carpal Tunnel", href: "/conditions/carpal-tunnel" },
+  { name: "Auto Injuries", href: "/conditions/auto-injury" },
+  { name: "Carpal Tunnel", href: "/conditions/carpal-tunnel-syndrome" },
   { name: "Spinal Stenosis", href: "/conditions/spinal-stenosis" },
 ];
 
@@ -197,14 +197,14 @@ export default function Home() {
                 description:
                   "Get comprehensive documentation and treatment for your injury claim.",
                 cta: "Start Your Evaluation",
-                href: "/services/injuries/motor-vehicle-accidents",
+                href: "/conditions/auto-injury",
               },
               {
                 title: "Workplace Injury?",
                 description:
                   "Expert workers' compensation care with employer coordination.",
                 cta: "File Your Claim",
-                href: "/services/injuries/workers-compensation",
+                href: "/conditions/workplace-injury",
               },
               {
                 title: "Chronic Pain?",
