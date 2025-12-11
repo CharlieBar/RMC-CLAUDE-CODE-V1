@@ -356,6 +356,577 @@ export const CONDITIONS: Condition[] = [
     metaDescription:
       "Plantar fasciitis treatment in Arlington Heights. Get relief from heel pain with physical therapy, injections, and expert foot care at Rand Medical Center.",
   },
+  // Additional conditions from services-conditions.json
+  {
+    slug: "spinal-stenosis",
+    name: "Spinal Stenosis",
+    description:
+      "Spinal stenosis is a narrowing of the spaces within your spine, which can put pressure on the nerves that travel through the spine. It most commonly occurs in the lower back and neck. While some people have no symptoms, others may experience pain, numbness, muscle weakness, and problems with bladder or bowel function.",
+    causes: [
+      "Overgrowth of bone (bone spurs) from osteoarthritis",
+      "Herniated discs pressing on the spinal canal",
+      "Thickened ligaments that can bulge into the spinal canal",
+      "Tumors or abnormal growths",
+      "Spinal injuries causing fractures or dislocations",
+      "Congenital spinal stenosis (born with a narrow spinal canal)",
+    ],
+    symptoms: [
+      "Pain or cramping in legs when standing or walking",
+      "Numbness or tingling in legs, feet, or buttocks",
+      "Weakness in the leg or foot",
+      "Back pain that improves when bending forward or sitting",
+      "Balance problems",
+      "In severe cases, bladder or bowel dysfunction",
+    ],
+    treatments: [
+      { name: "Epidural Steroid Injections", href: "/treatments/epidural-steroid-injections" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Pain Management", href: "/services/pain-management" },
+    ],
+    relatedConditions: ["back-pain", "sciatica", "herniated-disc"],
+    metaDescription:
+      "Spinal stenosis treatment in Arlington Heights, IL for nerve compression causing leg pain, numbness, or weakness.",
+  },
+  {
+    slug: "degenerative-disc-disease",
+    name: "Degenerative Disc Disease",
+    description:
+      "Degenerative disc disease is not actually a disease, but rather a term used to describe the normal changes in your spinal discs as you age. The spinal discs act as shock absorbers between the vertebrae, and over time they can break down and cause pain, instability, and other symptoms.",
+    causes: [
+      "Natural aging and wear on spinal discs",
+      "Loss of fluid in the discs reducing flexibility",
+      "Tiny tears or cracks in the outer layer of the disc",
+      "Previous back injuries",
+      "Repetitive activities that stress the spine",
+      "Genetic predisposition",
+    ],
+    symptoms: [
+      "Pain that comes and goes, lasting weeks to months",
+      "Pain that worsens with sitting, bending, or twisting",
+      "Pain that feels better when walking or moving",
+      "Numbness or tingling in extremities",
+      "Weakness in leg muscles",
+      "Pain in the lower back, buttocks, or thighs",
+    ],
+    treatments: [
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Pain Management", href: "/services/pain-management" },
+      { name: "Radiofrequency Ablation", href: "/treatments/radiofrequency-ablation" },
+    ],
+    relatedConditions: ["back-pain", "herniated-disc", "spinal-stenosis"],
+    metaDescription:
+      "Degenerative disc disease treatment in Arlington Heights, IL for age-related disc wear causing back and neck pain.",
+  },
+  {
+    slug: "hip-pain",
+    name: "Hip Pain",
+    description:
+      "Hip pain is a common complaint that can be caused by a wide variety of problems. The precise location of your hip pain can provide valuable clues about the underlying cause. Problems within the hip joint itself tend to cause pain inside the hip or groin, while problems with muscles, ligaments, or tendons may cause pain in the thigh, outer hip, or buttocks.",
+    causes: [
+      "Osteoarthritis or rheumatoid arthritis",
+      "Hip fractures from falls or trauma",
+      "Bursitis (inflammation of the fluid-filled sacs)",
+      "Tendinitis from repetitive activities",
+      "Hip labral tear",
+      "Referred pain from the lower back",
+    ],
+    symptoms: [
+      "Groin pain or pain inside the hip",
+      "Pain on the outside of the hip, upper thigh, or buttock",
+      "Stiffness and reduced range of motion",
+      "Limping or difficulty walking",
+      "Pain that worsens with activity",
+      "Clicking or locking sensation in the hip",
+    ],
+    treatments: [
+      { name: "Joint Injections", href: "/treatments/joint-injections" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Orthopedic Evaluation", href: "/services/orthopedics" },
+    ],
+    relatedConditions: ["arthritis", "back-pain"],
+    metaDescription:
+      "Hip pain treatment in Arlington Heights, IL for arthritis, bursitis, and injuries.",
+  },
+  {
+    slug: "neuropathy",
+    name: "Peripheral Neuropathy",
+    description:
+      "Peripheral neuropathy refers to damage to the peripheral nerves, which transmit messages between your brain and spinal cord and the rest of your body. This condition can cause weakness, numbness, and pain, usually in the hands and feet. It can result from traumatic injuries, infections, metabolic problems, and exposure to toxins.",
+    causes: [
+      "Diabetes (most common cause)",
+      "Autoimmune diseases",
+      "Infections such as shingles or Lyme disease",
+      "Vitamin deficiencies (especially B vitamins)",
+      "Alcoholism",
+      "Exposure to toxins or certain medications",
+    ],
+    symptoms: [
+      "Gradual onset of numbness or tingling in hands or feet",
+      "Sharp, jabbing, or burning pain",
+      "Extreme sensitivity to touch",
+      "Lack of coordination and falling",
+      "Muscle weakness",
+      "Feeling like wearing gloves or socks when not",
+    ],
+    treatments: [
+      { name: "Pain Management", href: "/services/pain-management" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Medication Management", href: "/services/pain-management" },
+    ],
+    relatedConditions: ["diabetic-neuropathy"],
+    metaDescription:
+      "Peripheral neuropathy treatment in Arlington Heights, IL for burning, tingling, or numbness in hands and feet.",
+  },
+  {
+    slug: "diabetic-neuropathy",
+    name: "Diabetic Neuropathy",
+    description:
+      "Diabetic neuropathy is a type of nerve damage that can occur in people with diabetes. High blood sugar can injure nerves throughout the body, but diabetic neuropathy most often damages nerves in the legs and feet. Depending on the affected nerves, symptoms can range from pain and numbness to problems with the digestive system, urinary tract, and heart.",
+    causes: [
+      "Prolonged high blood sugar levels",
+      "Metabolic factors associated with diabetes",
+      "Damage to blood vessels that supply nerves",
+      "Inflammation in the nerves",
+      "Genetic factors affecting nerve vulnerability",
+      "Lifestyle factors such as smoking and alcohol use",
+    ],
+    symptoms: [
+      "Numbness or reduced ability to feel pain or temperature changes",
+      "Burning or tingling sensation in feet and legs",
+      "Sharp pains or cramps",
+      "Increased sensitivity to touch",
+      "Muscle weakness",
+      "Serious foot problems like ulcers and infections",
+    ],
+    treatments: [
+      { name: "Pain Management", href: "/services/pain-management" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Internal Medicine", href: "/services/internal-medicine" },
+    ],
+    relatedConditions: ["neuropathy"],
+    metaDescription:
+      "Care for diabetic neuropathy symptoms in Arlington Heights, IL including burning foot pain and numbness.",
+  },
+  {
+    slug: "rotator-cuff-tear",
+    name: "Rotator Cuff Tear",
+    description:
+      "A rotator cuff tear is a common cause of pain and disability among adults. The rotator cuff is a group of four muscles and tendons that stabilize the shoulder joint and enable you to lift and rotate your arm. A tear in the rotator cuff can occur from an injury or from degeneration over time.",
+    causes: [
+      "Acute injury from a fall or lifting",
+      "Repetitive overhead motions",
+      "Age-related degeneration",
+      "Bone spurs that rub against the tendon",
+      "Decreased blood supply with aging",
+      "Sports activities like baseball or tennis",
+    ],
+    symptoms: [
+      "Pain at rest and at night, especially lying on the affected shoulder",
+      "Pain when lifting or lowering the arm",
+      "Weakness when lifting or rotating the arm",
+      "Crackling sensation when moving the shoulder",
+      "Difficulty reaching behind the back",
+      "Limited range of motion",
+    ],
+    treatments: [
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Joint Injections", href: "/treatments/joint-injections" },
+      { name: "Orthopedic Surgery", href: "/services/orthopedics" },
+    ],
+    relatedConditions: ["shoulder-pain"],
+    metaDescription:
+      "Rotator cuff tear treatment in Arlington Heights, IL for shoulder pain and weakness.",
+  },
+  {
+    slug: "myofascial-pain",
+    name: "Myofascial Pain Syndrome",
+    description:
+      "Myofascial pain syndrome is a chronic pain disorder in which pressure on sensitive points in your muscles (trigger points) causes pain in the muscle and sometimes in seemingly unrelated parts of your body. This is called referred pain. Myofascial pain typically occurs after a muscle has been contracted repetitively.",
+    causes: [
+      "Repetitive motions used in jobs or hobbies",
+      "Muscle injury or strain",
+      "Stress and anxiety causing muscle tension",
+      "Poor posture",
+      "Inactivity or immobilization",
+      "Lack of sleep or poor nutrition",
+    ],
+    symptoms: [
+      "Deep, aching muscle pain",
+      "Pain that persists or worsens",
+      "Tender knots in muscles (trigger points)",
+      "Pain that refers to other areas when trigger points pressed",
+      "Difficulty sleeping due to pain",
+      "Stiffness and decreased range of motion",
+    ],
+    treatments: [
+      { name: "Trigger Point Injections", href: "/treatments/trigger-point-injections" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Pain Management", href: "/services/pain-management" },
+    ],
+    relatedConditions: ["back-pain", "neck-pain", "headaches"],
+    metaDescription:
+      "Myofascial pain treatment in Arlington Heights, IL for tender trigger points and muscle knots.",
+  },
+  {
+    slug: "fibromyalgia",
+    name: "Fibromyalgia",
+    description:
+      "Fibromyalgia is a disorder characterized by widespread musculoskeletal pain accompanied by fatigue, sleep, memory, and mood issues. Researchers believe that fibromyalgia amplifies painful sensations by affecting the way your brain and spinal cord process painful and nonpainful signals.",
+    causes: [
+      "Genetics may play a role in susceptibility",
+      "Physical or emotional trauma triggering onset",
+      "Infections that may trigger or aggravate the condition",
+      "Repeated nerve stimulation causing brain changes",
+      "Imbalance of pain-related brain chemicals",
+      "Often develops gradually with no single triggering event",
+    ],
+    symptoms: [
+      "Widespread pain lasting more than 3 months",
+      "Fatigue despite adequate sleep",
+      "Cognitive difficulties (fibro fog)",
+      "Sleep disturbances",
+      "Headaches and migraines",
+      "Irritable bowel syndrome",
+    ],
+    treatments: [
+      { name: "Pain Management", href: "/services/pain-management" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Internal Medicine", href: "/services/internal-medicine" },
+    ],
+    relatedConditions: ["chronic-pain", "myofascial-pain"],
+    metaDescription:
+      "Care for fibromyalgia symptoms in Arlington Heights, IL including widespread pain and fatigue.",
+  },
+  {
+    slug: "chronic-pain",
+    name: "Chronic Pain",
+    description:
+      "Chronic pain is pain that lasts for longer than three months, or beyond the normal healing time for an injury. It can affect any part of the body and can range from mild to severe. Chronic pain can significantly impact quality of life, affecting sleep, mood, and daily activities.",
+    causes: [
+      "Initial injury or infection that triggers ongoing pain",
+      "Ongoing cause of pain such as arthritis",
+      "Changes in the nervous system",
+      "No clear physical cause (central sensitization)",
+      "Psychological factors influencing pain perception",
+      "Combination of physical and psychological factors",
+    ],
+    symptoms: [
+      "Pain that persists beyond expected healing time",
+      "Pain that may be constant or intermittent",
+      "Fatigue and sleep problems",
+      "Mood changes including depression and anxiety",
+      "Reduced activity and mobility",
+      "Difficulty concentrating",
+    ],
+    treatments: [
+      { name: "Pain Management", href: "/services/pain-management" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Interventional Procedures", href: "/treatments" },
+    ],
+    relatedConditions: ["back-pain", "fibromyalgia"],
+    metaDescription:
+      "Chronic pain management in Arlington Heights, IL for pain lasting more than three months.",
+  },
+  {
+    slug: "facet-syndrome",
+    name: "Facet Joint Syndrome",
+    description:
+      "Facet joint syndrome is a condition where the facet joints in the spine become a source of pain. Facet joints are small joints at each segment of the spine that provide stability and help guide motion. They can become painful due to arthritis, injury, or mechanical stress.",
+    causes: [
+      "Degenerative changes from aging",
+      "Injury or trauma to the spine",
+      "Poor posture over time",
+      "Repetitive stress on the spine",
+      "Obesity putting extra strain on joints",
+      "Disc degeneration affecting joint alignment",
+    ],
+    symptoms: [
+      "Localized pain in the back or neck",
+      "Pain that worsens with extension or twisting",
+      "Stiffness, especially in the morning",
+      "Pain that improves with rest",
+      "Tenderness over the affected joints",
+      "Pain that radiates to buttocks or shoulders",
+    ],
+    treatments: [
+      { name: "Facet Joint Injections", href: "/treatments/facet-joint-injections" },
+      { name: "Radiofrequency Ablation", href: "/treatments/radiofrequency-ablation" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+    ],
+    relatedConditions: ["back-pain", "neck-pain", "arthritis"],
+    metaDescription:
+      "Facet joint syndrome care in Arlington Heights, IL for arthritis-related back and neck pain.",
+  },
+  {
+    slug: "radiculopathy",
+    name: "Radiculopathy",
+    description:
+      "Radiculopathy occurs when a nerve root in the spine becomes compressed, inflamed, or damaged. This can cause pain, numbness, tingling, or weakness along the path of the nerve. Radiculopathy is often referred to as a pinched nerve and can occur in any part of the spine.",
+    causes: [
+      "Herniated or bulging discs",
+      "Bone spurs from arthritis",
+      "Spinal stenosis narrowing nerve pathways",
+      "Degenerative disc disease",
+      "Injury or trauma to the spine",
+      "Tumors or infections (rare)",
+    ],
+    symptoms: [
+      "Sharp pain that radiates down arm or leg",
+      "Numbness or tingling in extremities",
+      "Muscle weakness in the affected area",
+      "Pins and needles sensations",
+      "Pain that worsens with certain movements",
+      "Decreased reflexes",
+    ],
+    treatments: [
+      { name: "Epidural Steroid Injections", href: "/treatments/epidural-steroid-injections" },
+      { name: "Selective Nerve Root Block", href: "/treatments/selective-nerve-root-block" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+    ],
+    relatedConditions: ["sciatica", "herniated-disc", "spinal-stenosis"],
+    metaDescription:
+      "Radiculopathy treatment in Arlington Heights, IL for nerve pain, numbness, or weakness from pinched spinal nerves.",
+  },
+  {
+    slug: "si-joint-pain",
+    name: "Sacroiliac (SI) Joint Pain",
+    description:
+      "The sacroiliac joints connect the lower spine to the pelvis and are responsible for transferring weight and forces between the upper body and legs. Dysfunction or inflammation in these joints can cause pain in the lower back, buttocks, and legs.",
+    causes: [
+      "Arthritis wearing down the SI joint cartilage",
+      "Pregnancy causing ligament loosening",
+      "Injury from falls or car accidents",
+      "Leg length discrepancy",
+      "Altered gait from other conditions",
+      "Previous lumbar fusion surgery",
+    ],
+    symptoms: [
+      "Low back pain, often on one side",
+      "Pain in the buttock or hip",
+      "Pain radiating down the leg",
+      "Pain when standing from sitting",
+      "Stiffness in the lower back and hips",
+      "Instability feeling in the pelvis",
+    ],
+    treatments: [
+      { name: "SI Joint Injections", href: "/services/pain-management" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Pain Management", href: "/services/pain-management" },
+    ],
+    relatedConditions: ["back-pain", "hip-pain"],
+    metaDescription:
+      "SI joint pain treatment in Arlington Heights, IL for lower back and buttock pain from sacroiliac dysfunction.",
+  },
+  {
+    slug: "complex-regional-pain-syndrome",
+    name: "Complex Regional Pain Syndrome (CRPS)",
+    description:
+      "Complex regional pain syndrome (CRPS) is a chronic pain condition that usually affects an arm or leg. It typically develops after an injury, surgery, stroke, or heart attack, and the pain is out of proportion to the severity of the initial injury.",
+    causes: [
+      "Injury or trauma to the affected limb",
+      "Surgery complications",
+      "Nerve damage or dysfunction",
+      "Immune system response",
+      "Unknown causes in some cases",
+      "Genetic factors may play a role",
+    ],
+    symptoms: [
+      "Continuous burning or throbbing pain",
+      "Sensitivity to touch or cold",
+      "Swelling of the affected area",
+      "Changes in skin temperature, color, or texture",
+      "Changes in hair and nail growth",
+      "Joint stiffness and muscle spasms",
+    ],
+    treatments: [
+      { name: "Pain Management", href: "/services/pain-management" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Nerve Blocks", href: "/services/pain-management" },
+    ],
+    relatedConditions: ["chronic-pain", "neuropathy"],
+    metaDescription:
+      "CRPS treatment in Arlington Heights, IL for severe, long-lasting pain after injury or surgery.",
+  },
+  {
+    slug: "occipital-neuralgia",
+    name: "Occipital Neuralgia",
+    description:
+      "Occipital neuralgia is a condition characterized by chronic pain in the upper neck, back of the head, and behind the eyes. It is caused by irritation or injury to the occipital nerves, which run from the top of the spinal cord up through the scalp.",
+    causes: [
+      "Trauma to the back of the head",
+      "Neck tension or muscle tightness",
+      "Osteoarthritis in the cervical spine",
+      "Tumors affecting the nerve",
+      "Gout or diabetes causing nerve damage",
+      "Blood vessel inflammation",
+    ],
+    symptoms: [
+      "Aching, burning, or throbbing pain from base of head to scalp",
+      "Sharp, shocking pain in the back of head or neck",
+      "Pain on one or both sides of the head",
+      "Pain behind the eyes",
+      "Sensitivity to light",
+      "Tender scalp",
+    ],
+    treatments: [
+      { name: "Occipital Nerve Block", href: "/services/pain-management" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Trigger Point Injections", href: "/treatments/trigger-point-injections" },
+    ],
+    relatedConditions: ["headaches", "neck-pain"],
+    metaDescription:
+      "Occipital neuralgia treatment in Arlington Heights, IL for sharp, shooting pain at the base of the skull.",
+  },
+  {
+    slug: "trigeminal-neuralgia",
+    name: "Trigeminal Neuralgia",
+    description:
+      "Trigeminal neuralgia is a chronic pain condition affecting the trigeminal nerve, which carries sensation from your face to your brain. Even mild stimulation of your face — such as from brushing your teeth or putting on makeup — may trigger a jolt of excruciating pain.",
+    causes: [
+      "Blood vessel pressing on the trigeminal nerve",
+      "Multiple sclerosis or similar disorders",
+      "Tumor compressing the nerve",
+      "Facial trauma or surgical injury",
+      "Aging-related changes",
+      "Unknown cause in some cases",
+    ],
+    symptoms: [
+      "Episodes of severe, shooting, shock-like pain",
+      "Pain triggered by touch, chewing, or talking",
+      "Pain attacks lasting from seconds to minutes",
+      "Pain on one side of the face",
+      "Pain in cheek, jaw, teeth, gums, or lips",
+      "Periods of remission between attacks",
+    ],
+    treatments: [
+      { name: "Pain Management", href: "/services/pain-management" },
+      { name: "Medication Management", href: "/services/pain-management" },
+      { name: "Nerve Block", href: "/services/pain-management" },
+    ],
+    relatedConditions: ["headaches"],
+    metaDescription:
+      "Trigeminal neuralgia treatment in Arlington Heights, IL for severe facial pain episodes.",
+  },
+  {
+    slug: "piriformis-syndrome",
+    name: "Piriformis Syndrome",
+    description:
+      "Piriformis syndrome is a neuromuscular disorder that occurs when the piriformis muscle, located in the buttock region, spasms and causes buttock pain. The piriformis muscle can also irritate the nearby sciatic nerve and cause pain, numbness, and tingling along the back of the leg.",
+    causes: [
+      "Muscle spasm in the piriformis muscle",
+      "Swelling of the piriformis muscle from injury",
+      "Irritation of the piriformis or sciatic nerve",
+      "Prolonged sitting",
+      "Overuse from repetitive activities",
+      "Anatomic variations in muscle or nerve",
+    ],
+    symptoms: [
+      "Pain in the buttock that worsens with sitting",
+      "Pain radiating down the back of the leg",
+      "Numbness or tingling in the buttock or leg",
+      "Pain with climbing stairs or walking",
+      "Reduced range of motion in the hip",
+      "Pain that improves with movement",
+    ],
+    treatments: [
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Trigger Point Injections", href: "/treatments/trigger-point-injections" },
+      { name: "Pain Management", href: "/services/pain-management" },
+    ],
+    relatedConditions: ["sciatica", "back-pain", "hip-pain"],
+    metaDescription:
+      "Piriformis syndrome treatment in Arlington Heights, IL for buttock and leg pain similar to sciatica.",
+  },
+  {
+    slug: "osteoarthritis",
+    name: "Osteoarthritis",
+    description:
+      "Osteoarthritis is the most common form of arthritis, affecting millions of people worldwide. It occurs when the protective cartilage that cushions the ends of the bones wears down over time. Although osteoarthritis can damage any joint, the disorder most commonly affects joints in the hands, knees, hips, and spine.",
+    causes: [
+      "Age-related wear and tear on cartilage",
+      "Joint injuries from sports or accidents",
+      "Repetitive stress on a joint",
+      "Obesity putting extra stress on joints",
+      "Genetics and bone deformities",
+      "Other diseases affecting joint health",
+    ],
+    symptoms: [
+      "Pain during or after movement",
+      "Joint stiffness after inactivity",
+      "Tenderness when pressing on the joint",
+      "Loss of flexibility",
+      "Grating sensation with joint use",
+      "Bone spurs around the affected joint",
+    ],
+    treatments: [
+      { name: "Joint Injections", href: "/treatments/joint-injections" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "PRP Therapy", href: "/treatments/prp-therapy" },
+    ],
+    relatedConditions: ["knee-pain", "hip-pain", "arthritis"],
+    metaDescription:
+      "Osteoarthritis care in Arlington Heights, IL for age-related joint wear and chronic pain.",
+  },
+  {
+    slug: "auto-injury",
+    name: "Auto Accident Injuries",
+    description:
+      "Auto accident injuries can range from minor to severe and may not be immediately apparent after a collision. Common injuries include whiplash, back injuries, and soft tissue damage. Prompt evaluation and treatment are essential for proper recovery and documentation.",
+    causes: [
+      "Rear-end collisions causing whiplash",
+      "Side-impact collisions",
+      "Head-on collisions",
+      "Rollover accidents",
+      "Low-speed fender benders",
+      "Pedestrian or cyclist accidents",
+    ],
+    symptoms: [
+      "Neck pain and stiffness",
+      "Back pain",
+      "Headaches",
+      "Shoulder or arm pain",
+      "Numbness or tingling",
+      "Delayed onset of symptoms (sometimes days later)",
+    ],
+    treatments: [
+      { name: "Immediate Care", href: "/immediate-care" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Pain Management", href: "/services/pain-management" },
+    ],
+    relatedConditions: ["neck-pain", "back-pain", "headaches"],
+    metaDescription:
+      "Auto accident injury treatment in Arlington Heights, IL. Comprehensive care for whiplash, back pain, and injuries from car accidents.",
+  },
+  {
+    slug: "workplace-injury",
+    name: "Workplace Injuries",
+    description:
+      "Workplace injuries can occur in any job setting and may involve acute trauma or develop over time from repetitive activities. Workers' compensation cases require proper documentation and coordinated care between medical providers, employers, and insurers.",
+    causes: [
+      "Lifting heavy objects improperly",
+      "Slips, trips, and falls",
+      "Repetitive motion injuries",
+      "Being struck by objects",
+      "Equipment or machinery accidents",
+      "Prolonged poor ergonomics",
+    ],
+    symptoms: [
+      "Pain at the injury site",
+      "Swelling or bruising",
+      "Limited range of motion",
+      "Numbness or tingling",
+      "Weakness in affected area",
+      "Symptoms that worsen with work activities",
+    ],
+    treatments: [
+      { name: "Immediate Care", href: "/immediate-care" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Workers' Compensation Care", href: "/services/injuries/workers-compensation" },
+    ],
+    relatedConditions: ["back-pain", "carpal-tunnel-syndrome"],
+    metaDescription:
+      "Workplace injury treatment in Arlington Heights, IL. Expert care for work-related injuries with workers' compensation documentation.",
+  },
 ];
 
 export function getConditionBySlug(slug: string): Condition | undefined {
