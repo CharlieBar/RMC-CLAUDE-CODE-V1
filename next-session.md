@@ -3,243 +3,114 @@
 ## Project Overview
 - **Project**: Rand Medical Center Next.js Website
 - **Location**: `/home/user/RMC-CLAUDE-CODE-V1/rand-medical-center/`
-- **Branch**: `claude/resume-next-session-01Y1wsC1xqNi6eVuCg2LsZaT`
-- **Current Status**: 85 pages building successfully, all navigation links fixed
+- **Current Status**: 85 pages building successfully
 - **Tech Stack**: Next.js 16, TypeScript, Tailwind CSS, Lucide Icons
 
 ---
 
-## COMPLETED WORK
+## COMPLETED WORK (Summary)
 
 ### Pages Created (85 total)
-- **Homepage** with hero, services, conditions, providers, testimonials
-- **About Section**: Main page, Mission, Facility, Accreditation
-- **Services**: Pain Management, Orthopedics, Physical Therapy, Internal Medicine
-- **Conditions**: 31 condition pages with detailed content
-- **Treatments**: 10 treatment pages (epidurals, RFA, joint injections, nerve blocks, occipital nerve block, SI joint injection, etc.)
-- **Providers**: 5 provider profile pages
-- **Blog**: 9 articles with dynamic routing
-- **Patients**: Hub page, Insurance & Pricing, Forms, FAQ
-- **Legal**: Privacy Policy, Terms, HIPAA Notice, Nondiscrimination, Accessibility
-- **Other**: Contact, Immediate Care, Surgery Center
+- Homepage, About (Mission, Facility, Accreditation)
+- Services: Pain Management, Orthopedics, Physical Therapy, Internal Medicine
+- 31 Condition pages, 10 Treatment pages, 5 Provider pages
+- 9 Blog articles, Patient pages (FAQ, Forms, Insurance)
+- Legal pages, Contact, Immediate Care, Surgery Center
 
-### Infrastructure
-- SEO metadata on all pages
-- Sitemap.xml and robots.txt
-- Responsive design with Tailwind
-- Component library (Button, Badge, Card, Accordion)
-
----
-
-## RECENTLY COMPLETED (This Session)
-
-### Quick Wins Completed
-- [x] Patient sub-pages already existed and are complete (/patients/faq, /patients/forms, /patients/insurance-pricing)
-- [x] Fixed all treatment links in conditions.ts to point to `/treatments/*` pages
-- [x] Fixed broken orthopedics sub-page links (pointed to non-existent pages)
-- [x] Schema markup (JSON-LD) already implemented in layout.tsx
-- [x] Added Google Maps iframe embeds to homepage and contact page
-- [x] Fixed broken `/patients/new-patients` link in contact page
-
-### Content Enhancement Completed
-- [x] Added 5 new blog articles (total now 9):
-  - Workers' Compensation Injury Guide
-  - Auto Accident Injury: What to Know
-  - Understanding Chronic Pain
-  - When to See an Orthopedic Specialist
-  - Preparing for Your First Visit
-- [x] Added 2 new treatments (total now 10):
-  - Occipital Nerve Block
-  - SI Joint Injection
+### Infrastructure Done
+- SEO metadata, sitemap.xml, robots.txt
+- Google Maps embeds on homepage and contact page
+- Component library with proper hover/focus states
+- Internal linking between conditions, treatments, providers
+- Breadcrumbs on all detail pages
+- Image directory structure created (`/public/images/`)
 
 ---
 
 ## REMAINING TASKS
 
-### 1. CONTENT GAPS (Priority: High)
+### Priority 1: SEO Schema Markup (High Impact)
+Add JSON-LD structured data to improve search visibility:
 
-#### 1.1 Blog Content Enhancement ✅ COMPLETED
-~~Current blog has 4 articles.~~ Now has 9 articles.
-- [x] Added 5 new blog articles covering key topics
-- [x] Workers' compensation process guide
-- [x] Auto accident injury FAQ
-- [x] Understanding chronic pain
-- [x] When to see an orthopedic specialist
-- [x] Preparing for your first visit
+1. **Homepage** - Add to `src/app/page.tsx`:
+   - Organization schema
+   - LocalBusiness schema (address, hours, phone)
+   - MedicalOrganization schema
 
-#### 1.2 Additional Treatments ✅ PARTIALLY COMPLETED
-Added to `src/lib/treatments.ts`:
-- [x] Occipital nerve block
-- [x] SI joint injections
-- [ ] Spinal cord stimulation (optional)
-- [ ] Medial branch blocks (optional)
+2. **Provider Pages** - Add to `src/app/providers/[slug]/page.tsx`:
+   - Physician schema for each provider
 
----
+3. **FAQ Page** - Add to `src/app/patients/faq/page.tsx`:
+   - FAQPage schema with questions/answers
 
-### 2. DESIGN POLISH (Priority: Medium)
+4. **Blog Posts** - Add to `src/app/blog/[slug]/page.tsx`:
+   - Article schema with author, date, etc.
 
-#### 2.1 Visual Assets ✅ PARTIALLY COMPLETED
-- [x] Created `/public/images/` directory structure:
-  ```
-  /public/images/
-  ├── providers/    (for provider headshots)
-  ├── hero/         (for hero section images)
-  ├── facility/     (for facility photos)
-  └── og/           (for social sharing images)
-  ```
-- [ ] Replace `<UserCircle />` placeholders with actual images or higher-quality medical stock images
-- [ ] Add OG image for social media previews (1200x630)
+### Priority 2: Blog Related Content Links
+Improve internal linking from blog articles:
 
-#### 2.3 Component Polish ✅ REVIEWED - Already Implemented
-- [x] Card hover states are consistent (InteractiveCard has hover:-translate-y-1, shadow-xl, border animation)
-- [x] Buttons have proper focus states (focus-visible:ring-2 with teal ring color)
-- [ ] Check mobile menu behavior and touch targets
-- [ ] Verify form styling on contact page
+1. **Update blog.ts** - Add fields to BlogPost interface:
+   - `relatedConditions: { name: string; href: string }[]`
+   - `relatedTreatments: { name: string; href: string }[]`
 
-#### 2.4 Typography & Spacing
-- [ ] Audit heading hierarchy (h1, h2, h3) across all pages
-- [ ] Check consistent spacing between sections
-- [ ] Verify line heights for readability
+2. **Update blog/[slug]/page.tsx** - Add section:
+   - "Related Conditions" links
+   - "Related Treatments" links
 
----
+### Priority 3: Footer Links Audit
+File: `src/components/layout/footer.tsx`
+- Verify all links point to existing pages
+- Consider adding "Popular Conditions" quick links section
 
-### 3. INTERNAL LINKING ✅ ALREADY IMPLEMENTED
+### Priority 4: Form Polish
+File: `src/app/contact/page.tsx`
+- Add form validation error messages
+- Verify form styling and accessibility
 
-#### 3.1 Cross-Linking Strategy
-All cross-linking is already implemented:
+### Priority 5: Mobile Menu Testing
+File: `src/components/layout/mobile-nav.tsx`
+- Test touch targets (minimum 44x44px)
+- Verify menu behavior on mobile devices
 
-**Conditions → Treatments** ✅
-- [x] Each condition page links to relevant treatment pages via treatments array
-- [x] Treatment URLs corrected to `/treatments/*` format
+### Priority 6: Accessibility Audit
+- Add skip-to-content link in layout
+- Verify ARIA labels on interactive elements
+- Check color contrast ratios
+- Test keyboard navigation
 
-**Treatments → Conditions** ✅
-- [x] Each treatment page has "Conditions This Treats" section with links
-- [x] Related conditions displayed in Quick Facts sidebar
+### Optional Tasks (Low Priority)
 
-**Providers → Services** ✅
-- [x] Provider pages have "Conditions Treated" section with links
-- [x] Provider pages have "Procedures & Services" section with links
+1. **Additional Treatments** - Add to `src/lib/treatments.ts`:
+   - Spinal cord stimulation
+   - Medial branch blocks
 
-**Blog → Related Content**
-- [ ] Add "Related Conditions" links to blog articles
-- [ ] Add "Related Treatments" links to blog articles
+2. **Social Media Links** - Update `src/lib/constants.ts`:
+   - Add real social media URLs or remove icons from footer
 
-#### 3.2 Breadcrumb Implementation ✅ IMPLEMENTED
-- [x] Breadcrumbs on condition pages
-- [x] Breadcrumbs on treatment pages
-- [x] Breadcrumbs on provider pages
-
-#### 3.3 Footer Links Audit
-- [ ] Verify all footer links point to existing pages
-- [ ] Consider adding "Popular Conditions" or "Quick Links" section
+3. **Performance Optimization**:
+   - Run Lighthouse audit
+   - Add image dimensions to prevent layout shift
 
 ---
 
-### 4. SEO OPTIMIZATION (Priority: Medium)
+## KEY FILES REFERENCE
 
-#### 4.1 Metadata Audit
-- [ ] Ensure unique meta descriptions for all 78 pages
-- [ ] Add keywords to metadata where appropriate
-- [ ] Verify OpenGraph tags on all pages
-
-#### 4.2 Schema Markup (JSON-LD)
-Add structured data for:
-- [ ] Organization schema on homepage
-- [ ] LocalBusiness schema with address, hours, phone
-- [ ] MedicalOrganization schema
-- [ ] Physician schema on provider pages
-- [ ] FAQPage schema on FAQ page
-- [ ] Article schema on blog posts
-
-#### 4.3 Performance
-- [ ] Run Lighthouse audit
-- [ ] Optimize images (if added)
-- [ ] Review bundle size
-- [ ] Add proper image dimensions to prevent layout shift
-
----
-
-### 5. FUNCTIONAL ENHANCEMENTS (Priority: Low)
-
-#### 5.1 Contact Form
-- [ ] Review contact form functionality
-- [ ] Add form validation messages
-- [ ] Consider adding appointment request form fields
-
-#### 5.2 Search Functionality
-- [ ] Consider adding site search for conditions/treatments
-- [ ] Could use simple client-side search or Algolia
-
-#### 5.3 Accessibility (WCAG 2.1 AA)
-- [ ] Run aXe accessibility audit
-- [ ] Ensure proper ARIA labels
-- [ ] Check color contrast ratios
-- [ ] Verify keyboard navigation
-- [ ] Add skip-to-content link
-
----
-
-### 6. SOCIAL MEDIA LINKS (Priority: Low)
-
-Update `src/lib/constants.ts` SITE_CONFIG.socialMedia:
-- [ ] Add Facebook URL (if available)
-- [ ] Add Instagram URL (if available)
-- [ ] Add LinkedIn URL (if available)
-- [ ] Add YouTube URL (if available)
-- [ ] Or remove social icons from footer if not needed
-
----
-
-## FILE REFERENCE
-
-### Key Data Files
-- `src/lib/conditions.ts` - 31 conditions with full content
-- `src/lib/treatments.ts` - 10 treatments with details
-- `src/lib/providers.ts` - 5 providers with bios
-- `src/lib/blog.ts` - 9 blog articles
-- `src/lib/constants.ts` - Site config, navigation, providers list
-
-### Content Source Files (Root Directory)
-- `rand-pages-content.json` - Pre-written page content (124KB)
-- `services-conditions.json` - 48 conditions, 57 services data (65KB)
-- `lower-back-pain.md` - Detailed condition content
-- `carpal-tunnel-syndrome.md` - Detailed condition content
-- `physical-therapy.md` - Treatment content
-- `prp-therapy.md` - Treatment content
-
-### Component Files
-- `src/components/ui/` - Button, Badge, Card, Accordion
-- `src/components/layout/` - Header, Footer
-
----
-
-## ESTIMATED EFFORT
-
-| Task Category | Estimated Time |
-|--------------|----------------|
-| Content Gaps (patient pages, blog) | 3-4 hours |
-| Design Polish (images, maps) | 2-3 hours |
-| Internal Linking | 2-3 hours |
-| SEO Optimization | 2-3 hours |
-| Functional Enhancements | 2-4 hours |
-| **Total** | **11-17 hours** |
-
----
-
-## QUICK WINS (Can Do First)
-
-1. Create `/patients/faq/page.tsx` with accordion FAQ
-2. Add schema markup to homepage
-3. Fix treatment links in conditions.ts
-4. Add map embed to contact page
-5. Create `/patients/forms/page.tsx` with download links
+| File | Purpose |
+|------|---------|
+| `src/lib/conditions.ts` | 31 conditions data |
+| `src/lib/treatments.ts` | 10 treatments data |
+| `src/lib/providers.ts` | 5 providers data |
+| `src/lib/blog.ts` | 9 blog articles |
+| `src/lib/constants.ts` | Site config, navigation |
+| `src/app/layout.tsx` | Root layout (has basic schema) |
+| `src/components/layout/footer.tsx` | Footer links |
+| `src/components/layout/header.tsx` | Navigation |
 
 ---
 
 ## NOTES
 
-- All navigation links are now fixed and working
-- Build generates 85 static pages successfully
-- No TypeScript or build errors
-- Mobile responsiveness is implemented but should be tested
-- Dark mode is NOT implemented (light mode only)
+- Build: `cd rand-medical-center && npm run build`
+- Dev: `cd rand-medical-center && npm run dev`
+- All TypeScript/build errors resolved
+- Dark mode NOT implemented (light mode only)
