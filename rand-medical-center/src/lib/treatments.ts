@@ -599,6 +599,147 @@ export const TREATMENTS: Treatment[] = [
     metaDescription:
       "Physical therapy and rehabilitation at Rand Medical Center in Arlington Heights. Expert care for injury recovery, chronic pain, post-surgical rehab, and sports rehabilitation.",
   },
+  {
+    slug: "occipital-nerve-block",
+    name: "Occipital Nerve Block",
+    shortDescription: "Targeted injection for headaches and neck pain originating from occipital nerves",
+    description:
+      "An occipital nerve block is an injection of local anesthetic and steroid medication around the greater and lesser occipital nerves at the back of the head. This procedure is used to diagnose and treat headaches, migraines, and pain originating from the occipital region.",
+    howItWorks:
+      "The occipital nerves run from the upper neck to the back of the head. When these nerves become irritated or inflamed, they can cause headaches, migraines, and scalp tenderness. The injection delivers anti-inflammatory medication directly to these nerves, reducing inflammation and blocking pain signals.",
+    idealCandidates: [
+      "Patients with occipital neuralgia",
+      "Those suffering from chronic migraines or cluster headaches",
+      "Individuals with tension headaches originating from the neck",
+      "Patients with cervicogenic headaches",
+      "Those who haven't responded well to oral medications",
+    ],
+    procedure: [
+      "You will sit or lie face down comfortably",
+      "The injection site at the back of the head is cleaned",
+      "The nerves are located by palpation or ultrasound guidance",
+      "A small needle delivers the medication around the nerves",
+      "The procedure takes about 10-15 minutes",
+      "Both sides may be treated if needed",
+    ],
+    preparation: [
+      "Inform your doctor of all medications, especially blood thinners",
+      "No special preparation is typically required",
+      "Eat normally unless otherwise instructed",
+      "Arrange for someone to drive you home",
+    ],
+    risks: [
+      "Temporary numbness at the injection site",
+      "Tenderness or bruising",
+      "Dizziness (rare)",
+      "Infection (rare)",
+      "Allergic reaction (rare)",
+    ],
+    recovery:
+      "Most patients can resume normal activities immediately. You may experience numbness at the back of the head for several hours. Some patients notice immediate relief from the local anesthetic, with longer-term relief developing over the following days as the steroid takes effect.",
+    expectedResults:
+      "Many patients experience significant headache relief lasting weeks to months. The procedure can be repeated if effective. Some patients achieve long-term relief, while others may need periodic injections.",
+    duration: "10-15 minutes",
+    frequency: "Can be repeated every 4-6 weeks as needed",
+    relatedConditions: [
+      { name: "Headaches & Migraines", href: "/conditions/headaches" },
+      { name: "Neck Pain", href: "/conditions/neck-pain" },
+    ],
+    relatedServices: [
+      { name: "Pain Management", href: "/services/pain-management" },
+    ],
+    faqs: [
+      {
+        question: "How quickly will I feel relief?",
+        answer:
+          "Many patients notice some relief within minutes from the local anesthetic. The steroid typically provides longer-lasting relief within 3-7 days.",
+      },
+      {
+        question: "Is the injection painful?",
+        answer:
+          "You may feel brief stinging or pressure during the injection. Most patients tolerate the procedure well with minimal discomfort.",
+      },
+      {
+        question: "How long does the relief last?",
+        answer:
+          "Results vary, but many patients experience relief for several weeks to months. Some patients achieve longer-lasting improvement with repeated treatments.",
+      },
+    ],
+    metaDescription:
+      "Occipital nerve block for headaches and migraines at Rand Medical Center in Arlington Heights. Effective treatment for occipital neuralgia and chronic headaches.",
+  },
+  {
+    slug: "si-joint-injection",
+    name: "Sacroiliac (SI) Joint Injection",
+    shortDescription: "Diagnostic and therapeutic injection for SI joint pain",
+    description:
+      "A sacroiliac (SI) joint injection delivers medication directly into the SI joint, which connects the lower spine to the pelvis. This procedure helps diagnose SI joint dysfunction as a pain source and provides therapeutic relief from inflammation and pain.",
+    howItWorks:
+      "The SI joint can become painful due to arthritis, injury, or mechanical dysfunction. Using fluoroscopic guidance, medication is injected directly into the joint space. The local anesthetic provides diagnostic information—if pain relief occurs, the SI joint is confirmed as the source. The corticosteroid reduces inflammation for longer-term relief.",
+    idealCandidates: [
+      "Patients with lower back or buttock pain suspected to originate from the SI joint",
+      "Those with pain that radiates to the groin or upper thigh",
+      "Individuals with SI joint arthritis or sacroiliitis",
+      "Patients being evaluated for SI joint fusion",
+      "Those who haven't responded to physical therapy alone",
+    ],
+    procedure: [
+      "You will lie face down on a procedure table",
+      "The skin over the SI joint is cleaned and numbed",
+      "Using fluoroscopy (X-ray), a needle is guided into the SI joint",
+      "Contrast dye confirms proper needle placement",
+      "The medication mixture is injected into the joint",
+      "The procedure takes about 15-30 minutes",
+    ],
+    preparation: [
+      "Discuss all medications with your doctor, especially blood thinners",
+      "You may need to stop certain medications before the procedure",
+      "Do not eat for several hours if sedation is planned",
+      "Arrange for transportation home",
+      "Wear comfortable, loose-fitting clothing",
+    ],
+    risks: [
+      "Temporary soreness at the injection site",
+      "Temporary increase in pain",
+      "Infection (rare)",
+      "Bleeding (rare)",
+      "Allergic reaction (rare)",
+    ],
+    recovery:
+      "You should rest for the remainder of the day after the procedure. Some patients experience temporary leg weakness or numbness. Pain relief from the steroid typically develops over 3-7 days. Most patients can return to normal activities within 24-48 hours.",
+    expectedResults:
+      "If the SI joint is the source of your pain, you should experience significant relief. Relief typically lasts weeks to months. If effective, the injection can be repeated, or you may be a candidate for radiofrequency ablation or other treatments for longer-lasting results.",
+    duration: "15-30 minutes",
+    frequency: "Can be repeated every 3-6 months as needed",
+    relatedConditions: [
+      { name: "Back Pain", href: "/conditions/back-pain" },
+      { name: "SI Joint Pain", href: "/conditions/si-joint-pain" },
+      { name: "Hip Pain", href: "/conditions/hip-pain" },
+    ],
+    relatedServices: [
+      { name: "Pain Management", href: "/services/pain-management" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+    ],
+    faqs: [
+      {
+        question: "How do I know if my SI joint is causing my pain?",
+        answer:
+          "SI joint pain typically causes lower back and buttock pain, often on one side. It may radiate to the groin or upper thigh but usually doesn't go below the knee. An SI joint injection helps confirm the diagnosis—if you experience significant relief, the SI joint is likely your pain source.",
+      },
+      {
+        question: "Will I need more than one injection?",
+        answer:
+          "Some patients get lasting relief from a single injection, while others may benefit from periodic injections. If injections provide good but temporary relief, you may be a candidate for radiofrequency ablation for longer-lasting results.",
+      },
+      {
+        question: "What's the difference between SI joint injection and epidural injection?",
+        answer:
+          "SI joint injections target the joint where the spine meets the pelvis, while epidural injections deliver medication to the space around spinal nerves. The choice depends on the suspected source of your pain.",
+      },
+    ],
+    metaDescription:
+      "SI joint injection for lower back and buttock pain at Rand Medical Center in Arlington Heights. Diagnose and treat sacroiliac joint dysfunction with expert care.",
+  },
 ];
 
 export function getTreatmentBySlug(slug: string): Treatment | undefined {

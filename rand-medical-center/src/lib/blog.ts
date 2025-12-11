@@ -229,6 +229,377 @@ Don't suffer in silence—if your back pain is affecting your quality of life, i
     metaDescription:
       "Know when back pain requires medical attention. Learn the warning signs, when to schedule an appointment, and what to expect from your doctor visit.",
   },
+  {
+    slug: "workers-compensation-injury-guide",
+    title: "A Complete Guide to Workers' Compensation Injuries",
+    excerpt:
+      "Injured at work? Learn how workers' compensation works, your rights as an injured worker, and how to navigate the claims process successfully.",
+    content: `
+## Understanding Workers' Compensation
+
+Workers' compensation is a system designed to provide medical care and wage replacement to employees who are injured on the job. In Illinois, most employers are required to carry workers' compensation insurance, and you don't need to prove your employer was at fault to receive benefits.
+
+## What to Do If You're Injured at Work
+
+### 1. Report the Injury Immediately
+
+Notify your supervisor or employer as soon as possible. In Illinois, you should report your injury within 45 days, but reporting immediately protects your rights and ensures proper documentation.
+
+### 2. Seek Medical Treatment
+
+Your health is the priority. You have the right to choose your own doctor. At Rand Medical Center, we have extensive experience treating work-related injuries and understanding the documentation requirements for workers' comp cases.
+
+### 3. Document Everything
+
+Keep records of:
+- How the injury occurred
+- Witnesses to the accident
+- All medical treatments and appointments
+- Any work restrictions given by your doctor
+- Communication with your employer
+
+## Benefits You May Be Entitled To
+
+- **Medical Benefits**: Coverage for all reasonable and necessary medical treatment related to your injury
+- **Temporary Total Disability (TTD)**: Wage replacement if you can't work while recovering
+- **Permanent Partial Disability (PPD)**: Compensation for permanent impairments
+- **Vocational Rehabilitation**: Help returning to work or finding new employment if needed
+
+## Common Mistakes to Avoid
+
+- **Waiting too long to report**: Report your injury right away
+- **Not seeing a doctor**: Even if injuries seem minor, get evaluated
+- **Not following medical advice**: Non-compliance can affect your benefits
+- **Signing documents without understanding**: Review everything carefully
+
+## How We Help with Workers' Comp Cases
+
+Our team understands the workers' compensation system. We provide:
+
+- Thorough documentation of your injuries
+- Communication with insurance adjusters
+- Work status reports and restrictions
+- Coordination with your employer
+- Independent medical evaluations if needed
+
+Don't navigate the system alone. We're here to help you get the treatment you need and deserve.
+    `.trim(),
+    author: "Dr. Demetrios Giokaris",
+    authorTitle: "Chief Physician",
+    publishedAt: "2024-12-01",
+    category: "Health Education",
+    tags: ["workers compensation", "work injury", "insurance", "legal"],
+    readTime: "5 min read",
+    metaDescription:
+      "Complete guide to workers' compensation injuries in Illinois. Learn your rights, how to file a claim, and get proper medical treatment for work injuries.",
+  },
+  {
+    slug: "auto-accident-injury-what-to-know",
+    title: "Auto Accident Injuries: What You Need to Know",
+    excerpt:
+      "Been in a car accident? Learn about common injuries, why delayed symptoms occur, and how to protect your health and legal rights after a collision.",
+    content: `
+## Why Seeking Medical Care After an Accident Matters
+
+Even if you feel fine immediately after a car accident, it's crucial to get a medical evaluation. Adrenaline can mask pain and injuries, and many conditions don't show symptoms until days or weeks later.
+
+## Common Auto Accident Injuries
+
+### Whiplash and Neck Injuries
+The sudden back-and-forth motion of a collision can strain neck muscles and damage ligaments. Symptoms may include neck pain, stiffness, headaches, and dizziness.
+
+### Back Injuries
+The force of an accident can cause herniated discs, muscle strains, and spinal injuries. Back pain after an accident should always be evaluated.
+
+### Soft Tissue Injuries
+Muscles, tendons, and ligaments throughout the body can be damaged. These injuries may not show up on X-rays but can cause significant pain and limitation.
+
+### Concussions
+Even without hitting your head, the rapid movement of a collision can cause brain injury. Watch for headaches, confusion, memory problems, or changes in mood.
+
+## Why Symptoms May Be Delayed
+
+- **Inflammation builds gradually**: Swelling and inflammation worsen over time
+- **Adrenaline masks pain**: The stress response can temporarily hide symptoms
+- **Soft tissue injuries develop**: Some damage takes time to become apparent
+- **Hidden structural damage**: Problems like disc herniations may not cause immediate symptoms
+
+## Protecting Your Health and Rights
+
+### Get Evaluated Promptly
+See a doctor within 72 hours of your accident, even if you feel okay. This creates important documentation.
+
+### Follow Treatment Recommendations
+Consistent medical care shows the connection between your accident and injuries. Gaps in treatment can be used against you.
+
+### Keep Detailed Records
+Document your symptoms, treatments, missed work, and how injuries affect your daily life.
+
+### Communicate with Your Attorney
+If you have legal representation, make sure your medical team and attorney are coordinated.
+
+## How We Help Auto Accident Patients
+
+At Rand Medical Center, we:
+- Provide thorough initial evaluations
+- Create detailed medical documentation
+- Offer comprehensive treatment plans
+- Coordinate with insurance companies and attorneys
+- Provide expert testimony if needed
+
+Don't delay—your health and your case depend on prompt, proper medical care.
+    `.trim(),
+    author: "Dr. Krishna C. Chunduri",
+    authorTitle: "Pain Management Specialist",
+    publishedAt: "2024-11-28",
+    category: "Health Education",
+    tags: ["auto accident", "car crash", "whiplash", "personal injury"],
+    readTime: "5 min read",
+    metaDescription:
+      "Essential information about auto accident injuries. Learn about common injuries, delayed symptoms, and how to protect your health after a car accident.",
+  },
+  {
+    slug: "understanding-chronic-pain",
+    title: "Understanding Chronic Pain: Causes, Effects, and Treatment Options",
+    excerpt:
+      "Chronic pain affects millions of Americans. Learn what causes persistent pain, how it differs from acute pain, and the treatment options that can help.",
+    content: `
+## What Is Chronic Pain?
+
+Pain is considered chronic when it persists for more than three months, continuing beyond the normal healing time for an injury or illness. Unlike acute pain, which serves as a warning signal, chronic pain often continues even after the original cause has healed.
+
+## How Chronic Pain Differs from Acute Pain
+
+**Acute Pain:**
+- Serves a protective purpose
+- Has a clear cause
+- Resolves as healing occurs
+- Responds predictably to treatment
+
+**Chronic Pain:**
+- May persist without clear cause
+- Involves changes in the nervous system
+- Can exist independent of ongoing tissue damage
+- Often requires multimodal treatment
+
+## Common Causes of Chronic Pain
+
+- **Arthritis**: Joint inflammation and degeneration
+- **Nerve damage**: From diabetes, injuries, or other conditions
+- **Fibromyalgia**: Widespread pain with heightened pain sensitivity
+- **Back conditions**: Degenerative disc disease, spinal stenosis
+- **Previous injuries**: Some injuries lead to long-term pain
+- **Unknown causes**: Sometimes chronic pain develops without identifiable cause
+
+## How Chronic Pain Affects Your Life
+
+Chronic pain impacts more than just physical comfort:
+
+- **Sleep disruption**: Pain interferes with restful sleep
+- **Mood changes**: Depression and anxiety are common
+- **Reduced activity**: Leading to deconditioning and weight gain
+- **Work limitations**: Affecting income and career
+- **Relationship strain**: Chronic conditions affect family dynamics
+- **Cognitive effects**: "Brain fog" and concentration difficulties
+
+## Treatment Approaches
+
+Effective chronic pain management typically combines multiple approaches:
+
+### Interventional Procedures
+- Epidural steroid injections
+- Nerve blocks
+- Radiofrequency ablation
+- Joint injections
+
+### Physical Therapy
+- Targeted exercises
+- Manual therapy
+- Education on body mechanics
+
+### Medication Management
+- Anti-inflammatory medications
+- Nerve pain medications
+- Careful use of other pain relievers
+
+### Lifestyle Modifications
+- Regular exercise
+- Stress management
+- Sleep hygiene
+- Anti-inflammatory diet
+
+## Our Approach to Chronic Pain
+
+We believe in treating the whole person, not just the pain. Our comprehensive approach includes accurate diagnosis, personalized treatment plans, and ongoing support to help you regain function and quality of life.
+    `.trim(),
+    author: "Dr. Krishna C. Chunduri",
+    authorTitle: "Pain Management Specialist",
+    publishedAt: "2024-11-10",
+    category: "Pain Management",
+    tags: ["chronic pain", "pain management", "treatment", "quality of life"],
+    readTime: "5 min read",
+    metaDescription:
+      "Understanding chronic pain: causes, effects on daily life, and comprehensive treatment options including interventional procedures and physical therapy.",
+  },
+  {
+    slug: "when-to-see-orthopedic-specialist",
+    title: "When Should You See an Orthopedic Specialist?",
+    excerpt:
+      "Joint pain, injuries, and mobility problems don't always require a specialist. Learn when it's time to see an orthopedic doctor for your bone and joint issues.",
+    content: `
+## What Does an Orthopedic Specialist Do?
+
+Orthopedic specialists diagnose and treat conditions affecting the musculoskeletal system—your bones, joints, muscles, ligaments, and tendons. They handle everything from sports injuries to arthritis to complex joint replacements.
+
+## Signs You Should See an Orthopedic Specialist
+
+### Persistent Pain
+If joint or musculoskeletal pain lasts more than a few days and isn't improving with rest and over-the-counter treatments, it's time for an evaluation.
+
+### Limited Range of Motion
+Difficulty bending, straightening, or rotating a joint that doesn't improve over time needs professional assessment.
+
+### Instability
+If a joint feels like it's "giving way" or you have trouble bearing weight, this could indicate ligament damage or other structural problems.
+
+### Visible Deformity
+Any obvious change in the shape of a joint or limb after an injury requires immediate evaluation.
+
+### Swelling That Won't Go Away
+Persistent swelling in a joint, especially with warmth or redness, should be evaluated promptly.
+
+### Injuries That Aren't Healing
+If an injury isn't improving as expected, or if you've reinjured the same area multiple times, specialist care can help.
+
+## Common Conditions We Treat
+
+- **Arthritis**: Osteoarthritis, rheumatoid arthritis, other joint conditions
+- **Sports injuries**: ACL tears, meniscus injuries, rotator cuff tears
+- **Fractures**: Broken bones that may need surgical repair
+- **Tendon problems**: Tendinitis, tears, chronic tendon issues
+- **Cartilage damage**: Injuries affecting joint surfaces
+- **Joint replacement**: When conservative treatments aren't enough
+
+## What to Expect at Your First Visit
+
+1. **Detailed history**: We'll discuss your symptoms, how they started, and what makes them better or worse
+2. **Physical examination**: Testing range of motion, strength, and stability
+3. **Imaging review**: We may order X-rays, MRI, or other studies
+4. **Diagnosis and plan**: You'll receive a clear explanation and treatment recommendations
+
+## Treatment Options
+
+Not everyone needs surgery. Many orthopedic conditions respond well to:
+
+- Physical therapy and exercise programs
+- Anti-inflammatory medications
+- Joint injections (corticosteroids or hyaluronic acid)
+- Bracing or orthotics
+- Activity modifications
+
+When surgery is needed, our fellowship-trained surgeons use the latest minimally invasive techniques whenever possible.
+    `.trim(),
+    author: "Dr. Christos S. Giannoulias",
+    authorTitle: "Orthopedic Surgeon",
+    publishedAt: "2024-10-15",
+    category: "Orthopedics",
+    tags: ["orthopedics", "joint pain", "sports injury", "specialist"],
+    readTime: "4 min read",
+    metaDescription:
+      "Know when to see an orthopedic specialist for joint pain, injuries, and mobility issues. Learn about common conditions and what to expect at your appointment.",
+  },
+  {
+    slug: "preparing-for-first-visit",
+    title: "Preparing for Your First Visit to Rand Medical Center",
+    excerpt:
+      "Make the most of your first appointment. Here's what to bring, what to expect, and how to prepare for your initial evaluation at our clinic.",
+    content: `
+## Welcome to Rand Medical Center
+
+We want your first visit to be as smooth and productive as possible. This guide will help you prepare so we can focus on what matters most—your health.
+
+## What to Bring to Your Appointment
+
+### Required Items
+- **Photo ID**: Driver's license, state ID, or passport
+- **Insurance cards**: All that apply to your coverage
+- **Referral**: If required by your insurance plan
+- **Completed paperwork**: Download forms from our website ahead of time
+
+### Helpful Items
+- **Medical records**: Recent imaging (X-rays, MRI, CT scans) and reports
+- **Medication list**: All current medications with dosages
+- **Symptom diary**: Notes on when symptoms occur and what makes them better or worse
+- **Questions**: Write down anything you want to ask
+
+### For Work-Related Injuries
+- Employer information and contact
+- Workers' compensation claim number
+- Date of injury report
+
+### For Auto Accidents
+- Insurance information for all parties
+- Attorney contact information if applicable
+- Police report number
+
+## What to Expect During Your Visit
+
+### Check-In (15-20 minutes before appointment)
+Arrive early to complete any remaining paperwork. Our staff will verify your insurance and collect any copays.
+
+### Medical History Review
+Your provider will ask detailed questions about:
+- Your current symptoms
+- How your condition started
+- Previous treatments you've tried
+- Your medical history
+- Your goals for treatment
+
+### Physical Examination
+Depending on your condition, this may include:
+- Range of motion testing
+- Strength assessment
+- Neurological examination
+- Specific tests for your area of concern
+
+### Diagnostic Studies
+We may order imaging or other tests to complete your evaluation. Many studies can be done on-site.
+
+### Treatment Discussion
+You'll receive:
+- A clear explanation of your diagnosis
+- Treatment options with pros and cons
+- A recommended treatment plan
+- Time to ask questions
+
+## Tips for a Productive Visit
+
+- **Be honest and complete**: The more we know, the better we can help
+- **Describe your symptoms clearly**: Location, intensity, timing, triggers
+- **Ask questions**: No question is too simple
+- **Take notes**: Or bring someone who can help remember details
+- **Discuss your goals**: What do you want to be able to do?
+
+## After Your Visit
+
+You'll receive:
+- Written instructions for any treatments
+- Prescriptions if needed
+- Referrals for physical therapy or other services
+- Follow-up appointment scheduling
+- Contact information for questions
+
+We're here to help you feel better and get back to the activities you love.
+    `.trim(),
+    author: "Rand Medical Center Staff",
+    authorTitle: "Patient Services",
+    publishedAt: "2024-09-25",
+    category: "Health Education",
+    tags: ["first visit", "new patient", "preparation", "what to expect"],
+    readTime: "4 min read",
+    metaDescription:
+      "Prepare for your first visit to Rand Medical Center. Learn what to bring, what to expect during your appointment, and how to make the most of your evaluation.",
+  },
 ];
 
 export const BLOG_CATEGORIES = [
@@ -236,6 +607,7 @@ export const BLOG_CATEGORIES = [
   "Orthopedics",
   "Physical Therapy",
   "Health Education",
+  "Workers Compensation",
 ];
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
