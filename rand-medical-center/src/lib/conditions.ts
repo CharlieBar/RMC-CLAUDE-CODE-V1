@@ -37,10 +37,10 @@ export const CONDITIONS: Condition[] = [
       "Muscle spasms",
     ],
     treatments: [
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
-      { name: "Epidural Steroid Injections", href: "/services/pain-management/epidural-steroid-injections" },
-      { name: "Radiofrequency Ablation", href: "/services/pain-management/radiofrequency-ablation" },
-      { name: "Facet Joint Injections", href: "/services/pain-management/facet-joint-injections" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
+      { name: "Epidural Steroid Injections", href: "/treatments/epidural-steroid-injections" },
+      { name: "Radiofrequency Ablation", href: "/treatments/radiofrequency-ablation" },
+      { name: "Facet Joint Injections", href: "/treatments/facet-joint-injections" },
     ],
     relatedConditions: ["sciatica", "herniated-disc", "spinal-stenosis"],
     metaDescription:
@@ -68,10 +68,10 @@ export const CONDITIONS: Condition[] = [
       "Difficulty moving the leg or foot",
     ],
     treatments: [
-      { name: "Epidural Steroid Injections", href: "/services/pain-management/epidural-steroid-injections" },
-      { name: "Selective Nerve Root Block", href: "/services/pain-management/selective-nerve-root-block" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
-      { name: "Radiofrequency Ablation", href: "/services/pain-management/radiofrequency-ablation" },
+      { name: "Epidural Steroid Injections", href: "/treatments/epidural-steroid-injections" },
+      { name: "Selective Nerve Root Block", href: "/treatments/selective-nerve-root-block" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
+      { name: "Radiofrequency Ablation", href: "/treatments/radiofrequency-ablation" },
     ],
     relatedConditions: ["back-pain", "herniated-disc", "spinal-stenosis"],
     metaDescription:
@@ -99,10 +99,10 @@ export const CONDITIONS: Condition[] = [
       "Numbness or tingling in the arms",
     ],
     treatments: [
-      { name: "Cervical Epidural Injections", href: "/services/pain-management/epidural-steroid-injections" },
-      { name: "Trigger Point Injections", href: "/services/pain-management/trigger-point-injections" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
-      { name: "Facet Joint Injections", href: "/services/pain-management/facet-joint-injections" },
+      { name: "Cervical Epidural Injections", href: "/treatments/epidural-steroid-injections" },
+      { name: "Trigger Point Injections", href: "/treatments/trigger-point-injections" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
+      { name: "Facet Joint Injections", href: "/treatments/facet-joint-injections" },
     ],
     relatedConditions: ["whiplash", "herniated-disc"],
     metaDescription:
@@ -130,10 +130,10 @@ export const CONDITIONS: Condition[] = [
       "Warmth or redness around the joint",
     ],
     treatments: [
-      { name: "Joint Injections", href: "/services/pain-management/joint-injections" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
-      { name: "Knee Arthroscopy", href: "/services/orthopedics/knee" },
-      { name: "Knee Replacement", href: "/services/orthopedics/knee" },
+      { name: "Joint Injections", href: "/treatments/joint-injections" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
+      { name: "Knee Arthroscopy", href: "/services/orthopedics" },
+      { name: "Knee Replacement", href: "/services/orthopedics" },
     ],
     relatedConditions: ["arthritis", "sports-injuries"],
     metaDescription:
@@ -161,10 +161,10 @@ export const CONDITIONS: Condition[] = [
       "Stiffness and reduced range of motion",
     ],
     treatments: [
-      { name: "Joint Injections", href: "/services/pain-management/joint-injections" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
-      { name: "Shoulder Arthroscopy", href: "/services/orthopedics/shoulder-rotator-cuff" },
-      { name: "Rotator Cuff Repair", href: "/services/orthopedics/shoulder-rotator-cuff" },
+      { name: "Joint Injections", href: "/treatments/joint-injections" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
+      { name: "Shoulder Arthroscopy", href: "/services/orthopedics" },
+      { name: "Rotator Cuff Repair", href: "/services/orthopedics" },
     ],
     relatedConditions: ["arthritis", "sports-injuries"],
     metaDescription:
@@ -192,10 +192,10 @@ export const CONDITIONS: Condition[] = [
       "Bone spurs around affected joints",
     ],
     treatments: [
-      { name: "Joint Injections", href: "/services/pain-management/joint-injections" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Joint Injections", href: "/treatments/joint-injections" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Joint Replacement Surgery", href: "/services/orthopedics" },
-      { name: "Radiofrequency Ablation", href: "/services/pain-management/radiofrequency-ablation" },
+      { name: "Radiofrequency Ablation", href: "/treatments/radiofrequency-ablation" },
     ],
     relatedConditions: ["knee-pain", "shoulder-pain", "hip-pain"],
     metaDescription:
@@ -223,9 +223,9 @@ export const CONDITIONS: Condition[] = [
       "Symptoms often worse on one side",
     ],
     treatments: [
-      { name: "Epidural Steroid Injections", href: "/services/pain-management/epidural-steroid-injections" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
-      { name: "Selective Nerve Root Block", href: "/services/pain-management/selective-nerve-root-block" },
+      { name: "Epidural Steroid Injections", href: "/treatments/epidural-steroid-injections" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
+      { name: "Selective Nerve Root Block", href: "/treatments/selective-nerve-root-block" },
     ],
     relatedConditions: ["back-pain", "sciatica", "neck-pain"],
     metaDescription:
@@ -253,10 +253,10 @@ export const CONDITIONS: Condition[] = [
       "Bruising or visible deformity",
     ],
     treatments: [
-      { name: "Sports Medicine Evaluation", href: "/services/orthopedics/sports-injuries" },
-      { name: "Physical Therapy", href: "/services/physical-therapy/sports-rehab" },
+      { name: "Sports Medicine Evaluation", href: "/services/orthopedics" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Arthroscopic Surgery", href: "/services/orthopedics" },
-      { name: "Joint Injections", href: "/services/pain-management/joint-injections" },
+      { name: "Joint Injections", href: "/treatments/joint-injections" },
     ],
     relatedConditions: ["knee-pain", "shoulder-pain"],
     metaDescription:
@@ -285,9 +285,9 @@ export const CONDITIONS: Condition[] = [
       "Pain that worsens with physical activity",
     ],
     treatments: [
-      { name: "Occipital Nerve Block", href: "/services/pain-management/occipital-nerve-block" },
+      { name: "Occipital Nerve Block", href: "/services/pain-management" },
       { name: "Trigger Point Injections", href: "/treatments/trigger-point-injections" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Medication Management", href: "/services/pain-management" },
     ],
     relatedConditions: ["neck-pain"],
@@ -316,9 +316,9 @@ export const CONDITIONS: Condition[] = [
       "Shock-like sensations in the fingers",
     ],
     treatments: [
-      { name: "Carpal Tunnel Release Surgery", href: "/services/orthopedics/hand-wrist-elbow" },
-      { name: "Steroid Injections", href: "/services/pain-management/joint-injections" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Carpal Tunnel Release Surgery", href: "/services/orthopedics" },
+      { name: "Steroid Injections", href: "/treatments/joint-injections" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Splinting and Conservative Care", href: "/services/orthopedics" },
     ],
     relatedConditions: ["neck-pain"],
@@ -347,10 +347,10 @@ export const CONDITIONS: Condition[] = [
       "Stiffness and tenderness along the arch",
     ],
     treatments: [
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
-      { name: "Steroid Injections", href: "/services/pain-management/joint-injections" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
+      { name: "Steroid Injections", href: "/treatments/joint-injections" },
       { name: "PRP Therapy", href: "/treatments/prp-therapy" },
-      { name: "Orthotics and Conservative Care", href: "/services/orthopedics/foot-ankle" },
+      { name: "Orthotics and Conservative Care", href: "/services/orthopedics" },
     ],
     relatedConditions: ["knee-pain", "arthritis"],
     metaDescription:
@@ -380,7 +380,7 @@ export const CONDITIONS: Condition[] = [
     ],
     treatments: [
       { name: "Epidural Steroid Injections", href: "/treatments/epidural-steroid-injections" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Pain Management", href: "/services/pain-management" },
     ],
     relatedConditions: ["back-pain", "sciatica", "herniated-disc"],
@@ -409,7 +409,7 @@ export const CONDITIONS: Condition[] = [
       "Pain in the lower back, buttocks, or thighs",
     ],
     treatments: [
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Pain Management", href: "/services/pain-management" },
       { name: "Radiofrequency Ablation", href: "/treatments/radiofrequency-ablation" },
     ],
@@ -440,7 +440,7 @@ export const CONDITIONS: Condition[] = [
     ],
     treatments: [
       { name: "Joint Injections", href: "/treatments/joint-injections" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Orthopedic Evaluation", href: "/services/orthopedics" },
     ],
     relatedConditions: ["arthritis", "back-pain"],
@@ -470,7 +470,7 @@ export const CONDITIONS: Condition[] = [
     ],
     treatments: [
       { name: "Pain Management", href: "/services/pain-management" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Medication Management", href: "/services/pain-management" },
     ],
     relatedConditions: ["diabetic-neuropathy"],
@@ -500,7 +500,7 @@ export const CONDITIONS: Condition[] = [
     ],
     treatments: [
       { name: "Pain Management", href: "/services/pain-management" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Internal Medicine", href: "/services/internal-medicine" },
     ],
     relatedConditions: ["neuropathy"],
@@ -529,7 +529,7 @@ export const CONDITIONS: Condition[] = [
       "Limited range of motion",
     ],
     treatments: [
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Joint Injections", href: "/treatments/joint-injections" },
       { name: "Orthopedic Surgery", href: "/services/orthopedics" },
     ],
@@ -560,7 +560,7 @@ export const CONDITIONS: Condition[] = [
     ],
     treatments: [
       { name: "Trigger Point Injections", href: "/treatments/trigger-point-injections" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Pain Management", href: "/services/pain-management" },
     ],
     relatedConditions: ["back-pain", "neck-pain", "headaches"],
@@ -590,7 +590,7 @@ export const CONDITIONS: Condition[] = [
     ],
     treatments: [
       { name: "Pain Management", href: "/services/pain-management" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Internal Medicine", href: "/services/internal-medicine" },
     ],
     relatedConditions: ["chronic-pain", "myofascial-pain"],
@@ -620,7 +620,7 @@ export const CONDITIONS: Condition[] = [
     ],
     treatments: [
       { name: "Pain Management", href: "/services/pain-management" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Interventional Procedures", href: "/treatments" },
     ],
     relatedConditions: ["back-pain", "fibromyalgia"],
@@ -651,7 +651,7 @@ export const CONDITIONS: Condition[] = [
     treatments: [
       { name: "Facet Joint Injections", href: "/treatments/facet-joint-injections" },
       { name: "Radiofrequency Ablation", href: "/treatments/radiofrequency-ablation" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
     ],
     relatedConditions: ["back-pain", "neck-pain", "arthritis"],
     metaDescription:
@@ -681,7 +681,7 @@ export const CONDITIONS: Condition[] = [
     treatments: [
       { name: "Epidural Steroid Injections", href: "/treatments/epidural-steroid-injections" },
       { name: "Selective Nerve Root Block", href: "/treatments/selective-nerve-root-block" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
     ],
     relatedConditions: ["sciatica", "herniated-disc", "spinal-stenosis"],
     metaDescription:
@@ -710,7 +710,7 @@ export const CONDITIONS: Condition[] = [
     ],
     treatments: [
       { name: "SI Joint Injections", href: "/services/pain-management" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Pain Management", href: "/services/pain-management" },
     ],
     relatedConditions: ["back-pain", "hip-pain"],
@@ -740,7 +740,7 @@ export const CONDITIONS: Condition[] = [
     ],
     treatments: [
       { name: "Pain Management", href: "/services/pain-management" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Nerve Blocks", href: "/services/pain-management" },
     ],
     relatedConditions: ["chronic-pain", "neuropathy"],
@@ -770,7 +770,7 @@ export const CONDITIONS: Condition[] = [
     ],
     treatments: [
       { name: "Occipital Nerve Block", href: "/services/pain-management" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Trigger Point Injections", href: "/treatments/trigger-point-injections" },
     ],
     relatedConditions: ["headaches", "neck-pain"],
@@ -829,7 +829,7 @@ export const CONDITIONS: Condition[] = [
       "Pain that improves with movement",
     ],
     treatments: [
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Trigger Point Injections", href: "/treatments/trigger-point-injections" },
       { name: "Pain Management", href: "/services/pain-management" },
     ],
@@ -860,7 +860,7 @@ export const CONDITIONS: Condition[] = [
     ],
     treatments: [
       { name: "Joint Injections", href: "/treatments/joint-injections" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "PRP Therapy", href: "/treatments/prp-therapy" },
     ],
     relatedConditions: ["knee-pain", "hip-pain", "arthritis"],
@@ -890,7 +890,7 @@ export const CONDITIONS: Condition[] = [
     ],
     treatments: [
       { name: "Immediate Care", href: "/immediate-care" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Pain Management", href: "/services/pain-management" },
     ],
     relatedConditions: ["neck-pain", "back-pain", "headaches"],
@@ -920,7 +920,7 @@ export const CONDITIONS: Condition[] = [
     ],
     treatments: [
       { name: "Immediate Care", href: "/immediate-care" },
-      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Workers' Compensation Care", href: "/services/injuries/workers-compensation" },
     ],
     relatedConditions: ["back-pain", "carpal-tunnel-syndrome"],
