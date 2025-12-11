@@ -13,3 +13,10 @@ export {
 } from "./card";
 
 export { Badge, StatusBadge, TrustBadge } from "./badge";
+
+export {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "./accordion";

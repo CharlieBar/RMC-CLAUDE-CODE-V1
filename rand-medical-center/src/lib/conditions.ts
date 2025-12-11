@@ -262,6 +262,100 @@ export const CONDITIONS: Condition[] = [
     metaDescription:
       "Sports injury treatment in Arlington Heights. From ACL tears to tendinitis, our orthopedic and sports medicine specialists help athletes recover and return to play.",
   },
+  {
+    slug: "headaches",
+    name: "Headaches & Migraines",
+    description:
+      "Headaches and migraines are among the most common pain conditions, affecting millions of people. While occasional headaches are normal, chronic or severe headaches can significantly impact quality of life. Understanding the type and triggers of your headaches is key to effective treatment.",
+    causes: [
+      "Tension in neck and shoulder muscles",
+      "Stress and anxiety",
+      "Hormonal changes",
+      "Certain foods or environmental triggers",
+      "Sleep disturbances",
+      "Underlying medical conditions",
+      "Medication overuse",
+    ],
+    symptoms: [
+      "Throbbing or pulsating pain, often on one side",
+      "Sensitivity to light and sound",
+      "Nausea or vomiting with migraines",
+      "Visual disturbances or aura",
+      "Neck stiffness and tension",
+      "Pain that worsens with physical activity",
+    ],
+    treatments: [
+      { name: "Occipital Nerve Block", href: "/services/pain-management/occipital-nerve-block" },
+      { name: "Trigger Point Injections", href: "/treatments/trigger-point-injections" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Medication Management", href: "/services/pain-management" },
+    ],
+    relatedConditions: ["neck-pain"],
+    metaDescription:
+      "Headache and migraine treatment in Arlington Heights. Find relief with occipital nerve blocks, trigger point injections, and comprehensive care at Rand Medical Center.",
+  },
+  {
+    slug: "carpal-tunnel-syndrome",
+    name: "Carpal Tunnel Syndrome",
+    description:
+      "Carpal tunnel syndrome occurs when the median nerve, which runs through a narrow passageway in the wrist called the carpal tunnel, becomes compressed. This common condition causes numbness, tingling, and weakness in the hand and can significantly affect daily activities and work.",
+    causes: [
+      "Repetitive hand and wrist motions",
+      "Wrist anatomy and bone structure",
+      "Pregnancy and hormonal changes",
+      "Medical conditions like diabetes or thyroid disorders",
+      "Inflammatory conditions like rheumatoid arthritis",
+      "Prolonged use of vibrating hand tools",
+    ],
+    symptoms: [
+      "Numbness or tingling in thumb, index, middle, and ring fingers",
+      "Pain that radiates from wrist up the arm",
+      "Weakness in the hand, difficulty gripping objects",
+      "Symptoms often worse at night",
+      "Dropping objects due to numbness or weakness",
+      "Shock-like sensations in the fingers",
+    ],
+    treatments: [
+      { name: "Carpal Tunnel Release Surgery", href: "/services/orthopedics/hand-wrist-elbow" },
+      { name: "Steroid Injections", href: "/services/pain-management/joint-injections" },
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Splinting and Conservative Care", href: "/services/orthopedics" },
+    ],
+    relatedConditions: ["neck-pain"],
+    metaDescription:
+      "Carpal tunnel syndrome treatment in Arlington Heights. From conservative care to minimally invasive surgery, our specialists provide comprehensive hand and wrist care.",
+  },
+  {
+    slug: "plantar-fasciitis",
+    name: "Plantar Fasciitis",
+    description:
+      "Plantar fasciitis is one of the most common causes of heel pain, involving inflammation of the thick band of tissue (plantar fascia) that runs across the bottom of the foot and connects the heel bone to the toes. The condition typically causes stabbing pain that is worst with the first steps in the morning.",
+    causes: [
+      "Overuse from running, walking, or standing for long periods",
+      "Foot mechanics issues such as flat feet or high arches",
+      "Tight calf muscles and Achilles tendon",
+      "Obesity increasing stress on the plantar fascia",
+      "Improper footwear lacking arch support",
+      "Age-related degeneration of the fascia",
+    ],
+    symptoms: [
+      "Sharp, stabbing pain in the bottom of the heel",
+      "Pain that is worst with the first steps after waking",
+      "Pain after prolonged standing or sitting",
+      "Increased pain after exercise, not during",
+      "Gradual onset of symptoms over time",
+      "Stiffness and tenderness along the arch",
+    ],
+    treatments: [
+      { name: "Physical Therapy", href: "/services/physical-therapy" },
+      { name: "Steroid Injections", href: "/services/pain-management/joint-injections" },
+      { name: "PRP Therapy", href: "/treatments/prp-therapy" },
+      { name: "Orthotics and Conservative Care", href: "/services/orthopedics/foot-ankle" },
+    ],
+    relatedConditions: ["knee-pain", "arthritis"],
+    metaDescription:
+      "Plantar fasciitis treatment in Arlington Heights. Get relief from heel pain with physical therapy, injections, and expert foot care at Rand Medical Center.",
+  },
 ];
 
 export function getConditionBySlug(slug: string): Condition | undefined {
