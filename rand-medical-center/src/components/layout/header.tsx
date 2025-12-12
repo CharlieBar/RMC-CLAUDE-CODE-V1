@@ -174,9 +174,11 @@ export function Header() {
                 <Phone className="h-4 w-4" />
                 <span className="hidden xl:inline">{SITE_CONFIG.phoneDisplay}</span>
               </a>
-              <Button size="sm" className="hidden sm:flex">
-                <Calendar className="h-4 w-4" />
-                Book Now
+              <Button size="sm" className="hidden sm:flex" asChild>
+                <Link href={SITE_CONFIG.bookingUrl}>
+                  <Calendar className="h-4 w-4" />
+                  Book Now
+                </Link>
               </Button>
 
               {/* Mobile Menu Button */}

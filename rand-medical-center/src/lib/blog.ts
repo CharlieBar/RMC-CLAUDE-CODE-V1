@@ -11,6 +11,8 @@ export interface BlogPost {
   tags: string[];
   readTime: string;
   metaDescription: string;
+  relatedConditions?: { name: string; href: string }[];
+  relatedTreatments?: { name: string; href: string }[];
 }
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -56,6 +58,15 @@ ESIs work best for conditions where inflammation is causing nerve irritation. Th
     readTime: "4 min read",
     metaDescription:
       "Learn what to expect from epidural steroid injections, how they work, and whether this pain management treatment is right for your back or neck pain.",
+    relatedConditions: [
+      { name: "Back Pain", href: "/conditions/back-pain" },
+      { name: "Sciatica", href: "/conditions/sciatica" },
+      { name: "Herniated Disc", href: "/conditions/herniated-disc" },
+    ],
+    relatedTreatments: [
+      { name: "Epidural Steroid Injections", href: "/treatments/epidural-steroid-injections" },
+      { name: "Radiofrequency Ablation", href: "/treatments/radiofrequency-ablation" },
+    ],
   },
   {
     slug: "preparing-for-knee-replacement-surgery",
@@ -116,6 +127,14 @@ Most patients stay in the hospital for 1-2 days. You'll start physical therapy t
     readTime: "5 min read",
     metaDescription:
       "Prepare for successful knee replacement surgery with tips on physical preparation, home modifications, and what to expect before, during, and after your procedure.",
+    relatedConditions: [
+      { name: "Knee Pain", href: "/conditions/knee-pain" },
+      { name: "Arthritis", href: "/conditions/arthritis" },
+    ],
+    relatedTreatments: [
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
+      { name: "Joint Injections", href: "/treatments/joint-injections" },
+    ],
   },
   {
     slug: "benefits-of-physical-therapy-after-surgery",
@@ -168,6 +187,13 @@ Your program will be customized based on your surgery type, overall health, and 
     readTime: "4 min read",
     metaDescription:
       "Discover why physical therapy is essential after surgery and how it speeds recovery, reduces pain, and helps restore strength and mobility.",
+    relatedConditions: [
+      { name: "Sports Injuries", href: "/conditions/sports-injuries" },
+      { name: "Back Pain", href: "/conditions/back-pain" },
+    ],
+    relatedTreatments: [
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
+    ],
   },
   {
     slug: "when-to-see-doctor-for-back-pain",
@@ -228,6 +254,15 @@ Don't suffer in silence—if your back pain is affecting your quality of life, i
     readTime: "4 min read",
     metaDescription:
       "Know when back pain requires medical attention. Learn the warning signs, when to schedule an appointment, and what to expect from your doctor visit.",
+    relatedConditions: [
+      { name: "Back Pain", href: "/conditions/back-pain" },
+      { name: "Sciatica", href: "/conditions/sciatica" },
+      { name: "Herniated Disc", href: "/conditions/herniated-disc" },
+    ],
+    relatedTreatments: [
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
+      { name: "Epidural Steroid Injections", href: "/treatments/epidural-steroid-injections" },
+    ],
   },
   {
     slug: "workers-compensation-injury-guide",
@@ -292,6 +327,14 @@ Don't navigate the system alone. We're here to help you get the treatment you ne
     readTime: "5 min read",
     metaDescription:
       "Complete guide to workers' compensation injuries in Illinois. Learn your rights, how to file a claim, and get proper medical treatment for work injuries.",
+    relatedConditions: [
+      { name: "Workplace Injury", href: "/conditions/workplace-injury" },
+      { name: "Back Pain", href: "/conditions/back-pain" },
+      { name: "Carpal Tunnel Syndrome", href: "/conditions/carpal-tunnel-syndrome" },
+    ],
+    relatedTreatments: [
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
+    ],
   },
   {
     slug: "auto-accident-injury-what-to-know",
@@ -357,6 +400,15 @@ Don't delay—your health and your case depend on prompt, proper medical care.
     readTime: "5 min read",
     metaDescription:
       "Essential information about auto accident injuries. Learn about common injuries, delayed symptoms, and how to protect your health after a car accident.",
+    relatedConditions: [
+      { name: "Auto Injury", href: "/conditions/auto-injury" },
+      { name: "Whiplash", href: "/conditions/whiplash" },
+      { name: "Neck Pain", href: "/conditions/neck-pain" },
+    ],
+    relatedTreatments: [
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
+      { name: "Trigger Point Injections", href: "/treatments/trigger-point-injections" },
+    ],
   },
   {
     slug: "understanding-chronic-pain",
@@ -440,6 +492,16 @@ We believe in treating the whole person, not just the pain. Our comprehensive ap
     readTime: "5 min read",
     metaDescription:
       "Understanding chronic pain: causes, effects on daily life, and comprehensive treatment options including interventional procedures and physical therapy.",
+    relatedConditions: [
+      { name: "Back Pain", href: "/conditions/back-pain" },
+      { name: "Fibromyalgia", href: "/conditions/fibromyalgia" },
+      { name: "Arthritis", href: "/conditions/arthritis" },
+    ],
+    relatedTreatments: [
+      { name: "Radiofrequency Ablation", href: "/treatments/radiofrequency-ablation" },
+      { name: "Epidural Steroid Injections", href: "/treatments/epidural-steroid-injections" },
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
+    ],
   },
   {
     slug: "when-to-see-orthopedic-specialist",
@@ -507,6 +569,16 @@ When surgery is needed, our fellowship-trained surgeons use the latest minimally
     readTime: "4 min read",
     metaDescription:
       "Know when to see an orthopedic specialist for joint pain, injuries, and mobility issues. Learn about common conditions and what to expect at your appointment.",
+    relatedConditions: [
+      { name: "Knee Pain", href: "/conditions/knee-pain" },
+      { name: "Shoulder Pain", href: "/conditions/shoulder-pain" },
+      { name: "Hip Pain", href: "/conditions/hip-pain" },
+      { name: "Sports Injuries", href: "/conditions/sports-injuries" },
+    ],
+    relatedTreatments: [
+      { name: "Joint Injections", href: "/treatments/joint-injections" },
+      { name: "PRP Therapy", href: "/treatments/prp-therapy" },
+    ],
   },
   {
     slug: "preparing-for-first-visit",
@@ -599,6 +671,13 @@ We're here to help you feel better and get back to the activities you love.
     readTime: "4 min read",
     metaDescription:
       "Prepare for your first visit to Rand Medical Center. Learn what to bring, what to expect during your appointment, and how to make the most of your evaluation.",
+    relatedConditions: [
+      { name: "Back Pain", href: "/conditions/back-pain" },
+      { name: "Neck Pain", href: "/conditions/neck-pain" },
+    ],
+    relatedTreatments: [
+      { name: "Physical Therapy", href: "/treatments/physical-therapy" },
+    ],
   },
 ];
 

@@ -63,8 +63,46 @@ export default async function ProviderPage({ params }: Props) {
     3
   );
 
+  // Physician schema for SEO
+  const physicianSchema = {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    name: `${provider.name}, ${provider.credentials}`,
+    description: provider.bio,
+    url: `${SITE_CONFIG.domain}/providers/${provider.slug}`,
+    image: `${SITE_CONFIG.domain}${provider.image || "/images/providers/placeholder.jpg"}`,
+    jobTitle: provider.title,
+    medicalSpecialty: provider.specialty,
+    worksFor: {
+      "@type": "MedicalOrganization",
+      name: SITE_CONFIG.name,
+      url: SITE_CONFIG.domain,
+    },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: SITE_CONFIG.address.street,
+      addressLocality: SITE_CONFIG.address.city,
+      addressRegion: SITE_CONFIG.address.state,
+      postalCode: SITE_CONFIG.address.zip,
+      addressCountry: "US",
+    },
+    telephone: SITE_CONFIG.phone,
+    availableService: provider.specialties.map((specialty) => ({
+      "@type": "MedicalProcedure",
+      name: specialty,
+    })),
+  };
+
   return (
     <>
+      {/* Physician Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(physicianSchema),
+        }}
+      />
+
       {/* Breadcrumb */}
       <div className="bg-slate-50 border-b border-slate-200">
         <div className="container container-default mx-auto py-3">
