@@ -88,33 +88,51 @@ export default function PainManagementPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-28 bg-gradient-to-br from-slate-50 via-white to-teal-50/30 overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-teal-500/5 to-transparent" />
+      <section className="relative py-20 lg:py-28 hero-gradient overflow-hidden">
+        <div className="absolute inset-0 hero-gradient-overlay" />
+        <div className="floating-element floating-element-1 top-20 right-[10%]" />
+        <div className="floating-element floating-element-2 bottom-32 right-[25%]" />
+        <div className="floating-element floating-element-3 top-1/3 left-[5%]" />
 
         <div className="container container-default mx-auto relative z-10">
           <div className="max-w-3xl">
-            <Badge variant="primary" size="lg" className="mb-6">
+            <Badge
+              variant="primary"
+              size="lg"
+              className="mb-6 animate-fade-in-up opacity-0"
+              style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}
+            >
               <Activity className="h-4 w-4 mr-1" />
               Pain Management
             </Badge>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight">
+            <h1
+              className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 heading-tight animate-fade-in-up opacity-0"
+              style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}
+            >
               Find Lasting{" "}
               <span className="gradient-text-medical">Pain Relief</span>
             </h1>
 
-            <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+            <p
+              className="text-xl text-slate-600 mb-8 text-lead animate-fade-in-up opacity-0"
+              style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
+            >
               Our board-certified pain management specialists use advanced,
               minimally invasive techniques to target the source of your pain.
               Get back to living your life without being held back by chronic
               pain.
             </p>
 
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" asChild>
+            <div
+              className="flex flex-wrap gap-4 animate-fade-in-up opacity-0"
+              style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}
+            >
+              <Button size="lg" shine prominent className="group" asChild>
                 <Link href={SITE_CONFIG.bookingUrl}>
                   <Calendar className="h-5 w-5" />
                   Book Consultation
+                  <ChevronRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
               <Button variant="outline" size="lg" asChild>

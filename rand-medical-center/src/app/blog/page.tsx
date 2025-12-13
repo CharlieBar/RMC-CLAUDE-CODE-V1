@@ -31,22 +31,36 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-28 bg-gradient-to-br from-slate-50 via-white to-teal-50/30 overflow-hidden">
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-teal-500/5 to-transparent" />
+      <section className="relative py-20 lg:py-28 hero-gradient overflow-hidden">
+        <div className="absolute inset-0 hero-gradient-overlay" />
+        <div className="floating-element floating-element-1 top-20 right-[10%]" />
+        <div className="floating-element floating-element-2 bottom-32 right-[25%]" />
+        <div className="floating-element floating-element-3 top-1/3 left-[5%]" />
 
         <div className="container container-default mx-auto relative z-10">
           <div className="max-w-3xl">
-            <Badge variant="primary" size="lg" className="mb-6">
+            <Badge
+              variant="primary"
+              size="lg"
+              className="mb-6 animate-fade-in-up opacity-0"
+              style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}
+            >
               <FileText className="h-4 w-4 mr-1" />
               Health Blog
             </Badge>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight">
+            <h1
+              className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 heading-tight animate-fade-in-up opacity-0"
+              style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}
+            >
               Medical Insights &{" "}
               <span className="gradient-text-medical">Health Education</span>
             </h1>
 
-            <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+            <p
+              className="text-xl text-slate-600 mb-8 text-lead animate-fade-in-up opacity-0"
+              style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
+            >
               Stay informed with articles from our board-certified specialists.
               Learn about treatments, conditions, recovery tips, and ways to
               maintain your health.
@@ -137,17 +151,18 @@ export default function BlogPage() {
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {recentPosts.map((post) => (
+            {recentPosts.map((post, index) => (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group flex flex-col p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-teal-300 hover:shadow-lg transition-all"
+                className="group flex flex-col p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-teal-300 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 animate-fade-in-up opacity-0"
+                style={{ animationDelay: `${0.1 * index}s`, animationFillMode: 'forwards' }}
               >
                 <Badge className="w-fit mb-4">{post.category}</Badge>
                 <h3 className="text-lg font-semibold text-slate-900 mb-3 group-hover:text-teal-600 transition-colors line-clamp-2">
                   {post.title}
                 </h3>
-                <p className="text-slate-600 text-sm mb-4 line-clamp-3 flex-grow">
+                <p className="text-slate-600 text-sm mb-4 line-clamp-3 flex-grow text-body">
                   {post.excerpt}
                 </p>
                 <div className="flex items-center justify-between text-sm text-slate-500 pt-4 border-t border-slate-200">
@@ -182,12 +197,15 @@ export default function BlogPage() {
             <div className="flex flex-wrap justify-center gap-4">
               <Button
                 size="lg"
-                className="bg-teal-500 hover:bg-teal-600"
+                shine
+                prominent
+                className="bg-teal-500 hover:bg-teal-600 group"
                 asChild
               >
                 <Link href={SITE_CONFIG.bookingUrl}>
                   <Calendar className="h-5 w-5" />
                   Book Consultation
+                  <ChevronRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
               <Button
