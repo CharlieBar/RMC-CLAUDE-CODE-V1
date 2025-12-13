@@ -1,4 +1,4 @@
-# Rand Medical Center Website - Next Session Guide
+# Rand Medical Center Website - Session Guide
 
 ## Project Overview
 - **Project**: Rand Medical Center Next.js Website
@@ -14,8 +14,19 @@
 - Homepage, About (Mission, Facility, Accreditation)
 - Services: Pain Management, Orthopedics, Physical Therapy, Internal Medicine
 - 31 Condition pages, 10 Treatment pages, 5 Provider pages
-- 9 Blog articles, Patient pages (FAQ, Forms, Insurance)
-- Legal pages, Contact, Immediate Care, Surgery Center
+- 9 Blog articles, Patient pages (FAQ, Forms, Insurance, landing)
+- Legal pages (Privacy, Terms, HIPAA, Nondiscrimination, Accessibility)
+- Contact, Immediate Care, Surgery Center
+
+### Design Polish (COMPLETED THIS SESSION) ✓
+- [x] Enhanced CSS animations (float, gradient-flow, stagger, scale-in, etc.)
+- [x] Typography refinements (heading-display, text-micro, text-label, text-eyebrow, text-lead)
+- [x] Micro-interaction utilities (icon hovers, button shine, link underlines, card effects)
+- [x] Hero-specific styles (animated gradient, floating elements, CTA prominence)
+- [x] Skeleton loading components for cards, providers, testimonials, etc.
+- [x] Enhanced Button component (shine, prominent props, improved shadows)
+- [x] Enhanced Card components (FeatureCard, StatCard, hover variants, glow effects)
+- [x] Homepage micro-interactions throughout all sections
 
 ### SEO & Schema Markup ✓
 - [x] Homepage: MedicalOrganization + MedicalClinic schemas
@@ -41,6 +52,7 @@
 ### Accessibility ✓
 - [x] Skip-to-content link in layout
 - [x] Main content has id="main-content" and tabIndex={-1}
+- [x] Accessibility statement page
 
 ### Infrastructure ✓
 - [x] Google Maps embeds on homepage and contact page
@@ -49,311 +61,32 @@
 
 ---
 
-## DESIGN & VISUAL IMPROVEMENTS FOR NEXT SESSION
+## REMAINING TASKS (Lower Priority)
 
-### 1. Color Palette Refinement
+### 1. Apply Design Polish to Inner Pages
+The homepage has full animations/micro-interactions. Apply similar treatment to:
+- [ ] Providers page - add stagger animations to provider grid
+- [ ] Treatments page - add card hover effects
+- [ ] Conditions page - add micro-interactions
+- [ ] About pages - add hero gradient and floating elements
+- [ ] Service detail pages - add section animations
 
-**Current Issues:**
-- Teal is used heavily but could use more variation
-- Slate grays feel slightly flat
-- Accent colors (amber) could be more strategically placed
-
-**Recommended Color Updates (in tailwind.config.ts or globals.css):**
-
-```css
-/* Primary - Medical Teal with depth */
---primary-50: #f0fdfa;
---primary-100: #ccfbf1;
---primary-200: #99f6e4;
---primary-300: #5eead4;
---primary-400: #2dd4bf;
---primary-500: #14b8a6;  /* Current primary */
---primary-600: #0d9488;
---primary-700: #0f766e;
---primary-800: #115e59;
---primary-900: #134e4a;
-
-/* Secondary - Warm Navy for trust/professionalism */
---navy-50: #f8fafc;
---navy-100: #f1f5f9;
---navy-500: #475569;
---navy-800: #1e293b;
---navy-900: #0f172a;
-
-/* Accent - Coral for CTAs and highlights */
---coral-400: #fb7185;
---coral-500: #f43f5e;
---coral-600: #e11d48;
-
-/* Success/Health Green */
---health-400: #4ade80;
---health-500: #22c55e;
---health-600: #16a34a;
-```
-
-### 2. Typography Improvements
-
-**Current Issues:**
-- Font hierarchy could be stronger
-- Line heights need optimization for readability
-- Letter spacing on headings could be tighter
-
-**Recommendations:**
-```css
-/* Headings - tighter letter-spacing for modern feel */
-h1, h2, h3 {
-  letter-spacing: -0.025em;
-  font-feature-settings: "ss01", "ss02";
-}
-
-/* Body text - optimal line height for medical content */
-.prose {
-  line-height: 1.75;
-  font-size: 1.0625rem; /* 17px for better readability */
-}
-
-/* Micro text - badges, labels */
-.text-micro {
-  font-size: 0.6875rem; /* 11px */
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-```
-
-### 3. Component Polish
-
-#### Buttons
-- Add subtle gradient on primary buttons
-- Improve hover state with scale transform
-- Add focus ring with offset
-
-```tsx
-// Enhanced button styles
-className="bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700
-           transform hover:scale-[1.02] active:scale-[0.98]
-           focus:ring-2 focus:ring-teal-400 focus:ring-offset-2
-           transition-all duration-200 ease-out
-           shadow-md hover:shadow-lg"
-```
-
-#### Cards
-- Add subtle border gradient on hover
-- Improve shadow depth
-- Add micro-interaction on hover
-
-```tsx
-// Enhanced card styles
-className="group bg-white rounded-2xl border border-slate-200
-           shadow-sm hover:shadow-xl hover:shadow-teal-500/10
-           hover:border-teal-200
-           transform hover:-translate-y-1
-           transition-all duration-300 ease-out"
-```
-
-#### Input Fields
-- Add focus state animation
-- Improve placeholder styling
-- Add floating label option
-
-### 4. Hero Sections Enhancement
-
-**Homepage Hero:**
-- Add subtle parallax effect on scroll
-- Include animated gradient background
-- Add floating medical icons/elements
-
-```tsx
-// Animated gradient background
-<div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-teal-50/30 to-white
-                bg-[length:200%_200%] animate-gradient" />
-
-// Floating elements
-<div className="absolute top-20 right-20 w-16 h-16 bg-teal-100 rounded-full
-                blur-xl opacity-60 animate-float" />
-```
-
-**Add to globals.css:**
-```css
-@keyframes gradient {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
-}
-
-.animate-gradient {
-  animation: gradient 15s ease infinite;
-}
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-```
-
-### 5. Section Spacing & Rhythm
-
-**Current Issues:**
-- Some sections feel cramped
-- Inconsistent vertical rhythm
-
-**Recommendations:**
-```css
-/* Section spacing scale */
-.section-sm { padding-block: 3rem; }    /* 48px */
-.section-md { padding-block: 5rem; }    /* 80px */
-.section-lg { padding-block: 7rem; }    /* 112px */
-.section-xl { padding-block: 9rem; }    /* 144px */
-
-/* Content max-widths */
-.content-narrow { max-width: 42rem; }   /* 672px - articles */
-.content-default { max-width: 72rem; }  /* 1152px - standard */
-.content-wide { max-width: 90rem; }     /* 1440px - full-width */
-```
-
-### 6. Micro-Interactions & Animations
-
-**Add these animations:**
-
-```css
-/* Stagger animation for lists */
-.stagger-animation > * {
-  opacity: 0;
-  animation: fadeInUp 0.5s ease forwards;
-}
-
-.stagger-animation > *:nth-child(1) { animation-delay: 0.1s; }
-.stagger-animation > *:nth-child(2) { animation-delay: 0.2s; }
-.stagger-animation > *:nth-child(3) { animation-delay: 0.3s; }
-/* ... etc */
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Icon hover effects */
-.icon-hover {
-  transition: transform 0.2s ease;
-}
-.icon-hover:hover {
-  transform: scale(1.1) rotate(5deg);
-}
-
-/* Link underline animation */
-.link-animated {
-  position: relative;
-}
-.link-animated::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: currentColor;
-  transition: width 0.3s ease;
-}
-.link-animated:hover::after {
-  width: 100%;
-}
-```
-
-### 7. Loading States & Skeletons
-
-Add skeleton loading components for:
-- Provider cards
-- Blog post cards
-- Service cards
-
-```tsx
-// components/ui/skeleton.tsx
-export function CardSkeleton() {
-  return (
-    <div className="animate-pulse bg-slate-100 rounded-2xl p-6">
-      <div className="h-4 bg-slate-200 rounded w-3/4 mb-4" />
-      <div className="h-3 bg-slate-200 rounded w-full mb-2" />
-      <div className="h-3 bg-slate-200 rounded w-5/6" />
-    </div>
-  );
-}
-```
-
-### 8. Dark Mode Preparation (Optional)
-
-Add CSS variables for future dark mode:
-```css
-:root {
-  --background: 0 0% 100%;
-  --foreground: 222 47% 11%;
-  --card: 0 0% 100%;
-  --card-foreground: 222 47% 11%;
-  /* ... */
-}
-
-.dark {
-  --background: 222 47% 11%;
-  --foreground: 210 40% 98%;
-  --card: 217 33% 17%;
-  --card-foreground: 210 40% 98%;
-  /* ... */
-}
-```
-
-### 9. Image Optimization
-
-**Required Images:**
+### 2. Image Assets (Requires External Content)
 - [ ] `/public/images/og-image.jpg` (1200x630) - Social sharing
 - [ ] `/public/images/providers/*.jpg` - Doctor headshots (400x500)
 - [ ] `/public/images/hero/*.jpg` - Hero backgrounds (1920x1080)
 - [ ] `/public/images/facility/*.jpg` - Facility photos
 
-**Image component improvements:**
-```tsx
-// Use Next.js Image with blur placeholder
-<Image
-  src={imageSrc}
-  alt={imageAlt}
-  fill
-  className="object-cover"
-  placeholder="blur"
-  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD..."
-  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-/>
-```
-
-### 10. Specific Page Improvements
-
-#### Homepage
-- [ ] Add subtle scroll-triggered animations
-- [ ] Improve hero CTA button prominence
+### 3. Additional Enhancements (Nice to Have)
+- [ ] Add scroll-triggered animations to inner pages
 - [ ] Add testimonial carousel with smooth transitions
 - [ ] Add "Why Choose Us" stats with count-up animation
+- [ ] Add filtering/sorting options for conditions/treatments
+- [ ] Add estimated read time to blog posts
+- [ ] Add social share buttons to blog posts
 
-#### Provider Pages
-- [ ] Add hover effect on provider cards
-- [ ] Improve credential badges styling
-- [ ] Add "Available Appointments" indicator
-
-#### Service Pages
-- [ ] Add icon animations on scroll
-- [ ] Improve condition/treatment card grid
-- [ ] Add filtering/sorting options
-
-#### Blog
-- [ ] Add featured post hero styling
-- [ ] Improve post card hover states
-- [ ] Add estimated read time indicator
-- [ ] Add social share buttons
+### 4. Dark Mode (Optional)
+Dark mode CSS variables are already in globals.css but not activated.
 
 ---
 
@@ -367,8 +100,61 @@ Add CSS variables for future dark mode:
 | `src/lib/blog.ts` | 9 blog articles |
 | `src/lib/constants.ts` | Site config, navigation |
 | `src/app/layout.tsx` | Root layout with schema |
-| `src/app/globals.css` | Global styles |
-| `tailwind.config.ts` | Tailwind configuration |
+| `src/app/globals.css` | Global styles + animations |
+| `src/components/ui/button.tsx` | Enhanced button with shine/prominent |
+| `src/components/ui/card.tsx` | Cards with hover effects |
+| `src/components/ui/skeleton.tsx` | Loading skeleton components |
+
+---
+
+## DESIGN SYSTEM ASSETS
+
+### Animation Classes (in globals.css)
+```css
+/* Float animations */
+.animate-float, .animate-float-subtle, .animate-float-delayed
+
+/* Fade/slide animations */
+.animate-fade-in-up, .animate-fade-in, .animate-scale-in
+
+/* Gradient animations */
+.animate-gradient, .animate-gradient-flow
+
+/* Stagger delays */
+.stagger-1 through .stagger-8
+
+/* Hero specific */
+.hero-gradient, .hero-gradient-overlay, .floating-element-*
+```
+
+### Typography Classes
+```css
+.heading-display, .heading-tight
+.text-micro, .text-label, .text-eyebrow, .text-lead
+.text-body, .text-body-relaxed
+```
+
+### Micro-Interaction Classes
+```css
+.icon-hover-lift, .icon-hover-scale, .icon-hover-glow
+.btn-shine, .cta-prominent
+.link-underline
+.card-hover-glow, .card-hover-border
+.img-hover-zoom, .gradient-border
+```
+
+### Component Props
+```tsx
+// Button
+<Button shine prominent variant="primary" size="lg" />
+
+// Card
+<Card hover="lift" gradient />
+<InteractiveCard glowOnHover accentPosition="top" />
+<GlassCard glow />
+<FeatureCard icon={<Icon />} title="..." description="..." />
+<StatCard value="15+" label="Years Experience" />
+```
 
 ---
 
@@ -385,45 +171,34 @@ npm run start    # Production server
 
 ## PROMPT FOR NEXT SESSION
 
-Copy and paste this prompt to start your next session:
-
----
-
-**PROMPT:**
-
 ```
 Please read next-session.md and continue working on the Rand Medical Center website.
 
 PRIORITY TASKS FOR THIS SESSION:
 
-1. **Design Polish** (High Priority)
-   - Update globals.css with the recommended animations (fadeInUp, float, gradient)
-   - Enhance button component with gradient, scale transforms, and improved focus states
-   - Enhance card component with hover shadow and translate effects
-   - Add link underline animation utility class
+1. Apply Design Polish to Inner Pages
+   - Add hero-gradient and floating elements to Providers page
+   - Add stagger animations to provider/treatment/condition grids
+   - Add micro-interactions to About pages
 
-2. **Hero Section Enhancement**
-   - Add animated gradient background to homepage hero
-   - Add floating decorative elements
-   - Improve CTA button prominence
+2. Add Real Images (if available)
+   - Replace UserCircle placeholders with actual provider photos
+   - Add hero background images
+   - Add facility photos
 
-3. **Typography Refinement**
-   - Update heading letter-spacing (-0.025em)
-   - Optimize body text line-height (1.75)
-   - Add micro text utility class for badges
-
-4. **Micro-Interactions**
-   - Add stagger animation to card grids
-   - Add icon hover effects
-   - Improve button active/pressed states
-
-5. **Loading States**
-   - Create skeleton components for cards
-   - Add loading states for dynamic content
-
-After each major change, run `npm run build` to verify the site still builds successfully.
+3. Additional Page Enhancements
+   - Add scroll-triggered animations
+   - Improve blog post cards with hover effects
+   - Add read time estimates to blog
 
 The site is at: /home/user/RMC-CLAUDE-CODE-V1/rand-medical-center/
+
+Use the existing design system:
+- hero-gradient, floating-element classes for heroes
+- animate-fade-in-up with stagger delays for content
+- InteractiveCard with glowOnHover for cards
+- Button with shine/prominent for CTAs
+- heading-tight, text-lead, text-body for typography
 ```
 
 ---
@@ -433,6 +208,7 @@ The site is at: /home/user/RMC-CLAUDE-CODE-V1/rand-medical-center/
 - Build generates 85 static pages successfully
 - No TypeScript or build errors
 - All navigation links working
-- Dark mode NOT implemented (light mode only)
-- Contact page uses external booking links (no form validation needed)
-- All SEO schemas implemented and verified
+- Design polish completed on homepage (animations, micro-interactions)
+- Dark mode CSS variables exist but not activated
+- Contact page uses external booking links (no form)
+- All SEO schemas implemented
