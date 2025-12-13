@@ -75,51 +75,80 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 bg-gradient-to-br from-slate-50 via-white to-teal-50/30 overflow-hidden">
-        {/* Background decoration */}
-        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-teal-500/5 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2" />
+      <section className="relative py-20 lg:py-32 hero-gradient overflow-hidden">
+        {/* Animated gradient overlay */}
+        <div className="absolute inset-0 hero-gradient-overlay" />
+
+        {/* Floating decorative elements */}
+        <div className="floating-element floating-element-1 top-20 right-[10%]" />
+        <div className="floating-element floating-element-2 bottom-32 right-[25%]" />
+        <div className="floating-element floating-element-3 top-1/3 left-[5%]" />
+
+        {/* Subtle grid pattern */}
+        <div
+          className="absolute inset-0 opacity-[0.02]"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2314b8a6' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+          }}
+        />
 
         <div className="container container-default mx-auto relative z-10">
           <div className="max-w-3xl">
-            {/* Trust Badge */}
-            <Badge variant="primary" size="lg" className="mb-6">
-              <Award className="h-4 w-4 mr-1" />
+            {/* Trust Badge - with animation */}
+            <Badge
+              variant="primary"
+              size="lg"
+              className="mb-6 animate-fade-in-up opacity-0"
+              style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}
+            >
+              <Award className="h-4 w-4 mr-1 icon-hover-scale" />
               Joint Commission Accredited
             </Badge>
 
-            {/* Headline */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight">
+            {/* Headline - with stagger animation */}
+            <h1
+              className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 heading-tight animate-fade-in-up opacity-0"
+              style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}
+            >
               Comprehensive Medical Care in{" "}
               <span className="gradient-text-medical">Arlington Heights</span>
             </h1>
 
             {/* Subheadline */}
-            <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+            <p
+              className="text-xl text-slate-600 mb-8 text-lead animate-fade-in-up opacity-0"
+              style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
+            >
               Pain management, orthopedics, physical therapy, and immediate care
               &mdash; all under one roof. Board-certified specialists with 15+
               years of experience helping patients get back to their lives.
             </p>
 
-            {/* Trust indicators */}
-            <div className="flex flex-wrap gap-6 mb-10 text-slate-600">
-              <div className="flex items-center gap-2">
-                <BadgeCheck className="h-5 w-5 text-teal-500" />
-                <span>Board Certified</span>
+            {/* Trust indicators - with icon hover effects */}
+            <div
+              className="flex flex-wrap gap-6 mb-10 text-slate-600 animate-fade-in-up opacity-0"
+              style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}
+            >
+              <div className="flex items-center gap-2 group">
+                <BadgeCheck className="h-5 w-5 text-teal-500 transition-transform duration-200 group-hover:scale-110" />
+                <span className="group-hover:text-slate-900 transition-colors">Board Certified</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Clock className="h-5 w-5 text-teal-500" />
-                <span>Same-Day Appointments</span>
+              <div className="flex items-center gap-2 group">
+                <Clock className="h-5 w-5 text-teal-500 transition-transform duration-200 group-hover:scale-110" />
+                <span className="group-hover:text-slate-900 transition-colors">Same-Day Appointments</span>
               </div>
-              <div className="flex items-center gap-2">
-                <CreditCard className="h-5 w-5 text-teal-500" />
-                <span>Most Insurance Accepted</span>
+              <div className="flex items-center gap-2 group">
+                <CreditCard className="h-5 w-5 text-teal-500 transition-transform duration-200 group-hover:scale-110" />
+                <span className="group-hover:text-slate-900 transition-colors">Most Insurance Accepted</span>
               </div>
             </div>
 
-            {/* CTAs */}
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="group" asChild>
+            {/* CTAs - Enhanced with prominence and shine */}
+            <div
+              className="flex flex-wrap gap-4 animate-fade-in-up opacity-0"
+              style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}
+            >
+              <Button size="lg" shine prominent className="group" asChild>
                 <Link href={SITE_CONFIG.bookingUrl}>
                   <Calendar className="h-5 w-5" />
                   Book Appointment
@@ -154,20 +183,20 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {SERVICE_CATEGORIES.map((service) => (
-              <InteractiveCard key={service.id} href={service.href}>
+            {SERVICE_CATEGORIES.map((service, index) => (
+              <InteractiveCard key={service.id} href={service.href} glowOnHover>
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-teal-100 rounded-xl text-teal-600">
+                  <div className="icon-animate p-3 bg-teal-100 rounded-xl text-teal-600 transition-all duration-200 group-hover:bg-teal-500 group-hover:text-white group-hover:shadow-lg group-hover:shadow-teal-500/30">
                     {iconMap[service.icon] || <Activity className="h-6 w-6" />}
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold text-slate-900 mb-2 group-hover:text-teal-600 transition-colors">
                       {service.name}
                     </h3>
-                    <p className="text-slate-600 text-sm">{service.description}</p>
+                    <p className="text-slate-600 text-sm text-body">{service.description}</p>
                   </div>
                 </div>
-                <div className="mt-4 flex items-center text-teal-600 text-sm font-medium">
+                <div className="mt-4 flex items-center text-teal-600 text-sm font-medium group-hover:text-teal-700">
                   Learn More
                   <ChevronRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -217,13 +246,13 @@ export default function Home() {
               <Link
                 key={index}
                 href={item.href}
-                className="group p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl hover:bg-white/10 hover:border-teal-500/50 transition-all duration-300"
+                className="group p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl hover:bg-white/10 hover:border-teal-500/50 hover:-translate-y-1 hover:shadow-xl hover:shadow-teal-500/10 transition-all duration-300"
               >
-                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                <p className="text-slate-400 mb-4">{item.description}</p>
-                <span className="inline-flex items-center text-teal-400 font-medium group-hover:text-teal-300">
+                <h3 className="text-xl font-semibold mb-3 group-hover:text-teal-300 transition-colors">{item.title}</h3>
+                <p className="text-slate-400 mb-4 text-body">{item.description}</p>
+                <span className="inline-flex items-center text-teal-400 font-medium group-hover:text-teal-300 transition-colors">
                   {item.cta}
-                  <ChevronRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                  <ChevronRight className="h-4 w-4 ml-1 group-hover:translate-x-2 transition-transform" />
                 </span>
               </Link>
             ))}
@@ -252,9 +281,9 @@ export default function Home() {
               <Link
                 key={condition.name}
                 href={condition.href}
-                className="group flex items-center gap-2 p-4 bg-white rounded-xl border border-slate-200 hover:border-teal-300 hover:shadow-md transition-all duration-200"
+                className="group flex items-center gap-2 p-4 bg-white rounded-xl border border-slate-200 hover:border-teal-300 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-200"
               >
-                <ChevronRight className="h-4 w-4 text-slate-400 group-hover:text-teal-500 transition-colors" />
+                <ChevronRight className="h-4 w-4 text-slate-400 group-hover:text-teal-500 group-hover:translate-x-0.5 transition-all duration-200" />
                 <span className="text-slate-700 group-hover:text-teal-600 font-medium transition-colors">
                   {condition.name}
                 </span>
@@ -296,11 +325,11 @@ export default function Home() {
                 href={`/providers/${provider.slug}`}
                 className="group text-center"
               >
-                <div className="relative mb-4 aspect-square rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200 overflow-hidden">
+                <div className="relative mb-4 aspect-square rounded-2xl bg-gradient-to-br from-slate-100 to-slate-200 overflow-hidden transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1 img-hover-zoom">
                   <div className="absolute inset-0 flex items-center justify-center">
-                    <UserCircle className="h-24 w-24 text-slate-300" />
+                    <UserCircle className="h-24 w-24 text-slate-300 transition-transform duration-300 group-hover:scale-105" />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-teal-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
                 <h3 className="text-lg font-semibold text-slate-900 group-hover:text-teal-600 transition-colors">
                   {provider.name}
@@ -339,18 +368,18 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-6">
             {TESTIMONIALS.map((testimonial, index) => (
-              <GlassCard key={index} className="relative">
-                <Quote className="absolute top-4 right-4 h-8 w-8 text-white/20" />
+              <GlassCard key={index} className="relative" glow>
+                <Quote className="absolute top-4 right-4 h-8 w-8 text-white/20 transition-all duration-300 group-hover:text-white/30" />
                 <div className="flex gap-1 mb-4">
                   {Array.from({ length: testimonial.rating }).map((_, i) => (
-                    <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400" />
+                    <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400 transition-transform duration-200 hover:scale-110" />
                   ))}
                 </div>
-                <p className="text-white/90 mb-6 leading-relaxed">
+                <p className="text-white/90 mb-6 text-body-relaxed">
                   &ldquo;{testimonial.quote}&rdquo;
                 </p>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center transition-all duration-200 group-hover:bg-white/30">
                     <UserCircle className="h-6 w-6 text-white/60" />
                   </div>
                   <div>
@@ -521,26 +550,31 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 bg-slate-900 text-white">
-        <div className="container container-default mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold font-display mb-4">
+      <section className="py-16 bg-slate-900 text-white relative overflow-hidden">
+        {/* Subtle gradient orbs */}
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-teal-600/10 rounded-full blur-3xl" />
+
+        <div className="container container-default mx-auto text-center relative z-10">
+          <h2 className="text-3xl md:text-4xl font-bold font-display mb-4 heading-tight">
             Start Your Journey to Pain Relief Today
           </h2>
-          <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-8">
+          <p className="text-lg text-slate-400 max-w-2xl mx-auto mb-8 text-body">
             Don&apos;t let pain control your life. Our experienced team is ready to help
             you get back to doing what you love.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" className="bg-teal-500 hover:bg-teal-600" asChild>
+            <Button size="lg" shine prominent className="bg-teal-500 hover:bg-teal-600 group" asChild>
               <Link href={SITE_CONFIG.bookingUrl}>
                 <Calendar className="h-5 w-5" />
                 Book Your Appointment
+                <ChevronRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-white/30 text-white hover:bg-white/10"
+              className="border-white/30 text-white hover:bg-white/10 hover:border-white/50"
               asChild
             >
               <a href={SITE_CONFIG.phoneTel}>

@@ -7,6 +7,8 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: "sm" | "md" | "lg" | "xl" | "icon";
   isLoading?: boolean;
   asChild?: boolean;
+  shine?: boolean;
+  prominent?: boolean;
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -17,6 +19,8 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       size = "md",
       isLoading = false,
       asChild = false,
+      shine = false,
+      prominent = false,
       disabled,
       children,
       ...props
@@ -31,28 +35,31 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         disabled={disabled || isLoading}
         className={cn(
           // Base styles
-          "relative inline-flex items-center justify-center gap-2 font-semibold rounded-full transition-all duration-300",
+          "relative inline-flex items-center justify-center gap-2 font-semibold rounded-full",
+          "transition-all duration-300 ease-out",
           "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2",
           "disabled:pointer-events-none disabled:opacity-50",
+          // Icon transition for children
+          "[&>svg]:transition-transform [&>svg]:duration-200",
           // Variants
           {
-            // Primary - Gradient with glow
-            "bg-gradient-to-r from-teal-500 to-teal-600 text-white hover:shadow-[0_0_40px_rgba(20,184,166,0.4)] hover:-translate-y-0.5 active:translate-y-0":
+            // Primary - Gradient with glow and shine
+            "bg-gradient-to-r from-teal-500 to-teal-600 text-white shadow-lg shadow-teal-500/25 hover:shadow-xl hover:shadow-teal-500/30 hover:-translate-y-0.5 active:translate-y-0 active:shadow-md":
               variant === "primary",
-            // Secondary
-            "bg-slate-100 text-slate-900 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-100 dark:hover:bg-slate-700":
+            // Secondary - Subtle lift
+            "bg-slate-100 text-slate-900 hover:bg-slate-200 hover:-translate-y-0.5 hover:shadow-md active:translate-y-0 dark:bg-slate-800 dark:text-slate-100 dark:hover:bg-slate-700":
               variant === "secondary",
-            // Outline
-            "border-2 border-teal-500 text-teal-600 bg-transparent hover:bg-teal-500 hover:text-white dark:text-teal-400 dark:hover:text-white":
+            // Outline - Border glow
+            "border-2 border-teal-500 text-teal-600 bg-transparent hover:bg-teal-500 hover:text-white hover:shadow-lg hover:shadow-teal-500/20 dark:text-teal-400 dark:hover:text-white":
               variant === "outline",
-            // Ghost
-            "text-slate-700 bg-transparent hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800":
+            // Ghost - Subtle background
+            "text-slate-700 bg-transparent hover:bg-slate-100 active:bg-slate-200 dark:text-slate-300 dark:hover:bg-slate-800":
               variant === "ghost",
-            // Destructive
-            "bg-red-500 text-white hover:bg-red-600":
+            // Destructive - Red glow
+            "bg-red-500 text-white shadow-lg shadow-red-500/25 hover:bg-red-600 hover:shadow-xl hover:shadow-red-500/30 hover:-translate-y-0.5 active:translate-y-0":
               variant === "destructive",
-            // Link
-            "text-teal-600 underline-offset-4 hover:underline bg-transparent p-0 h-auto":
+            // Link - Underline animation
+            "text-teal-600 underline-offset-4 hover:underline bg-transparent p-0 h-auto hover:text-teal-700":
               variant === "link",
           },
           // Sizes
@@ -63,6 +70,10 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
             "px-10 py-5 text-xl": size === "xl",
             "h-10 w-10 p-0": size === "icon",
           },
+          // Shine effect
+          shine && "btn-shine overflow-hidden",
+          // Prominent CTA glow
+          prominent && "cta-prominent",
           className
         )}
         {...props}
