@@ -124,8 +124,10 @@ export function Footer() {
 
             {/* CTA */}
             <div className="mt-6">
-              <Button size="sm" className="w-full">
-                Book Appointment
+              <Button size="sm" className="w-full" asChild>
+                <Link href={SITE_CONFIG.bookingUrl}>
+                  Book Appointment
+                </Link>
               </Button>
             </div>
           </div>

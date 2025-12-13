@@ -77,9 +77,11 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
 
         {/* CTAs */}
         <div className="p-4 border-b border-slate-200 space-y-3">
-          <Button size="lg" className="w-full">
-            <Calendar className="h-5 w-5" />
-            Book Appointment
+          <Button size="lg" className="w-full" asChild>
+            <Link href={SITE_CONFIG.bookingUrl} onClick={onClose}>
+              <Calendar className="h-5 w-5" />
+              Book Appointment
+            </Link>
           </Button>
           <a
             href={SITE_CONFIG.phoneTel}

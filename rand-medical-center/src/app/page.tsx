@@ -44,8 +44,8 @@ const CONDITIONS = [
   { name: "Hip Pain", href: "/conditions/hip-pain" },
   { name: "Arthritis", href: "/conditions/arthritis" },
   { name: "Sports Injuries", href: "/conditions/sports-injuries" },
-  { name: "Whiplash", href: "/conditions/whiplash" },
-  { name: "Carpal Tunnel", href: "/conditions/carpal-tunnel" },
+  { name: "Auto Injuries", href: "/conditions/auto-injury" },
+  { name: "Carpal Tunnel", href: "/conditions/carpal-tunnel-syndrome" },
   { name: "Spinal Stenosis", href: "/conditions/spinal-stenosis" },
 ];
 
@@ -71,9 +71,103 @@ const TESTIMONIALS = [
   },
 ];
 
+// JSON-LD Schema for SEO
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalOrganization",
+  "@id": `${SITE_CONFIG.domain}/#organization`,
+  name: SITE_CONFIG.name,
+  description: SITE_CONFIG.description,
+  url: SITE_CONFIG.domain,
+  telephone: SITE_CONFIG.phone,
+  email: SITE_CONFIG.email,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: SITE_CONFIG.address.street,
+    addressLocality: SITE_CONFIG.address.city,
+    addressRegion: SITE_CONFIG.address.state,
+    postalCode: SITE_CONFIG.address.zip,
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 42.0654,
+    longitude: -87.9806,
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "17:00",
+    },
+  ],
+  medicalSpecialty: [
+    "Pain Medicine",
+    "Orthopedic Surgery",
+    "Physical Therapy",
+    "Internal Medicine",
+  ],
+  hasCredential: {
+    "@type": "EducationalOccupationalCredential",
+    credentialCategory: "Joint Commission Accreditation",
+  },
+};
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "@id": `${SITE_CONFIG.domain}/#localbusiness`,
+  name: SITE_CONFIG.name,
+  image: `${SITE_CONFIG.domain}/images/og/og-image.jpg`,
+  url: SITE_CONFIG.domain,
+  telephone: SITE_CONFIG.phone,
+  priceRange: "$$",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: SITE_CONFIG.address.street,
+    addressLocality: SITE_CONFIG.address.city,
+    addressRegion: SITE_CONFIG.address.state,
+    postalCode: SITE_CONFIG.address.zip,
+    addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 42.0654,
+    longitude: -87.9806,
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "17:00",
+    },
+  ],
+  sameAs: [
+    SITE_CONFIG.socialMedia.facebook,
+    SITE_CONFIG.socialMedia.instagram,
+    SITE_CONFIG.socialMedia.linkedin,
+  ].filter(Boolean),
+};
+
 export default function Home() {
   return (
     <>
+      {/* JSON-LD Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(localBusinessSchema),
+        }}
+      />
+
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 hero-gradient overflow-hidden">
         {/* Animated gradient overlay */}
@@ -226,14 +320,14 @@ export default function Home() {
                 description:
                   "Get comprehensive documentation and treatment for your injury claim.",
                 cta: "Start Your Evaluation",
-                href: "/services/injuries/motor-vehicle-accidents",
+                href: "/conditions/auto-injury",
               },
               {
                 title: "Workplace Injury?",
                 description:
                   "Expert workers' compensation care with employer coordination.",
                 cta: "File Your Claim",
-                href: "/services/injuries/workers-compensation",
+                href: "/conditions/workplace-injury",
               },
               {
                 title: "Chronic Pain?",
@@ -466,13 +560,19 @@ export default function Home() {
       <section className="section bg-slate-50">
         <div className="container container-default mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Map Placeholder */}
-            <div className="relative aspect-video lg:aspect-square rounded-2xl bg-slate-200 overflow-hidden">
-              <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-400">
-                <Building2 className="h-16 w-16 mb-4" />
-                <p className="font-medium">Map Location</p>
-              </div>
-              {/* Real map can be added here */}
+            {/* Google Maps Embed */}
+            <div className="relative aspect-video lg:aspect-square rounded-2xl overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.5!2d-87.9806!3d42.0654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fb5a0c0000001%3A0x1234567890abcdef!2s1925%20E%20Rand%20Rd%2C%20Arlington%20Heights%2C%20IL%2060004!5e0!3m2!1sen!2sus!4v1"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Rand Medical Center Location"
+                className="absolute inset-0"
+              />
             </div>
 
             <div>

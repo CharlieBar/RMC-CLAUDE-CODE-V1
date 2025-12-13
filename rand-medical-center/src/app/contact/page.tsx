@@ -257,25 +257,34 @@ export default function ContactPage() {
               </Card>
             </div>
 
-            {/* Map Placeholder */}
+            {/* Google Maps Embed */}
             <div>
-              <div className="relative aspect-square rounded-2xl bg-slate-200 overflow-hidden">
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-400">
-                  <Building2 className="h-16 w-16 mb-4" />
-                  <p className="font-medium">Map Location</p>
-                  <a
-                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-                      SITE_CONFIG.address.full
-                    )}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4"
-                  >
-                    <Button size="sm" variant="outline">
-                      Open in Google Maps
-                    </Button>
-                  </a>
-                </div>
+              <div className="relative aspect-square rounded-2xl overflow-hidden shadow-lg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.5!2d-87.9806!3d42.0654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fb5a0c0000001%3A0x1234567890abcdef!2s1925%20E%20Rand%20Rd%2C%20Arlington%20Heights%2C%20IL%2060004!5e0!3m2!1sen!2sus!4v1"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Rand Medical Center Location"
+                  className="absolute inset-0"
+                />
+              </div>
+              <div className="mt-4 text-center">
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+                    SITE_CONFIG.address.full
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button size="sm" variant="outline">
+                    <MapPin className="h-4 w-4" />
+                    Open in Google Maps
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
@@ -312,9 +321,9 @@ export default function ContactPage() {
                 href: "/patients/faq",
               },
               {
-                title: "New Patients",
-                description: "What to expect at your first visit",
-                href: "/patients/new-patients",
+                title: "Patient Resources",
+                description: "Everything you need for your visit",
+                href: "/patients",
               },
             ].map((link, index) => (
               <Link
