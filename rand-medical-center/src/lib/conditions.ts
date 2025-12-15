@@ -605,6 +605,15 @@ export const CONDITIONS: Condition[] = [
       "Muscle weakness",
       "Feeling like wearing gloves or socks when not",
     ],
+    whenToSeeDoctor: [
+      "Numbness or tingling that starts suddenly or spreads rapidly",
+      "Weakness that affects your ability to walk or grip objects",
+      "Pain that interferes with sleep or daily activities",
+      "Symptoms that affect both sides of your body symmetrically",
+      "Changes in bladder or bowel function",
+      "Dizziness or fainting episodes",
+      "Symptoms following an injury or illness",
+    ],
     treatments: [
       { name: "Pain Management", href: "/services/pain-management" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -612,7 +621,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["diabetic-neuropathy"],
     metaDescription:
-      "Peripheral neuropathy treatment in Arlington Heights, IL for burning, tingling, or numbness in hands and feet.",
+      "Peripheral neuropathy treatment in Arlington Heights, IL. Expert care for burning, tingling & numbness in hands and feet. Serving Mount Prospect, Palatine & NW suburbs.",
   },
   {
     slug: "diabetic-neuropathy",
@@ -635,6 +644,15 @@ export const CONDITIONS: Condition[] = [
       "Muscle weakness",
       "Serious foot problems like ulcers and infections",
     ],
+    whenToSeeDoctor: [
+      "Any cut, sore, or blister on your feet that isn't healing",
+      "Burning, tingling, or numbness in feet that disrupts sleep",
+      "Sharp, sudden pains in your legs or feet",
+      "Changes in digestion, urination, or sexual function",
+      "Dizziness or fainting when standing up",
+      "Loss of balance or difficulty walking",
+      "Signs of infection (redness, swelling, warmth, discharge)",
+    ],
     treatments: [
       { name: "Pain Management", href: "/services/pain-management" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -642,7 +660,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["neuropathy"],
     metaDescription:
-      "Care for diabetic neuropathy symptoms in Arlington Heights, IL including burning foot pain and numbness.",
+      "Diabetic neuropathy treatment in Arlington Heights, IL. Comprehensive care for burning foot pain, numbness & nerve damage. Serving Des Plaines, Rolling Meadows & NW suburbs.",
   },
   {
     slug: "rotator-cuff-tear",
@@ -665,6 +683,15 @@ export const CONDITIONS: Condition[] = [
       "Difficulty reaching behind the back",
       "Limited range of motion",
     ],
+    whenToSeeDoctor: [
+      "Sudden shoulder pain following a fall or injury",
+      "Immediate weakness after an injury",
+      "Pain that prevents you from sleeping",
+      "Difficulty lifting your arm above shoulder level",
+      "Shoulder pain that persists despite rest and over-the-counter pain medication",
+      "Progressive weakness in the shoulder over weeks or months",
+      "A popping sensation at the time of injury",
+    ],
     treatments: [
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Joint Injections", href: "/treatments/joint-injections" },
@@ -672,7 +699,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["shoulder-pain"],
     metaDescription:
-      "Rotator cuff tear treatment in Arlington Heights, IL for shoulder pain and weakness.",
+      "Rotator cuff tear treatment in Arlington Heights, IL. Expert orthopedic care for shoulder pain & weakness. Surgical & non-surgical options. Serving Mount Prospect & NW suburbs.",
   },
   {
     slug: "myofascial-pain",
@@ -695,6 +722,15 @@ export const CONDITIONS: Condition[] = [
       "Difficulty sleeping due to pain",
       "Stiffness and decreased range of motion",
     ],
+    whenToSeeDoctor: [
+      "Muscle pain that persists for more than a few weeks",
+      "Pain that disrupts your sleep regularly",
+      "Trigger points that don't respond to self-massage or stretching",
+      "Pain that limits your ability to work or perform daily activities",
+      "New onset of pain without an obvious cause",
+      "Pain accompanied by weakness or numbness",
+      "Muscle pain with fever or other systemic symptoms",
+    ],
     treatments: [
       { name: "Trigger Point Injections", href: "/treatments/trigger-point-injections" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -702,7 +738,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["back-pain", "neck-pain", "headaches"],
     metaDescription:
-      "Myofascial pain treatment in Arlington Heights, IL for tender trigger points and muscle knots.",
+      "Myofascial pain treatment in Arlington Heights, IL. Trigger point injections & therapy for muscle knots. Serving Palatine, Des Plaines & NW Chicago suburbs.",
   },
   {
     slug: "fibromyalgia",
@@ -725,6 +761,15 @@ export const CONDITIONS: Condition[] = [
       "Headaches and migraines",
       "Irritable bowel syndrome",
     ],
+    whenToSeeDoctor: [
+      "Widespread pain that persists for more than a few weeks",
+      "Fatigue that doesn't improve with rest",
+      "Sleep problems that affect your daily functioning",
+      "Cognitive difficulties affecting work or daily life (fibro fog)",
+      "Depression or anxiety alongside pain",
+      "Symptoms that are getting progressively worse",
+      "Pain that significantly impacts your quality of life",
+    ],
     treatments: [
       { name: "Pain Management", href: "/services/pain-management" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -732,7 +777,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["chronic-pain", "myofascial-pain"],
     metaDescription:
-      "Care for fibromyalgia symptoms in Arlington Heights, IL including widespread pain and fatigue.",
+      "Fibromyalgia treatment in Arlington Heights, IL. Comprehensive care for widespread pain & fatigue. Serving Mount Prospect, Rolling Meadows & NW Chicago suburbs.",
   },
   {
     slug: "chronic-pain",
@@ -755,6 +800,15 @@ export const CONDITIONS: Condition[] = [
       "Reduced activity and mobility",
       "Difficulty concentrating",
     ],
+    whenToSeeDoctor: [
+      "Pain lasting longer than 3 months",
+      "Pain that interferes with work, sleep, or daily activities",
+      "Over-the-counter medications no longer providing relief",
+      "Increasing reliance on pain medication",
+      "Depression or anxiety related to chronic pain",
+      "Pain preventing you from exercising or staying active",
+      "New or worsening symptoms alongside existing pain",
+    ],
     treatments: [
       { name: "Pain Management", href: "/services/pain-management" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -762,7 +816,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["back-pain", "fibromyalgia"],
     metaDescription:
-      "Chronic pain management in Arlington Heights, IL for pain lasting more than three months.",
+      "Chronic pain management in Arlington Heights, IL. Expert treatment for persistent pain lasting more than three months. Serving Palatine, Des Plaines & NW suburbs.",
   },
   {
     slug: "facet-syndrome",
@@ -785,6 +839,15 @@ export const CONDITIONS: Condition[] = [
       "Tenderness over the affected joints",
       "Pain that radiates to buttocks or shoulders",
     ],
+    whenToSeeDoctor: [
+      "Back or neck pain that persists for more than a few weeks",
+      "Pain that worsens with bending backward or twisting",
+      "Morning stiffness lasting more than 30 minutes",
+      "Pain that limits your ability to work or enjoy activities",
+      "Pain that radiates to buttocks, hips, or shoulders",
+      "Symptoms that don't improve with over-the-counter medications",
+      "Numbness or weakness in arms or legs",
+    ],
     treatments: [
       { name: "Facet Joint Injections", href: "/treatments/facet-joint-injections" },
       { name: "Radiofrequency Ablation", href: "/treatments/radiofrequency-ablation" },
@@ -792,7 +855,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["back-pain", "neck-pain", "arthritis"],
     metaDescription:
-      "Facet joint syndrome care in Arlington Heights, IL for arthritis-related back and neck pain.",
+      "Facet joint syndrome treatment in Arlington Heights, IL. Facet injections & radiofrequency ablation for spinal arthritis. Serving Mount Prospect & NW Chicago suburbs.",
   },
   {
     slug: "radiculopathy",
@@ -815,6 +878,15 @@ export const CONDITIONS: Condition[] = [
       "Pain that worsens with certain movements",
       "Decreased reflexes",
     ],
+    whenToSeeDoctor: [
+      "Radiating pain that persists for more than a week",
+      "Progressive numbness or tingling",
+      "Weakness affecting your ability to grip, walk, or lift",
+      "Pain that doesn't improve with rest",
+      "Symptoms following an injury or accident",
+      "Bladder or bowel changes (seek emergency care)",
+      "Pain accompanied by fever or unexplained weight loss",
+    ],
     treatments: [
       { name: "Epidural Steroid Injections", href: "/treatments/epidural-steroid-injections" },
       { name: "Selective Nerve Root Block", href: "/treatments/selective-nerve-root-block" },
@@ -822,7 +894,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["sciatica", "herniated-disc", "spinal-stenosis"],
     metaDescription:
-      "Radiculopathy treatment in Arlington Heights, IL for nerve pain, numbness, or weakness from pinched spinal nerves.",
+      "Radiculopathy treatment in Arlington Heights, IL. Expert care for pinched nerve pain, numbness & weakness. Serving Palatine, Des Plaines & NW Chicago suburbs.",
   },
   {
     slug: "si-joint-pain",
@@ -845,6 +917,15 @@ export const CONDITIONS: Condition[] = [
       "Stiffness in the lower back and hips",
       "Instability feeling in the pelvis",
     ],
+    whenToSeeDoctor: [
+      "Lower back or buttock pain lasting more than a few weeks",
+      "Pain that worsens with prolonged sitting or standing",
+      "Pain that makes it difficult to climb stairs or walk",
+      "Pain that disrupts sleep",
+      "Leg pain that mimics sciatica",
+      "Instability or giving way sensation in the pelvis",
+      "Pain during or after pregnancy that persists",
+    ],
     treatments: [
       { name: "SI Joint Injections", href: "/services/pain-management" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -852,7 +933,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["back-pain", "hip-pain"],
     metaDescription:
-      "SI joint pain treatment in Arlington Heights, IL for lower back and buttock pain from sacroiliac dysfunction.",
+      "SI joint pain treatment in Arlington Heights, IL. Expert care for sacroiliac dysfunction causing lower back & buttock pain. Serving Mount Prospect & NW suburbs.",
   },
   {
     slug: "complex-regional-pain-syndrome",
@@ -875,6 +956,15 @@ export const CONDITIONS: Condition[] = [
       "Changes in hair and nail growth",
       "Joint stiffness and muscle spasms",
     ],
+    whenToSeeDoctor: [
+      "Pain out of proportion to the original injury",
+      "Burning or throbbing pain that persists after an injury heals",
+      "Extreme sensitivity to touch or temperature changes",
+      "Swelling that doesn't resolve with elevation and ice",
+      "Changes in skin color, temperature, or texture",
+      "Difficulty moving the affected limb",
+      "Hair or nail growth changes in the affected area",
+    ],
     treatments: [
       { name: "Pain Management", href: "/services/pain-management" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -882,7 +972,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["chronic-pain", "neuropathy"],
     metaDescription:
-      "CRPS treatment in Arlington Heights, IL for severe, long-lasting pain after injury or surgery.",
+      "CRPS treatment in Arlington Heights, IL. Specialized care for complex regional pain syndrome after injury or surgery. Serving Palatine, Des Plaines & NW suburbs.",
   },
   {
     slug: "occipital-neuralgia",
@@ -905,6 +995,15 @@ export const CONDITIONS: Condition[] = [
       "Sensitivity to light",
       "Tender scalp",
     ],
+    whenToSeeDoctor: [
+      "Sudden, severe head pain unlike previous headaches",
+      "Pain that starts at the base of the skull and shoots upward",
+      "Persistent headaches that don't respond to over-the-counter medications",
+      "Pain accompanied by vision changes",
+      "Scalp tenderness that makes it painful to brush hair or lie down",
+      "Headaches with fever, stiff neck, or confusion (seek emergency care)",
+      "Headache after head trauma",
+    ],
     treatments: [
       { name: "Occipital Nerve Block", href: "/services/pain-management" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -912,7 +1011,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["headaches", "neck-pain"],
     metaDescription:
-      "Occipital neuralgia treatment in Arlington Heights, IL for sharp, shooting pain at the base of the skull.",
+      "Occipital neuralgia treatment in Arlington Heights, IL. Expert care for sharp, shooting pain at the base of the skull. Serving Mount Prospect, Rolling Meadows & NW suburbs.",
   },
   {
     slug: "trigeminal-neuralgia",
@@ -935,6 +1034,15 @@ export const CONDITIONS: Condition[] = [
       "Pain in cheek, jaw, teeth, gums, or lips",
       "Periods of remission between attacks",
     ],
+    whenToSeeDoctor: [
+      "Sudden episodes of intense, electric shock-like facial pain",
+      "Facial pain triggered by routine activities like eating or brushing teeth",
+      "Pain that affects your ability to eat or speak",
+      "Increasing frequency or severity of pain episodes",
+      "Facial pain that doesn't respond to dental treatment",
+      "Pain accompanied by facial weakness or numbness",
+      "New onset of facial pain without clear cause",
+    ],
     treatments: [
       { name: "Pain Management", href: "/services/pain-management" },
       { name: "Medication Management", href: "/services/pain-management" },
@@ -942,7 +1050,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["headaches"],
     metaDescription:
-      "Trigeminal neuralgia treatment in Arlington Heights, IL for severe facial pain episodes.",
+      "Trigeminal neuralgia treatment in Arlington Heights, IL. Expert care for severe facial pain episodes. Serving Palatine, Des Plaines & NW Chicago suburbs.",
   },
   {
     slug: "piriformis-syndrome",
@@ -965,6 +1073,15 @@ export const CONDITIONS: Condition[] = [
       "Reduced range of motion in the hip",
       "Pain that improves with movement",
     ],
+    whenToSeeDoctor: [
+      "Buttock pain that persists for more than a few weeks",
+      "Pain that radiates down your leg",
+      "Numbness or tingling in the buttock, leg, or foot",
+      "Pain that makes prolonged sitting impossible",
+      "Symptoms that don't improve with stretching and rest",
+      "Difficulty with daily activities like walking or climbing stairs",
+      "Pain that disrupts your sleep",
+    ],
     treatments: [
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Trigger Point Injections", href: "/treatments/trigger-point-injections" },
@@ -972,7 +1089,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["sciatica", "back-pain", "hip-pain"],
     metaDescription:
-      "Piriformis syndrome treatment in Arlington Heights, IL for buttock and leg pain similar to sciatica.",
+      "Piriformis syndrome treatment in Arlington Heights, IL. Expert care for buttock & leg pain similar to sciatica. Serving Mount Prospect, Rolling Meadows & NW suburbs.",
   },
   {
     slug: "osteoarthritis",
@@ -995,6 +1112,15 @@ export const CONDITIONS: Condition[] = [
       "Grating sensation with joint use",
       "Bone spurs around the affected joint",
     ],
+    whenToSeeDoctor: [
+      "Joint pain that persists for several weeks",
+      "Stiffness that doesn't improve with movement",
+      "Swelling or warmth around a joint",
+      "Reduced range of motion affecting daily activities",
+      "Joint pain that interferes with sleep",
+      "Over-the-counter pain medications no longer providing relief",
+      "Difficulty walking, climbing stairs, or gripping objects",
+    ],
     treatments: [
       { name: "Joint Injections", href: "/treatments/joint-injections" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -1002,7 +1128,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["knee-pain", "hip-pain", "arthritis"],
     metaDescription:
-      "Osteoarthritis care in Arlington Heights, IL for age-related joint wear and chronic pain.",
+      "Osteoarthritis treatment in Arlington Heights, IL. Expert care for age-related joint wear & chronic pain. Serving Palatine, Des Plaines & NW Chicago suburbs.",
   },
   {
     slug: "auto-injury",
@@ -1025,6 +1151,15 @@ export const CONDITIONS: Condition[] = [
       "Numbness or tingling",
       "Delayed onset of symptoms (sometimes days later)",
     ],
+    whenToSeeDoctor: [
+      "Any pain, stiffness, or discomfort after a car accident (even minor)",
+      "Headaches that develop hours or days after the accident",
+      "Neck pain or stiffness",
+      "Numbness, tingling, or weakness in arms or legs",
+      "Dizziness or difficulty concentrating",
+      "Worsening symptoms over days following the accident",
+      "Back pain or radiating pain down arms or legs",
+    ],
     treatments: [
       { name: "Immediate Care", href: "/immediate-care" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -1032,7 +1167,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["neck-pain", "back-pain", "headaches"],
     metaDescription:
-      "Auto accident injury treatment in Arlington Heights, IL. Comprehensive care for whiplash, back pain, and injuries from car accidents.",
+      "Auto accident injury treatment in Arlington Heights, IL. Same-day care for whiplash, back pain & MVA injuries. Serving Mount Prospect, Palatine & NW Chicago suburbs.",
   },
   {
     slug: "workplace-injury",
@@ -1055,6 +1190,15 @@ export const CONDITIONS: Condition[] = [
       "Weakness in affected area",
       "Symptoms that worsen with work activities",
     ],
+    whenToSeeDoctor: [
+      "Any injury that occurs at work (for proper documentation)",
+      "Pain that develops from repetitive work activities",
+      "Back pain from lifting or prolonged standing",
+      "Numbness or tingling in hands or feet",
+      "Joint or muscle pain that persists despite rest",
+      "Symptoms that interfere with your ability to work",
+      "Injuries that require time off work or modified duties",
+    ],
     treatments: [
       { name: "Immediate Care", href: "/immediate-care" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -1062,7 +1206,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["back-pain", "carpal-tunnel-syndrome"],
     metaDescription:
-      "Workplace injury treatment in Arlington Heights, IL. Expert care for work-related injuries with workers' compensation documentation.",
+      "Workplace injury treatment in Arlington Heights, IL. Workers' comp accepted. Expert care for work injuries with proper documentation. Serving NW Chicago suburbs.",
   },
 ];
 

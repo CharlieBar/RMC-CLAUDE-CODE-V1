@@ -18,7 +18,7 @@
 - Legal pages (Privacy, Terms, HIPAA, Nondiscrimination, Accessibility)
 - Contact, Immediate Care, Surgery Center
 
-### Design Polish (COMPLETED THIS SESSION) ✓
+### Design Polish ✓
 - [x] Enhanced CSS animations (float, gradient-flow, stagger, scale-in, etc.)
 - [x] Typography refinements (heading-display, text-micro, text-label, text-eyebrow, text-lead)
 - [x] Micro-interaction utilities (icon hovers, button shine, link underlines, card effects)
@@ -27,6 +27,7 @@
 - [x] Enhanced Button component (shine, prominent props, improved shadows)
 - [x] Enhanced Card components (FeatureCard, StatCard, hover variants, glow effects)
 - [x] Homepage micro-interactions throughout all sections
+- [x] ALL inner pages polished (services, about, blog, surgery-center, immediate-care)
 
 ### SEO & Schema Markup ✓
 - [x] Homepage: MedicalOrganization + MedicalClinic schemas
@@ -37,13 +38,11 @@
 - [x] Condition pages: MedicalCondition schema
 - [x] Treatment pages: MedicalProcedure + FAQPage schemas
 
-### Content & SEO Enhancements (THIS SESSION) ✓
+### Content & SEO Enhancements ✓
 - [x] Added "When to See a Doctor" section to condition pages with red flag symptoms
 - [x] Added overview field to 14 key conditions for additional SEO content
 - [x] Enhanced condition meta descriptions with local SEO keywords (NW Chicago suburbs)
 - [x] Enhanced treatment meta descriptions with local SEO keywords
-- [x] Added MedicalCondition schema markup to condition detail pages
-- [x] Added MedicalProcedure and FAQPage schema markup to treatment detail pages
 - [x] Conditions enhanced: back-pain, sciatica, neck-pain, knee-pain, shoulder-pain, arthritis, herniated-disc, sports-injuries, headaches, carpal-tunnel-syndrome, plantar-fasciitis, spinal-stenosis, degenerative-disc-disease, hip-pain
 
 ### Internal Linking ✓
@@ -72,43 +71,178 @@
 
 ---
 
-## REMAINING TASKS (Lower Priority)
+## REMAINING TASKS
 
-### 1. Apply Design Polish to Inner Pages ✓ (ALL COMPLETE)
-The homepage has full animations/micro-interactions. Applied similar treatment to:
-- [x] Providers page - hero gradient, floating elements, stagger animations, card hover effects
-- [x] Treatments page - hero gradient, floating elements, stagger animations, icon-animate
-- [x] Conditions page - hero gradient, floating elements, stagger animations, micro-interactions
-- [x] About pages (main + mission, facility, accreditation) - hero gradient, floating elements, card animations
-- [x] Service pages (Pain Management, Orthopedics, Physical Therapy, Internal Medicine) - all polished
-- [x] Surgery Center page - hero gradient, floating elements, stagger animations
-- [x] Immediate Care page - hero gradient, floating elements, stagger animations
-- [x] Blog page - hero gradient, floating elements, stagger animations on post cards
+### Priority 1: Content Completion (Quick Wins)
 
-### 2. Content & SEO Enhancements ✓ (ALL COMPLETE)
-- [x] Condition pages have "When to See a Doctor" section with red flag symptoms
-- [x] Condition pages have MedicalCondition schema for Google rich results
-- [x] Treatment pages have MedicalProcedure and FAQPage schemas
-- [x] Meta descriptions optimized with local SEO keywords (NW Chicago suburbs)
-- [x] 14 key conditions enhanced with overview text and whenToSeeDoctor data
+#### A. Add whenToSeeDoctor to Remaining 17 Conditions
+The following conditions need the `whenToSeeDoctor` field added:
+- [ ] whiplash
+- [ ] neuropathy
+- [ ] diabetic-neuropathy
+- [ ] rotator-cuff-tear
+- [ ] myofascial-pain
+- [ ] fibromyalgia
+- [ ] chronic-pain
+- [ ] facet-syndrome
+- [ ] radiculopathy
+- [ ] si-joint-pain
+- [ ] complex-regional-pain-syndrome
+- [ ] occipital-neuralgia
+- [ ] trigeminal-neuralgia
+- [ ] piriformis-syndrome
+- [ ] osteoarthritis
+- [ ] work-injuries
+- [ ] auto-accident-injuries
 
-### 3. Image Assets (Requires External Content)
-- [ ] `/public/images/og-image.jpg` (1200x630) - Social sharing
+**File**: `src/lib/conditions.ts`
+
+#### B. Add Social Media Links
+Currently empty strings in constants. Add real links:
+- [ ] Facebook
+- [ ] Instagram
+- [ ] LinkedIn
+- [ ] YouTube (if applicable)
+
+**File**: `src/lib/constants.ts`
+
+#### C. Add Testimonials
+- [ ] Add 3-5 more patient testimonials
+- [ ] Include condition-specific testimonials
+
+**File**: `src/lib/constants.ts` or create `src/lib/testimonials.ts`
+
+---
+
+### Priority 2: Image Assets (Requires External Content)
+
+- [ ] `/public/images/og-image.jpg` (1200x630) - Social sharing image
 - [ ] `/public/images/providers/*.jpg` - Doctor headshots (400x500)
+  - demetrios-giokaris.jpg
+  - krishna-chunduri.jpg
+  - christos-giannoulias.jpg
+  - elena-rodriguez.jpg
+  - michael-thompson.jpg
 - [ ] `/public/images/hero/*.jpg` - Hero backgrounds (1920x1080)
 - [ ] `/public/images/facility/*.jpg` - Facility photos
 
-### 4. Additional Enhancements (Nice to Have)
-- [ ] Add scroll-triggered animations to inner pages
-- [ ] Add testimonial carousel with smooth transitions
-- [ ] Add "Why Choose Us" stats with count-up animation
-- [ ] Add filtering/sorting options for conditions/treatments
-- [ ] Add estimated read time to blog posts
-- [ ] Add social share buttons to blog posts
-- [ ] Add whenToSeeDoctor to remaining 17 conditions (whiplash, work injuries, etc.)
+---
 
-### 5. Dark Mode (Optional)
-Dark mode CSS variables are already in globals.css but not activated.
+### Priority 3: UX Improvements
+
+#### A. Mobile Experience
+- [ ] Add sticky header on scroll for mobile
+- [ ] Consider bottom navigation bar for key actions (Call, Book, Directions)
+- [ ] Make phone number more prominent on mobile header
+
+#### B. Patient Journey
+- [ ] Add insurance company logos to homepage
+- [ ] Consider "Insurance Checker" widget on insurance page
+- [ ] Add "Accepting New Patients" badges consistently to provider cards
+
+#### C. Quick Actions Section
+Consider adding a floating action section with:
+- Call Now
+- Book Online
+- Get Directions
+- Patient Portal (if exists)
+
+---
+
+## IMPROVEMENT SUGGESTIONS
+
+### Design Improvements
+
+#### 1. Card Consistency
+- Some pages use `<Link>` with hover styles, others use `<Card>`
+- Standardize to use `<InteractiveCard>` or `<Card hover="lift">` consistently
+- Add subtle gradient borders on hover for featured items
+
+#### 2. CTA Variety
+Most CTAs say "Book Appointment". Consider varying language:
+- "Schedule Your Visit"
+- "Get Started Today"
+- "Start Your Recovery"
+- "Request Appointment"
+
+#### 3. Dark Section Variety
+Currently all dark sections are `bg-slate-900`. Consider alternating:
+- `bg-gradient-to-br from-slate-900 to-slate-800`
+- `bg-gradient-to-br from-teal-900 to-slate-900`
+
+#### 4. Service-Specific Colors
+The constants define colors per service but they're not used:
+- Pain Management: teal (default)
+- Orthopedics: blue accent
+- Physical Therapy: green accent
+- Immediate Care: amber accent
+- Surgery Center: rose accent
+
+### Content Improvements
+
+#### 1. Blog Expansion
+- Add condition-specific blog posts
+- Add "Related Articles" section to condition/treatment pages
+- Add estimated read time to blog posts
+- Add social share buttons to blog posts
+
+#### 2. Provider Bios
+- Add more detailed biography content on provider detail pages
+- Include publications, awards, special interests
+
+#### 3. Social Proof
+- Add specific numbers: "X,000+ patients treated"
+- Add review snippets from Google/Healthgrades
+- Add "As seen in" section if applicable
+
+#### 4. Missing Pages to Consider
+- `/services/workers-compensation` - dedicated page for work injuries
+- `/services/auto-accident-care` - dedicated page for MVA cases
+- `/services/sports-medicine` - if relevant
+
+### UX Improvements
+
+#### 1. Scroll-Triggered Animations
+- Add IntersectionObserver-based animations for content below the fold
+- Apply to: stats, testimonials, feature grids
+
+#### 2. Loading States
+Skeleton components exist but aren't used. Consider adding:
+- Loading states for provider cards
+- Loading states for treatment grids
+
+#### 3. Forms
+Currently relies on external Tebra booking. Consider adding:
+- Contact form for general inquiries
+- Appointment request form (captures leads)
+- Newsletter signup for health tips
+
+#### 4. Accessibility
+- Verify all interactive elements have proper focus states
+- Add `aria-labels` to icon-only buttons
+- Test with screen readers
+- Ensure color contrast meets WCAG AA
+
+### Technical Improvements
+
+#### 1. Additional SEO
+- Add BreadcrumbList schema to pages with breadcrumbs
+- Add LocalBusiness schema with aggregateRating (when reviews exist)
+- Consider HowTo schema for treatment procedure pages
+
+#### 2. Analytics (When Ready to Launch)
+- Google Analytics 4
+- Google Tag Manager
+- Conversion tracking for:
+  - Book Appointment clicks
+  - Phone number clicks
+  - Form submissions
+
+#### 3. Dark Mode (Optional)
+CSS variables exist but not activated. Would need:
+- Theme toggle component
+- Persist preference in localStorage
+- System preference detection
 
 ---
 
@@ -116,16 +250,18 @@ Dark mode CSS variables are already in globals.css but not activated.
 
 | File | Purpose |
 |------|---------|
-| `src/lib/conditions.ts` | 31 conditions data |
+| `src/lib/conditions.ts` | 31 conditions data (14 have whenToSeeDoctor) |
 | `src/lib/treatments.ts` | 10 treatments data |
 | `src/lib/providers.ts` | 5 providers data |
 | `src/lib/blog.ts` | 9 blog articles |
-| `src/lib/constants.ts` | Site config, navigation |
+| `src/lib/constants.ts` | Site config, navigation, social links |
 | `src/app/layout.tsx` | Root layout with schema |
 | `src/app/globals.css` | Global styles + animations |
 | `src/components/ui/button.tsx` | Enhanced button with shine/prominent |
 | `src/components/ui/card.tsx` | Cards with hover effects |
 | `src/components/ui/skeleton.tsx` | Loading skeleton components |
+| `src/app/conditions/[slug]/page.tsx` | Condition detail template |
+| `src/app/treatments/[slug]/page.tsx` | Treatment detail template |
 
 ---
 
@@ -201,37 +337,42 @@ Please read the following files to understand the project context:
 Then continue working on the Rand Medical Center website at:
 /home/user/RMC-CLAUDE-CODE-V1/rand-medical-center/
 
-COMPLETED:
-- Design polish on ALL pages (animations, micro-interactions)
-- SEO schema markup on ALL page types (conditions, treatments, providers, blog)
-- "When to See a Doctor" section on 14 key condition pages
-- Local SEO optimization for meta descriptions
+PROJECT STATUS:
+- 85 pages building successfully
+- Design polish COMPLETE on all pages
+- SEO schema markup COMPLETE on all page types
+- "When to See a Doctor" added to 14 key conditions
+- Local SEO optimization complete for meta descriptions
 
-REMAINING TASKS:
+PRIORITY TASKS FOR THIS SESSION:
 
-1. Add Real Images (if available)
-   - Replace UserCircle placeholders with actual provider photos
-   - Add hero background images
-   - Add facility photos
+1. Add whenToSeeDoctor to Remaining 17 Conditions
+   File: src/lib/conditions.ts
+   Conditions: whiplash, neuropathy, diabetic-neuropathy, rotator-cuff-tear,
+   myofascial-pain, fibromyalgia, chronic-pain, facet-syndrome, radiculopathy,
+   si-joint-pain, complex-regional-pain-syndrome, occipital-neuralgia,
+   trigeminal-neuralgia, piriformis-syndrome, osteoarthritis, work-injuries,
+   auto-accident-injuries
 
-2. Additional Content Enhancements
-   - Add whenToSeeDoctor to remaining 17 conditions
-   - Add social media links to constants.ts
-   - Add more testimonials
+2. Add Social Media Links
+   File: src/lib/constants.ts
+   Add Facebook, Instagram, LinkedIn URLs
 
-3. Additional Page Enhancements (Nice to Have)
+3. Add More Testimonials
+   Add 3-5 patient testimonials with condition-specific details
+
+4. UX Improvements (Choose one or more):
    - Add scroll-triggered animations (IntersectionObserver)
    - Add estimated read time to blog posts
    - Add social share buttons to blog posts
-   - Add filtering/sorting options for conditions/treatments
+   - Add filtering/sorting for conditions/treatments pages
 
-4. Dark Mode (Optional)
-   - Dark mode CSS variables exist but not activated
-   - Would need theme toggle component
+5. Optional - Real Images
+   If images are available, add:
+   - Provider headshots to /public/images/providers/
+   - Facility photos to /public/images/facility/
 
-The site is at: /home/user/RMC-CLAUDE-CODE-V1/rand-medical-center/
-
-Build generates 85 pages successfully. All SEO and content enhancements complete.
+Run "npm run build" to verify all changes work. Build should produce 85 pages.
 ```
 
 ---
@@ -241,7 +382,8 @@ Build generates 85 pages successfully. All SEO and content enhancements complete
 - Build generates 85 static pages successfully
 - No TypeScript or build errors
 - All navigation links working
-- Design polish completed on homepage (animations, micro-interactions)
+- Design polish completed on ALL pages (animations, micro-interactions)
+- SEO schema markup on conditions (MedicalCondition) and treatments (MedicalProcedure + FAQPage)
 - Dark mode CSS variables exist but not activated
 - Contact page uses external booking links (no form)
-- All SEO schemas implemented
+- 14 of 31 conditions have whenToSeeDoctor data
