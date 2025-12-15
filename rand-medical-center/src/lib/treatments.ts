@@ -92,7 +92,7 @@ export const TREATMENTS: Treatment[] = [
       },
     ],
     metaDescription:
-      "Epidural steroid injections for back pain, sciatica, and herniated discs at Rand Medical Center in Arlington Heights. Find lasting relief with our expert pain management team.",
+      "Epidural steroid injections in Arlington Heights, IL for back pain, sciatica & herniated discs. Board-certified pain specialists. Serving Mount Prospect, Palatine, Des Plaines & NW Chicago suburbs.",
   },
   {
     slug: "radiofrequency-ablation",
@@ -164,7 +164,7 @@ export const TREATMENTS: Treatment[] = [
       },
     ],
     metaDescription:
-      "Radiofrequency ablation (RFA) for chronic back and neck pain at Rand Medical Center in Arlington Heights. Long-lasting relief with minimally invasive treatment.",
+      "Radiofrequency ablation (RFA) in Arlington Heights, IL for chronic back & neck pain. Long-lasting relief with minimally invasive treatment. Serving NW Chicago suburbs.",
   },
   {
     slug: "facet-joint-injections",
@@ -308,7 +308,7 @@ export const TREATMENTS: Treatment[] = [
       },
     ],
     metaDescription:
-      "Joint injections for knee, hip, and shoulder pain at Rand Medical Center in Arlington Heights. Relief from arthritis and joint conditions with expert care.",
+      "Joint injections in Arlington Heights, IL for knee, hip & shoulder pain. Relief from arthritis with corticosteroid & hyaluronic acid injections. Serving NW Chicago suburbs.",
   },
   {
     slug: "selective-nerve-root-block",
@@ -597,7 +597,7 @@ export const TREATMENTS: Treatment[] = [
       },
     ],
     metaDescription:
-      "Physical therapy and rehabilitation at Rand Medical Center in Arlington Heights. Expert care for injury recovery, chronic pain, post-surgical rehab, and sports rehabilitation.",
+      "Physical therapy in Arlington Heights, IL. Expert rehabilitation for injury recovery, chronic pain, post-surgical rehab & sports injuries. Serving NW Chicago suburbs.",
   },
   {
     slug: "occipital-nerve-block",

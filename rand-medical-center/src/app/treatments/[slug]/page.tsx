@@ -70,8 +70,51 @@ export default async function TreatmentPage({ params }: Props) {
   // Get other treatments for suggestions
   const otherTreatments = TREATMENTS.filter((t) => t.slug !== slug).slice(0, 3);
 
+  // MedicalProcedure schema for SEO
+  const medicalProcedureSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    name: treatment.name,
+    description: treatment.description,
+    howPerformed: treatment.howItWorks,
+    preparation: treatment.preparation.join(". "),
+    procedureType: "https://schema.org/NoninvasiveProcedure",
+    followup: treatment.recovery,
+    status: "https://schema.org/ActiveActionStatus",
+  };
+
+  // FAQPage schema for the FAQs
+  const faqSchema = treatment.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: treatment.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  } : null;
+
   return (
     <>
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(medicalProcedureSchema),
+        }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema),
+          }}
+        />
+      )}
+
       {/* Breadcrumb */}
       <div className="bg-slate-50 border-b border-slate-200">
         <div className="container container-default mx-auto py-3">

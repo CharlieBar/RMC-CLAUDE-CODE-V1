@@ -3,8 +3,10 @@ export interface Condition {
   slug: string;
   name: string;
   description: string;
+  overview?: string; // Additional SEO content
   causes: string[];
   symptoms: string[];
+  whenToSeeDoctor?: string[]; // Red flag symptoms requiring medical attention
   treatments: {
     name: string;
     href: string;
@@ -19,6 +21,8 @@ export const CONDITIONS: Condition[] = [
     name: "Back Pain",
     description:
       "Back pain is one of the most common reasons people seek medical care. It can range from a dull, constant ache to sudden, sharp pain. While most back pain improves within a few weeks with self-care, persistent or severe back pain may require professional treatment.",
+    overview:
+      "At Rand Medical Center in Arlington Heights, our board-certified pain management specialists and orthopedic surgeons work together to diagnose the root cause of your back pain and develop a personalized treatment plan. We serve patients throughout the northwest Chicago suburbs including Mount Prospect, Palatine, Des Plaines, Rolling Meadows, and Schaumburg.",
     causes: [
       "Muscle or ligament strain from heavy lifting or sudden movements",
       "Bulging or herniated discs pressing on nerves",
@@ -36,6 +40,15 @@ export const CONDITIONS: Condition[] = [
       "Decreased range of motion",
       "Muscle spasms",
     ],
+    whenToSeeDoctor: [
+      "Pain persists for more than a few weeks despite rest and home care",
+      "Severe pain that doesn't improve with rest",
+      "Pain that spreads down one or both legs, especially below the knee",
+      "Weakness, numbness, or tingling in your legs",
+      "Unexplained weight loss accompanying back pain",
+      "Back pain after a fall, blow to your back, or other injury",
+      "Bladder or bowel problems (seek immediate medical attention)",
+    ],
     treatments: [
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Epidural Steroid Injections", href: "/treatments/epidural-steroid-injections" },
@@ -44,13 +57,15 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["sciatica", "herniated-disc", "spinal-stenosis"],
     metaDescription:
-      "Find relief from back pain at Rand Medical Center. Our specialists offer advanced treatments including physical therapy, injections, and minimally invasive procedures in Arlington Heights.",
+      "Back pain treatment in Arlington Heights, IL. Board-certified specialists offering physical therapy, epidural injections, and minimally invasive procedures. Serving Mount Prospect, Palatine, Des Plaines & NW Chicago suburbs.",
   },
   {
     slug: "sciatica",
     name: "Sciatica",
     description:
       "Sciatica refers to pain that radiates along the path of the sciatic nerve, which branches from your lower back through your hips and buttocks and down each leg. Typically, sciatica affects only one side of the body and occurs when a herniated disk, bone spur, or spinal stenosis compresses part of the nerve.",
+    overview:
+      "Sciatica is one of the most common conditions we treat at Rand Medical Center. Our interventional pain management specialists use advanced diagnostic techniques to pinpoint the exact cause of your sciatic pain, then develop a targeted treatment plan using the latest minimally invasive procedures.",
     causes: [
       "Herniated or bulging disc in the lumbar spine",
       "Spinal stenosis narrowing the nerve pathways",
@@ -67,6 +82,14 @@ export const CONDITIONS: Condition[] = [
       "Pain that worsens with prolonged sitting",
       "Difficulty moving the leg or foot",
     ],
+    whenToSeeDoctor: [
+      "Leg pain that lasts longer than a week",
+      "Progressive weakness in the leg",
+      "Numbness in the leg or foot that worsens",
+      "Loss of bladder or bowel control (emergency - seek immediate care)",
+      "Pain following a violent injury or accident",
+      "Pain so severe that it disrupts sleep or daily activities",
+    ],
     treatments: [
       { name: "Epidural Steroid Injections", href: "/treatments/epidural-steroid-injections" },
       { name: "Selective Nerve Root Block", href: "/treatments/selective-nerve-root-block" },
@@ -75,13 +98,15 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["back-pain", "herniated-disc", "spinal-stenosis"],
     metaDescription:
-      "Sciatica treatment in Arlington Heights. Our pain specialists offer epidural injections, nerve blocks, and physical therapy to relieve sciatic nerve pain.",
+      "Sciatica treatment in Arlington Heights, IL. Expert pain specialists offering epidural injections, nerve blocks & physical therapy for sciatic nerve pain. Serving NW Chicago suburbs.",
   },
   {
     slug: "neck-pain",
     name: "Neck Pain",
     description:
       "Neck pain is extremely common and can be caused by poor posture, injury, arthritis, or degenerative conditions. While most neck pain improves with conservative treatment, chronic or severe neck pain may require specialized care to address the underlying cause.",
+    overview:
+      "Whether your neck pain is from an auto accident, work injury, or years of desk work, our team at Rand Medical Center provides comprehensive diagnosis and treatment. We combine interventional pain management with physical therapy for optimal results.",
     causes: [
       "Poor posture, especially from desk work or phone use",
       "Whiplash from car accidents",
@@ -98,6 +123,14 @@ export const CONDITIONS: Condition[] = [
       "Headaches starting at the base of the skull",
       "Numbness or tingling in the arms",
     ],
+    whenToSeeDoctor: [
+      "Neck pain after a car accident or injury (even if it seems minor)",
+      "Pain that persists for several days without relief",
+      "Pain that radiates down your arms or legs",
+      "Headaches accompanying your neck pain",
+      "Numbness, weakness, or tingling in your arms or hands",
+      "Difficulty gripping objects or loss of coordination",
+    ],
     treatments: [
       { name: "Cervical Epidural Injections", href: "/treatments/epidural-steroid-injections" },
       { name: "Trigger Point Injections", href: "/treatments/trigger-point-injections" },
@@ -106,13 +139,15 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["whiplash", "herniated-disc"],
     metaDescription:
-      "Neck pain treatment at Rand Medical Center in Arlington Heights. Expert care for cervical pain with injections, physical therapy, and advanced pain management.",
+      "Neck pain treatment in Arlington Heights, IL. Expert cervical pain care with injections, physical therapy & advanced pain management. Serving Palatine, Des Plaines & NW suburbs.",
   },
   {
     slug: "knee-pain",
     name: "Knee Pain",
     description:
       "Knee pain can result from injuries, mechanical problems, arthritis, and other conditions. The severity ranges from minor discomfort to debilitating pain that affects daily activities. Treatment depends on the cause and may include conservative measures or surgical intervention.",
+    overview:
+      "Our orthopedic surgeons and pain management specialists at Rand Medical Center work together to provide comprehensive knee care. From sports injuries to arthritis, we offer everything from conservative treatments to advanced surgical options at our Joint Commission-accredited surgery center.",
     causes: [
       "ACL, MCL, or meniscus injuries",
       "Osteoarthritis or rheumatoid arthritis",
@@ -129,6 +164,14 @@ export const CONDITIONS: Condition[] = [
       "Inability to fully straighten the knee",
       "Warmth or redness around the joint",
     ],
+    whenToSeeDoctor: [
+      "Unable to bear weight on your knee",
+      "Significant swelling that develops quickly",
+      "Obvious deformity or instability in the knee",
+      "Fever along with redness, pain, and swelling",
+      "Knee gives out or locks up",
+      "Pain that doesn't improve with rest and ice after a few days",
+    ],
     treatments: [
       { name: "Joint Injections", href: "/treatments/joint-injections" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -137,13 +180,15 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["arthritis", "sports-injuries"],
     metaDescription:
-      "Knee pain treatment in Arlington Heights. Our orthopedic specialists and pain management team offer comprehensive care from injections to surgery.",
+      "Knee pain treatment in Arlington Heights, IL. Orthopedic specialists & pain management offering injections, physical therapy & surgery. Serving Mount Prospect, Rolling Meadows & NW suburbs.",
   },
   {
     slug: "shoulder-pain",
     name: "Shoulder Pain",
     description:
       "The shoulder is the most mobile joint in the body, making it susceptible to injury and wear. Shoulder pain can originate from the joint itself or from surrounding muscles, ligaments, and tendons. Treatment varies based on the underlying cause.",
+    overview:
+      "At Rand Medical Center, our orthopedic surgeons specialize in shoulder conditions from rotator cuff tears to frozen shoulder. We offer both non-surgical treatments and advanced arthroscopic procedures at our accredited surgery center, helping you get back to your active lifestyle.",
     causes: [
       "Rotator cuff tears or tendinitis",
       "Frozen shoulder (adhesive capsulitis)",
@@ -160,6 +205,14 @@ export const CONDITIONS: Condition[] = [
       "Clicking or popping sensations",
       "Stiffness and reduced range of motion",
     ],
+    whenToSeeDoctor: [
+      "Sudden, severe shoulder pain after an injury",
+      "Shoulder appears deformed or out of place",
+      "Unable to use your arm or lift things",
+      "Intense pain, swelling, or bruising around the joint",
+      "Signs of infection (fever, redness, warmth)",
+      "Pain that persists despite rest and home treatment",
+    ],
     treatments: [
       { name: "Joint Injections", href: "/treatments/joint-injections" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -168,13 +221,15 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["arthritis", "sports-injuries"],
     metaDescription:
-      "Shoulder pain specialists in Arlington Heights. From rotator cuff injuries to frozen shoulder, get expert diagnosis and treatment at Rand Medical Center.",
+      "Shoulder pain specialists in Arlington Heights, IL. Expert care for rotator cuff injuries, frozen shoulder & arthritis. Orthopedic surgery available. Serving NW Chicago suburbs.",
   },
   {
     slug: "arthritis",
     name: "Arthritis",
     description:
       "Arthritis is inflammation of one or more joints, causing pain and stiffness that typically worsens with age. The most common types are osteoarthritis (wear-and-tear) and rheumatoid arthritis (autoimmune). Proper management can significantly reduce pain and improve quality of life.",
+    overview:
+      "Rand Medical Center provides comprehensive arthritis care from our pain management and orthopedic teams. We offer a full range of treatments from conservative options like injections and physical therapy to joint replacement surgery when needed. Our goal is to reduce your pain and keep you active.",
     causes: [
       "Wear and tear of cartilage (osteoarthritis)",
       "Autoimmune disorders attacking joint lining",
@@ -191,6 +246,14 @@ export const CONDITIONS: Condition[] = [
       "Grinding or grating sensation",
       "Bone spurs around affected joints",
     ],
+    whenToSeeDoctor: [
+      "Joint pain that persists for more than a few days",
+      "Swelling that doesn't go down with rest and ice",
+      "Significant stiffness limiting daily activities",
+      "Redness or warmth in a joint (may indicate infection)",
+      "Pain that interferes with sleep or work",
+      "Joint deformity or significant loss of function",
+    ],
     treatments: [
       { name: "Joint Injections", href: "/treatments/joint-injections" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -199,13 +262,15 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["knee-pain", "shoulder-pain", "hip-pain"],
     metaDescription:
-      "Arthritis treatment at Rand Medical Center. Our team offers joint injections, physical therapy, and surgical options to manage arthritis pain in Arlington Heights.",
+      "Arthritis treatment in Arlington Heights, IL. Joint injections, physical therapy & joint replacement surgery. Expert care serving Palatine, Mount Prospect & NW Chicago suburbs.",
   },
   {
     slug: "herniated-disc",
     name: "Herniated Disc",
     description:
       "A herniated disc occurs when the soft center of a spinal disc pushes through a crack in the tougher exterior. This can irritate nearby nerves and result in pain, numbness, or weakness in an arm or leg. Many herniated discs improve with conservative treatment.",
+    overview:
+      "Our spine specialists at Rand Medical Center use advanced imaging and diagnostic techniques to accurately diagnose herniated discs and develop targeted treatment plans. Most patients find relief through our non-surgical interventional procedures, avoiding the need for spine surgery.",
     causes: [
       "Age-related disc degeneration",
       "Heavy lifting with improper technique",
@@ -222,6 +287,14 @@ export const CONDITIONS: Condition[] = [
       "Pain that worsens with certain movements",
       "Symptoms often worse on one side",
     ],
+    whenToSeeDoctor: [
+      "Pain that persists or worsens over several weeks",
+      "Numbness or tingling that spreads or worsens",
+      "Weakness in your arm or leg affecting daily activities",
+      "Bladder or bowel dysfunction (seek emergency care)",
+      "Pain following an injury or accident",
+      "Difficulty walking or maintaining balance",
+    ],
     treatments: [
       { name: "Epidural Steroid Injections", href: "/treatments/epidural-steroid-injections" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -229,13 +302,15 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["back-pain", "sciatica", "neck-pain"],
     metaDescription:
-      "Herniated disc treatment in Arlington Heights. Find relief with epidural injections, nerve blocks, and physical therapy at Rand Medical Center.",
+      "Herniated disc treatment in Arlington Heights, IL. Non-surgical relief with epidural injections, nerve blocks & physical therapy. Serving Des Plaines, Palatine & NW Chicago suburbs.",
   },
   {
     slug: "sports-injuries",
     name: "Sports Injuries",
     description:
       "Sports injuries are injuries that occur during athletic activities or exercise. They can affect muscles, bones, tendons, ligaments, and other tissues. Proper diagnosis and treatment are essential for full recovery and safe return to activity.",
+    overview:
+      "At Rand Medical Center, our orthopedic surgeons have extensive experience treating athletes of all levels. We understand the importance of getting you back to your sport safely and develop individualized return-to-play protocols to ensure full recovery.",
     causes: [
       "Overuse and repetitive stress",
       "Acute trauma from contact or falls",
@@ -252,6 +327,14 @@ export const CONDITIONS: Condition[] = [
       "Instability in joints",
       "Bruising or visible deformity",
     ],
+    whenToSeeDoctor: [
+      "Inability to bear weight or use the injured area",
+      "Significant swelling that develops rapidly",
+      "Visible deformity of a bone or joint",
+      "Joint gives way or locks up",
+      "Pain that doesn't improve with RICE (rest, ice, compression, elevation)",
+      "Numbness, tingling, or coldness in the affected limb",
+    ],
     treatments: [
       { name: "Sports Medicine Evaluation", href: "/services/orthopedics" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -260,13 +343,15 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["knee-pain", "shoulder-pain"],
     metaDescription:
-      "Sports injury treatment in Arlington Heights. From ACL tears to tendinitis, our orthopedic and sports medicine specialists help athletes recover and return to play.",
+      "Sports injury treatment in Arlington Heights, IL. ACL tears, tendinitis, sprains & fractures. Expert orthopedic care helping athletes return to play. Serving NW Chicago suburbs.",
   },
   {
     slug: "headaches",
     name: "Headaches & Migraines",
     description:
       "Headaches and migraines are among the most common pain conditions, affecting millions of people. While occasional headaches are normal, chronic or severe headaches can significantly impact quality of life. Understanding the type and triggers of your headaches is key to effective treatment.",
+    overview:
+      "Chronic headaches and migraines often have underlying causes that can be addressed with proper treatment. Our pain management specialists at Rand Medical Center use a comprehensive approach to identify your headache triggers and develop an effective treatment plan.",
     causes: [
       "Tension in neck and shoulder muscles",
       "Stress and anxiety",
@@ -284,6 +369,14 @@ export const CONDITIONS: Condition[] = [
       "Neck stiffness and tension",
       "Pain that worsens with physical activity",
     ],
+    whenToSeeDoctor: [
+      "Sudden, severe headache unlike any you've had before",
+      "Headache with fever, stiff neck, confusion, or seizures",
+      "Headache after a head injury",
+      "Chronic headaches that are getting worse",
+      "Headaches that wake you from sleep",
+      "Headaches with vision changes, speech difficulty, or weakness",
+    ],
     treatments: [
       { name: "Occipital Nerve Block", href: "/services/pain-management" },
       { name: "Trigger Point Injections", href: "/treatments/trigger-point-injections" },
@@ -292,13 +385,15 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["neck-pain"],
     metaDescription:
-      "Headache and migraine treatment in Arlington Heights. Find relief with occipital nerve blocks, trigger point injections, and comprehensive care at Rand Medical Center.",
+      "Headache & migraine treatment in Arlington Heights, IL. Occipital nerve blocks, trigger point injections & comprehensive care. Serving Mount Prospect, Palatine & NW Chicago suburbs.",
   },
   {
     slug: "carpal-tunnel-syndrome",
     name: "Carpal Tunnel Syndrome",
     description:
       "Carpal tunnel syndrome occurs when the median nerve, which runs through a narrow passageway in the wrist called the carpal tunnel, becomes compressed. This common condition causes numbness, tingling, and weakness in the hand and can significantly affect daily activities and work.",
+    overview:
+      "Carpal tunnel syndrome is a common workplace injury that we treat regularly at Rand Medical Center. Our hand and wrist specialists offer both conservative treatments and minimally invasive surgical options when needed.",
     causes: [
       "Repetitive hand and wrist motions",
       "Wrist anatomy and bone structure",
@@ -315,6 +410,14 @@ export const CONDITIONS: Condition[] = [
       "Dropping objects due to numbness or weakness",
       "Shock-like sensations in the fingers",
     ],
+    whenToSeeDoctor: [
+      "Symptoms that persist for more than two weeks",
+      "Frequent numbness that interferes with sleep",
+      "Weakness that makes it hard to grip or hold objects",
+      "Loss of coordination or clumsiness in the hand",
+      "Constant numbness or tingling",
+      "Symptoms affecting your ability to work",
+    ],
     treatments: [
       { name: "Carpal Tunnel Release Surgery", href: "/services/orthopedics" },
       { name: "Steroid Injections", href: "/treatments/joint-injections" },
@@ -323,13 +426,15 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["neck-pain"],
     metaDescription:
-      "Carpal tunnel syndrome treatment in Arlington Heights. From conservative care to minimally invasive surgery, our specialists provide comprehensive hand and wrist care.",
+      "Carpal tunnel treatment in Arlington Heights, IL. From splinting to minimally invasive surgery. Expert hand & wrist care serving NW Chicago suburbs.",
   },
   {
     slug: "plantar-fasciitis",
     name: "Plantar Fasciitis",
     description:
       "Plantar fasciitis is one of the most common causes of heel pain, involving inflammation of the thick band of tissue (plantar fascia) that runs across the bottom of the foot and connects the heel bone to the toes. The condition typically causes stabbing pain that is worst with the first steps in the morning.",
+    overview:
+      "Heel pain doesn't have to slow you down. At Rand Medical Center, we offer effective treatments for plantar fasciitis that help you get back on your feet, from physical therapy and custom orthotics to advanced injection therapies.",
     causes: [
       "Overuse from running, walking, or standing for long periods",
       "Foot mechanics issues such as flat feet or high arches",
@@ -346,6 +451,14 @@ export const CONDITIONS: Condition[] = [
       "Gradual onset of symptoms over time",
       "Stiffness and tenderness along the arch",
     ],
+    whenToSeeDoctor: [
+      "Heel pain that persists despite home treatment",
+      "Severe heel pain after an injury",
+      "Pain that prevents normal walking or activities",
+      "Numbness or tingling in the foot",
+      "Pain accompanied by swelling or discoloration",
+      "Foot pain along with fever or signs of infection",
+    ],
     treatments: [
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Steroid Injections", href: "/treatments/joint-injections" },
@@ -354,7 +467,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["knee-pain", "arthritis"],
     metaDescription:
-      "Plantar fasciitis treatment in Arlington Heights. Get relief from heel pain with physical therapy, injections, and expert foot care at Rand Medical Center.",
+      "Plantar fasciitis treatment in Arlington Heights, IL. Heel pain relief with physical therapy, injections & orthotics. Expert foot care serving NW Chicago suburbs.",
   },
   // Additional conditions from services-conditions.json
   {
@@ -378,6 +491,14 @@ export const CONDITIONS: Condition[] = [
       "Balance problems",
       "In severe cases, bladder or bowel dysfunction",
     ],
+    whenToSeeDoctor: [
+      "Leg weakness or difficulty walking",
+      "Worsening numbness or tingling in your legs",
+      "Difficulty with balance or coordination",
+      "Bladder or bowel changes (seek emergency care)",
+      "Pain that significantly limits your daily activities",
+      "Symptoms that progressively worsen over time",
+    ],
     treatments: [
       { name: "Epidural Steroid Injections", href: "/treatments/epidural-steroid-injections" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -385,7 +506,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["back-pain", "sciatica", "herniated-disc"],
     metaDescription:
-      "Spinal stenosis treatment in Arlington Heights, IL for nerve compression causing leg pain, numbness, or weakness.",
+      "Spinal stenosis treatment in Arlington Heights, IL. Expert care for nerve compression, leg pain, numbness & weakness. Serving Mount Prospect, Des Plaines & NW suburbs.",
   },
   {
     slug: "degenerative-disc-disease",
@@ -408,6 +529,14 @@ export const CONDITIONS: Condition[] = [
       "Weakness in leg muscles",
       "Pain in the lower back, buttocks, or thighs",
     ],
+    whenToSeeDoctor: [
+      "Back or neck pain that persists for more than a few weeks",
+      "Pain accompanied by numbness or tingling",
+      "Weakness in your arms or legs",
+      "Pain that limits your ability to work or enjoy activities",
+      "Sudden worsening of symptoms",
+      "Loss of bladder or bowel control (seek emergency care)",
+    ],
     treatments: [
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
       { name: "Pain Management", href: "/services/pain-management" },
@@ -415,7 +544,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["back-pain", "herniated-disc", "spinal-stenosis"],
     metaDescription:
-      "Degenerative disc disease treatment in Arlington Heights, IL for age-related disc wear causing back and neck pain.",
+      "Degenerative disc disease treatment in Arlington Heights, IL. Expert care for age-related disc wear causing back & neck pain. Serving NW Chicago suburbs.",
   },
   {
     slug: "hip-pain",
@@ -438,6 +567,14 @@ export const CONDITIONS: Condition[] = [
       "Pain that worsens with activity",
       "Clicking or locking sensation in the hip",
     ],
+    whenToSeeDoctor: [
+      "Hip pain after a fall or injury",
+      "Sudden, intense hip pain",
+      "Deformity or inability to move your leg",
+      "Signs of infection (fever, redness, warmth)",
+      "Hip pain that disrupts sleep",
+      "Limping or difficulty bearing weight",
+    ],
     treatments: [
       { name: "Joint Injections", href: "/treatments/joint-injections" },
       { name: "Physical Therapy", href: "/treatments/physical-therapy" },
@@ -445,7 +582,7 @@ export const CONDITIONS: Condition[] = [
     ],
     relatedConditions: ["arthritis", "back-pain"],
     metaDescription:
-      "Hip pain treatment in Arlington Heights, IL for arthritis, bursitis, and injuries.",
+      "Hip pain treatment in Arlington Heights, IL. Expert care for arthritis, bursitis & injuries. Orthopedic specialists serving Palatine, Mount Prospect & NW suburbs.",
   },
   {
     slug: "neuropathy",

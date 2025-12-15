@@ -8,6 +8,7 @@ import { SITE_CONFIG } from "@/lib/constants";
 import { CONDITIONS, getConditionBySlug, getAllConditionSlugs } from "@/lib/conditions";
 import {
   AlertCircle,
+  AlertTriangle,
   Calendar,
   CheckCircle,
   ChevronRight,
@@ -59,8 +60,46 @@ export default async function ConditionPage({ params }: ConditionPageProps) {
     .map((slug) => CONDITIONS.find((c) => c.slug === slug))
     .filter(Boolean);
 
+  // MedicalCondition schema for SEO
+  const medicalConditionSchema = {
+    "@context": "https://schema.org",
+    "@type": "MedicalCondition",
+    name: condition.name,
+    description: condition.description,
+    possibleTreatment: condition.treatments.map((t) => ({
+      "@type": "MedicalTherapy",
+      name: t.name,
+    })),
+    signOrSymptom: condition.symptoms.map((s) => ({
+      "@type": "MedicalSignOrSymptom",
+      name: s,
+    })),
+    associatedAnatomy: {
+      "@type": "AnatomicalStructure",
+      name: condition.name.includes("Back") || condition.name.includes("Spine")
+        ? "Spine"
+        : condition.name.includes("Knee")
+        ? "Knee"
+        : condition.name.includes("Shoulder")
+        ? "Shoulder"
+        : condition.name.includes("Hip")
+        ? "Hip"
+        : condition.name.includes("Neck")
+        ? "Cervical Spine"
+        : "Musculoskeletal System",
+    },
+  };
+
   return (
     <>
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(medicalConditionSchema),
+        }}
+      />
+
       {/* Hero Section */}
       <section className="relative py-20 lg:py-28 bg-gradient-to-br from-slate-50 via-white to-teal-50/30 overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-teal-500/5 to-transparent" />
@@ -86,9 +125,17 @@ export default async function ConditionPage({ params }: ConditionPageProps) {
               <span className="gradient-text-medical">Treatment</span>
             </h1>
 
-            <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+            <p className="text-xl text-slate-600 mb-4 leading-relaxed">
               {condition.description}
             </p>
+
+            {condition.overview && (
+              <p className="text-lg text-slate-500 mb-8 leading-relaxed">
+                {condition.overview}
+              </p>
+            )}
+
+            {!condition.overview && <div className="mb-4" />}
 
             <div className="flex flex-wrap gap-4">
               <Button size="lg" asChild>
@@ -156,6 +203,51 @@ export default async function ConditionPage({ params }: ConditionPageProps) {
           </div>
         </div>
       </section>
+
+      {/* When to See a Doctor */}
+      {condition.whenToSeeDoctor && condition.whenToSeeDoctor.length > 0 && (
+        <section className="section bg-amber-50">
+          <div className="container container-default mx-auto">
+            <Card className="p-8 border-amber-200 bg-white">
+              <CardContent className="p-0">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-3 bg-amber-100 rounded-xl text-amber-600">
+                    <AlertTriangle className="h-6 w-6" />
+                  </div>
+                  <h2 className="text-2xl font-bold text-slate-900">
+                    When to See a Doctor for {condition.name}
+                  </h2>
+                </div>
+                <p className="text-slate-600 mb-6">
+                  While some cases of {condition.name.toLowerCase()} can be managed with home care, you should seek medical attention if you experience any of the following:
+                </p>
+                <ul className="space-y-3 mb-6">
+                  {condition.whenToSeeDoctor.map((item, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                      <AlertCircle className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" />
+                      <span className="text-slate-700">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex flex-wrap gap-4">
+                  <Button className="bg-amber-500 hover:bg-amber-600" asChild>
+                    <Link href={SITE_CONFIG.bookingUrl}>
+                      <Calendar className="h-5 w-5" />
+                      Schedule an Evaluation
+                    </Link>
+                  </Button>
+                  <Button variant="outline" asChild>
+                    <a href={SITE_CONFIG.phoneTel}>
+                      <Phone className="h-5 w-5" />
+                      Call {SITE_CONFIG.phoneDisplay}
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
+      )}
 
       {/* Treatments */}
       <section className="section bg-slate-50">
