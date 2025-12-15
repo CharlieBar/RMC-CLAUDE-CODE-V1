@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import { SocialShare } from "@/components/ui/social-share";
 import { SITE_CONFIG } from "@/lib/constants";
 import { BLOG_POSTS, getBlogPostBySlug, getAllBlogSlugs } from "@/lib/blog";
 import {
@@ -12,7 +13,6 @@ import {
   ChevronRight,
   Clock,
   Phone,
-  Share2,
   User,
 } from "lucide-react";
 
@@ -212,14 +212,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </div>
 
               {/* Share */}
-              <div className="mt-6 flex items-center gap-4">
-                <span className="text-sm font-medium text-slate-600">
-                  Share this article:
-                </span>
-                <Button variant="outline" size="sm">
-                  <Share2 className="h-4 w-4" />
-                  Share
-                </Button>
+              <div className="mt-8 pt-6 border-t border-slate-200">
+                <SocialShare
+                  url={`${SITE_CONFIG.domain}/blog/${post.slug}`}
+                  title={post.title}
+                  description={post.excerpt}
+                />
               </div>
 
               {/* Related Content */}

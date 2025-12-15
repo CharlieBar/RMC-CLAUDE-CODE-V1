@@ -3,17 +3,14 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
+import { TreatmentsGrid } from "@/components/treatments-grid";
 import { SITE_CONFIG } from "@/lib/constants";
-import { TREATMENTS } from "@/lib/treatments";
 import {
   Activity,
-  ArrowRight,
   Calendar,
   ChevronRight,
-  Clock,
   Phone,
   Syringe,
-  Zap,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -26,29 +23,6 @@ export const metadata: Metadata = {
       "Advanced pain management treatments and procedures. Find relief with our expert care in Arlington Heights.",
   },
 };
-
-const TREATMENT_CATEGORIES = [
-  {
-    name: "Spine Injections",
-    icon: Syringe,
-    treatments: ["epidural-steroid-injections", "facet-joint-injections", "selective-nerve-root-block"],
-  },
-  {
-    name: "Advanced Procedures",
-    icon: Zap,
-    treatments: ["radiofrequency-ablation"],
-  },
-  {
-    name: "Joint Treatments",
-    icon: Activity,
-    treatments: ["joint-injections", "prp-therapy"],
-  },
-  {
-    name: "Muscle & Rehab",
-    icon: Activity,
-    treatments: ["trigger-point-injections", "physical-therapy"],
-  },
-];
 
 export default function TreatmentsPage() {
   return (
@@ -146,64 +120,11 @@ export default function TreatmentsPage() {
               Comprehensive Treatment Options
             </h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto text-body">
-              From minimally invasive injections to physical therapy, we offer
-              treatments tailored to your specific condition and goals.
+              Search through our treatments or browse by procedure type to find the right option for you.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {TREATMENTS.map((treatment, index) => (
-              <Card
-                key={treatment.slug}
-                hover="lift"
-                className="group h-full animate-fade-in-up opacity-0"
-                style={{ animationDelay: `${0.1 * index}s`, animationFillMode: 'forwards' }}
-              >
-                <Link
-                  href={`/treatments/${treatment.slug}`}
-                  className="block h-full"
-                >
-                  <CardContent className="p-6 h-full flex flex-col">
-                    <div className="icon-animate p-3 bg-teal-100 rounded-xl text-teal-600 w-fit mb-4 transition-all duration-200 group-hover:bg-teal-500 group-hover:text-white group-hover:shadow-lg group-hover:shadow-teal-500/30">
-                      <Syringe className="h-6 w-6" />
-                    </div>
-
-                    <h3 className="text-xl font-semibold text-slate-900 group-hover:text-teal-600 transition-colors mb-2">
-                      {treatment.name}
-                    </h3>
-
-                    <p className="text-slate-600 mb-4 flex-grow text-body">
-                      {treatment.shortDescription}
-                    </p>
-
-                    <div className="flex items-center gap-4 text-sm text-slate-500 mb-4">
-                      <div className="flex items-center gap-1">
-                        <Clock className="h-4 w-4" />
-                        {treatment.duration}
-                      </div>
-                    </div>
-
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {treatment.relatedConditions.slice(0, 2).map((condition, idx) => (
-                        <Badge key={idx} variant="outline" size="sm">
-                          {condition.name}
-                        </Badge>
-                      ))}
-                      {treatment.relatedConditions.length > 2 && (
-                        <Badge variant="outline" size="sm">
-                          +{treatment.relatedConditions.length - 2} more
-                        </Badge>
-                      )}
-                    </div>
-
-                    <span className="inline-flex items-center gap-1 text-teal-600 font-medium group-hover:gap-2 transition-all">
-                      Learn More <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                    </span>
-                  </CardContent>
-                </Link>
-              </Card>
-            ))}
-          </div>
+          <TreatmentsGrid />
         </div>
       </section>
 

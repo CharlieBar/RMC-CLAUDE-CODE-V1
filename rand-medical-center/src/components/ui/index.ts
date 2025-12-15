@@ -20,3 +20,6 @@ export {
   AccordionTrigger,
   AccordionContent,
 } from "./accordion";
+
+export { FloatingCTA } from "./floating-cta";
+export { SocialShare } from "./social-share";

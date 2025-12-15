@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { ConditionsGrid } from "@/components/conditions-grid";
 import { SITE_CONFIG } from "@/lib/constants";
-import { CONDITIONS } from "@/lib/conditions";
 import {
   Calendar,
   ChevronRight,
@@ -22,28 +22,6 @@ export const metadata: Metadata = {
       "Find relief from pain conditions with our comprehensive treatment options.",
   },
 };
-
-// Group conditions by category
-const CONDITION_CATEGORIES = [
-  {
-    name: "Spine & Back",
-    conditions: CONDITIONS.filter((c) =>
-      ["back-pain", "sciatica", "herniated-disc", "neck-pain"].includes(c.slug)
-    ),
-  },
-  {
-    name: "Joints",
-    conditions: CONDITIONS.filter((c) =>
-      ["knee-pain", "shoulder-pain", "arthritis"].includes(c.slug)
-    ),
-  },
-  {
-    name: "Other Conditions",
-    conditions: CONDITIONS.filter((c) =>
-      ["sports-injuries"].includes(c.slug)
-    ),
-  },
-];
 
 export default function ConditionsPage() {
   return (
@@ -120,41 +98,12 @@ export default function ConditionsPage() {
             <h2 className="text-3xl md:text-4xl font-bold font-display text-slate-900 mb-4 heading-tight">
               Find Your Condition
             </h2>
+            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+              Search through our comprehensive list of conditions or browse by category.
+            </p>
           </div>
 
-          {CONDITION_CATEGORIES.map((category, catIndex) => (
-            <div key={catIndex} className="mb-12">
-              <h3 className="text-xl font-semibold text-slate-900 mb-6 pb-2 border-b border-slate-200">
-                {category.name}
-              </h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {category.conditions.map((condition, condIndex) => (
-                  <Link
-                    key={condition.slug}
-                    href={`/conditions/${condition.slug}`}
-                    className="group p-6 bg-slate-50 rounded-2xl border border-slate-200 hover:border-teal-300 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 animate-fade-in-up opacity-0"
-                    style={{ animationDelay: `${0.1 * condIndex}s`, animationFillMode: 'forwards' }}
-                  >
-                    <h4 className="text-lg font-semibold text-slate-900 mb-2 group-hover:text-teal-600 transition-colors">
-                      {condition.name}
-                    </h4>
-                    <p className="text-slate-600 text-sm mb-4 line-clamp-2 text-body">
-                      {condition.description}
-                    </p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-slate-500">
-                        {condition.treatments.length} treatments available
-                      </span>
-                      <span className="inline-flex items-center text-teal-600 text-sm font-medium">
-                        Learn More
-                        <ChevronRight className="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform" />
-                      </span>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          ))}
+          <ConditionsGrid />
         </div>
       </section>
 
