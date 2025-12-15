@@ -69,6 +69,36 @@ const TESTIMONIALS = [
     location: "Palatine",
     rating: 5,
   },
+  {
+    quote: "Friendly staff, best physical therapist and treatment in the city without a doubt. Highly recommend for all locals and people nearby.",
+    author: "Tanner R.",
+    location: "Arlington Heights",
+    rating: 5,
+  },
+  {
+    quote: "I am very grateful to have RAND MEDICAL CENTER in my life. Dr. Ruben is a wonderful person, and it is worth mentioning how kind and efficient Rosa and Jay and the entire staff are. It is a fantastic service.",
+    author: "Ana O.",
+    location: "Chicago Area",
+    rating: 5,
+  },
+  {
+    quote: "Best Medical Center has been about my blessing on my journey to recovery. From the moment I walked through their doors after my injury, I was met with professionalism, kindness, and an unwavering commitment to my well-being. The team was extremely supportive.",
+    author: "Tachina B.",
+    location: "Arlington Heights",
+    rating: 5,
+  },
+  {
+    quote: "Today I want to thank Dr. Ruben Bermudez for his very professional attention for giving me excellent service and for addressing the medical issues I am going through and for giving materials to the appropriate specialists.",
+    author: "Amy F.",
+    location: "Arlington Heights",
+    rating: 5,
+  },
+  {
+    quote: "We're delighted to read your wonderful feedback! Our dedicated team at Rand Medical Center always strives for excellence, and knowing we made a difference in your satisfaction with our medical services. Our feedback reinforces our mission to continue delivering exceptional care.",
+    author: "Florence E.",
+    location: "Mount Prospect",
+    rating: 5,
+  },
 ];
 
 export default function Home() {

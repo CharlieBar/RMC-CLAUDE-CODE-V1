@@ -23,8 +23,9 @@ export const SITE_CONFIG = {
   },
   bookingUrl: "https://www.tebra.com/care/practice/rand-medical-center-456192",
   socialMedia: {
-    facebook: "",
-    instagram: "",
+    facebook: "https://www.facebook.com/RandMedicalCenter",
+    instagram: "https://www.instagram.com/randmedicalcenter_/",
+    twitter: "https://x.com/rand_medical",
     linkedin: "",
     youtube: "",
   },

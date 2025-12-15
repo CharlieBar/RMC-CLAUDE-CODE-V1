@@ -10,6 +10,7 @@ import {
   Instagram,
   Linkedin,
   Youtube,
+  Twitter,
   Award,
 } from "lucide-react";
 
@@ -176,6 +177,17 @@ export function Footer() {
                   aria-label="Instagram"
                 >
                   <Instagram className="h-5 w-5" />
+                </a>
+              )}
+              {SITE_CONFIG.socialMedia.twitter && (
+                <a
+                  href={SITE_CONFIG.socialMedia.twitter}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-slate-400 hover:text-teal-400 transition-colors"
+                  aria-label="Twitter / X"
+                >
+                  <Twitter className="h-5 w-5" />
                 </a>
               )}
               {SITE_CONFIG.socialMedia.linkedin && (
