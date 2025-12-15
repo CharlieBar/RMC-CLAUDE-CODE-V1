@@ -64,8 +64,41 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     (p) => p.category === post.category && p.slug !== post.slug
   ).slice(0, 2);
 
+  // Article schema for SEO
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.metaDescription,
+    author: {
+      "@type": "Person",
+      name: post.author,
+      jobTitle: post.authorTitle,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_CONFIG.name,
+      url: SITE_CONFIG.domain,
+    },
+    datePublished: post.publishedAt,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_CONFIG.domain}/blog/${post.slug}`,
+    },
+    articleSection: post.category,
+    keywords: post.tags.join(", "),
+  };
+
   return (
     <>
+      {/* Article Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
+      />
+
       {/* Header */}
       <section className="relative py-16 lg:py-20 bg-gradient-to-br from-slate-50 via-white to-teal-50/30">
         <div className="container container-default mx-auto">
@@ -188,6 +221,57 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   Share
                 </Button>
               </div>
+
+              {/* Related Content */}
+              {(post.relatedConditions?.length || post.relatedTreatments?.length) && (
+                <div className="mt-12 pt-8 border-t border-slate-200">
+                  <h3 className="text-lg font-semibold text-slate-900 mb-6">
+                    Related Content
+                  </h3>
+                  <div className="grid sm:grid-cols-2 gap-6">
+                    {post.relatedConditions && post.relatedConditions.length > 0 && (
+                      <div>
+                        <h4 className="text-sm font-semibold text-slate-700 mb-3">
+                          Related Conditions
+                        </h4>
+                        <ul className="space-y-2">
+                          {post.relatedConditions.map((condition) => (
+                            <li key={condition.href}>
+                              <Link
+                                href={condition.href}
+                                className="flex items-center gap-2 text-slate-600 hover:text-teal-600 transition-colors"
+                              >
+                                <ChevronRight className="h-4 w-4" />
+                                {condition.name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                    {post.relatedTreatments && post.relatedTreatments.length > 0 && (
+                      <div>
+                        <h4 className="text-sm font-semibold text-slate-700 mb-3">
+                          Related Treatments
+                        </h4>
+                        <ul className="space-y-2">
+                          {post.relatedTreatments.map((treatment) => (
+                            <li key={treatment.href}>
+                              <Link
+                                href={treatment.href}
+                                className="flex items-center gap-2 text-slate-600 hover:text-teal-600 transition-colors"
+                              >
+                                <ChevronRight className="h-4 w-4" />
+                                {treatment.name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
             </article>
 
             {/* Sidebar */}
