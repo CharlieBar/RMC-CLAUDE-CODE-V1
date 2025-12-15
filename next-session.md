@@ -39,11 +39,11 @@
 - [x] Treatment pages: MedicalProcedure + FAQPage schemas
 
 ### Content & SEO Enhancements ✓
-- [x] Added "When to See a Doctor" section to condition pages with red flag symptoms
+- [x] Added "When to See a Doctor" section to ALL 31 condition pages with red flag symptoms
 - [x] Added overview field to 14 key conditions for additional SEO content
-- [x] Enhanced condition meta descriptions with local SEO keywords (NW Chicago suburbs)
+- [x] Enhanced ALL condition meta descriptions with local SEO keywords (NW Chicago suburbs)
 - [x] Enhanced treatment meta descriptions with local SEO keywords
-- [x] Conditions enhanced: back-pain, sciatica, neck-pain, knee-pain, shoulder-pain, arthritis, herniated-disc, sports-injuries, headaches, carpal-tunnel-syndrome, plantar-fasciitis, spinal-stenosis, degenerative-disc-disease, hip-pain
+- [x] All conditions now have complete whenToSeeDoctor sections for SEO and patient guidance
 
 ### Internal Linking ✓
 - [x] Conditions link to treatments
@@ -75,29 +75,7 @@
 
 ### Priority 1: Content Completion (Quick Wins)
 
-#### A. Add whenToSeeDoctor to Remaining 17 Conditions
-The following conditions need the `whenToSeeDoctor` field added:
-- [ ] whiplash
-- [ ] neuropathy
-- [ ] diabetic-neuropathy
-- [ ] rotator-cuff-tear
-- [ ] myofascial-pain
-- [ ] fibromyalgia
-- [ ] chronic-pain
-- [ ] facet-syndrome
-- [ ] radiculopathy
-- [ ] si-joint-pain
-- [ ] complex-regional-pain-syndrome
-- [ ] occipital-neuralgia
-- [ ] trigeminal-neuralgia
-- [ ] piriformis-syndrome
-- [ ] osteoarthritis
-- [ ] work-injuries
-- [ ] auto-accident-injuries
-
-**File**: `src/lib/conditions.ts`
-
-#### B. Add Social Media Links
+#### A. Add Social Media Links
 Currently empty strings in constants. Add real links:
 - [ ] Facebook
 - [ ] Instagram
