@@ -43,7 +43,7 @@
 - [x] Added overview field to 14 key conditions for additional SEO content
 - [x] Enhanced ALL condition meta descriptions with local SEO keywords (NW Chicago suburbs)
 - [x] Enhanced treatment meta descriptions with local SEO keywords
-- [x] All conditions now have complete whenToSeeDoctor sections for SEO and patient guidance
+- [x] All 31 conditions now have complete whenToSeeDoctor sections for SEO and patient guidance
 
 ### Internal Linking ✓
 - [x] Conditions link to treatments
@@ -76,19 +76,25 @@
 ### Priority 1: Content Completion (Quick Wins)
 
 #### A. Add Social Media Links
-Currently empty strings in constants. Add real links:
-- [ ] Facebook
-- [ ] Instagram
-- [ ] LinkedIn
-- [ ] YouTube (if applicable)
+Currently empty strings in constants. Add real links when available:
+- [ ] Facebook page URL
+- [ ] Instagram profile URL
+- [ ] LinkedIn company page URL
+- [ ] YouTube channel (if applicable)
 
 **File**: `src/lib/constants.ts`
 
-#### C. Add Testimonials
+#### B. Add More Testimonials
 - [ ] Add 3-5 more patient testimonials
-- [ ] Include condition-specific testimonials
+- [ ] Include condition-specific testimonials (e.g., "After my back surgery...")
+- [ ] Add testimonial attribution (first name, condition treated)
 
 **File**: `src/lib/constants.ts` or create `src/lib/testimonials.ts`
+
+#### C. Add Overview to Remaining Conditions
+14 key conditions have overview text. Consider adding to remaining 17 for additional SEO content.
+
+**File**: `src/lib/conditions.ts`
 
 ---
 
@@ -119,7 +125,7 @@ Currently empty strings in constants. Add real links:
 - [ ] Add "Accepting New Patients" badges consistently to provider cards
 
 #### C. Quick Actions Section
-Consider adding a floating action section with:
+Consider adding a floating action button or section with:
 - Call Now
 - Book Online
 - Get Directions
@@ -142,6 +148,7 @@ Most CTAs say "Book Appointment". Consider varying language:
 - "Get Started Today"
 - "Start Your Recovery"
 - "Request Appointment"
+- "Find Relief Now"
 
 #### 3. Dark Section Variety
 Currently all dark sections are `bg-slate-900`. Consider alternating:
@@ -149,17 +156,19 @@ Currently all dark sections are `bg-slate-900`. Consider alternating:
 - `bg-gradient-to-br from-teal-900 to-slate-900`
 
 #### 4. Service-Specific Colors
-The constants define colors per service but they're not used:
+The constants define colors per service but they're not fully used:
 - Pain Management: teal (default)
 - Orthopedics: blue accent
 - Physical Therapy: green accent
 - Immediate Care: amber accent
 - Surgery Center: rose accent
 
+Consider applying these accent colors more prominently on service pages.
+
 ### Content Improvements
 
 #### 1. Blog Expansion
-- Add condition-specific blog posts
+- Add condition-specific blog posts (e.g., "5 Exercises for Lower Back Pain")
 - Add "Related Articles" section to condition/treatment pages
 - Add estimated read time to blog posts
 - Add social share buttons to blog posts
@@ -167,27 +176,32 @@ The constants define colors per service but they're not used:
 #### 2. Provider Bios
 - Add more detailed biography content on provider detail pages
 - Include publications, awards, special interests
+- Add patient education philosophy
 
 #### 3. Social Proof
 - Add specific numbers: "X,000+ patients treated"
 - Add review snippets from Google/Healthgrades
 - Add "As seen in" section if applicable
+- Add years of combined experience stat
 
 #### 4. Missing Pages to Consider
 - `/services/workers-compensation` - dedicated page for work injuries
 - `/services/auto-accident-care` - dedicated page for MVA cases
 - `/services/sports-medicine` - if relevant
+- `/services/telehealth` - if offered
 
 ### UX Improvements
 
 #### 1. Scroll-Triggered Animations
 - Add IntersectionObserver-based animations for content below the fold
 - Apply to: stats, testimonials, feature grids
+- Use existing animation classes with scroll triggers
 
 #### 2. Loading States
 Skeleton components exist but aren't used. Consider adding:
 - Loading states for provider cards
 - Loading states for treatment grids
+- Page transition animations
 
 #### 3. Forms
 Currently relies on external Tebra booking. Consider adding:
@@ -195,11 +209,17 @@ Currently relies on external Tebra booking. Consider adding:
 - Appointment request form (captures leads)
 - Newsletter signup for health tips
 
-#### 4. Accessibility
+#### 4. Search Functionality
+- Add site search for conditions/treatments
+- Add condition symptom checker quiz
+- Add treatment finder wizard
+
+#### 5. Accessibility Enhancements
 - Verify all interactive elements have proper focus states
 - Add `aria-labels` to icon-only buttons
 - Test with screen readers
 - Ensure color contrast meets WCAG AA
+- Add focus-visible styles consistently
 
 ### Technical Improvements
 
@@ -207,6 +227,7 @@ Currently relies on external Tebra booking. Consider adding:
 - Add BreadcrumbList schema to pages with breadcrumbs
 - Add LocalBusiness schema with aggregateRating (when reviews exist)
 - Consider HowTo schema for treatment procedure pages
+- Add VideoObject schema when video content is added
 
 #### 2. Analytics (When Ready to Launch)
 - Google Analytics 4
@@ -215,8 +236,14 @@ Currently relies on external Tebra booking. Consider adding:
   - Book Appointment clicks
   - Phone number clicks
   - Form submissions
+  - Direction requests
 
-#### 3. Dark Mode (Optional)
+#### 3. Performance Optimization
+- Implement image lazy loading with Next.js Image component
+- Add preload for critical fonts
+- Consider implementing service worker for offline access
+
+#### 4. Dark Mode (Optional)
 CSS variables exist but not activated. Would need:
 - Theme toggle component
 - Persist preference in localStorage
@@ -228,7 +255,7 @@ CSS variables exist but not activated. Would need:
 
 | File | Purpose |
 |------|---------|
-| `src/lib/conditions.ts` | 31 conditions data (14 have whenToSeeDoctor) |
+| `src/lib/conditions.ts` | 31 conditions data (ALL have whenToSeeDoctor) |
 | `src/lib/treatments.ts` | 10 treatments data |
 | `src/lib/providers.ts` | 5 providers data |
 | `src/lib/blog.ts` | 9 blog articles |
@@ -308,9 +335,8 @@ npm run start    # Production server
 ## PROMPT FOR NEXT SESSION
 
 ```
-Please read the following files to understand the project context:
-1. /home/user/RMC-CLAUDE-CODE-V1/next-session.md
-2. /home/user/RMC-CLAUDE-CODE-V1/IMPROVEMENT-SUGGESTIONS.md
+Please read the session guide to understand the project context:
+/home/user/RMC-CLAUDE-CODE-V1/next-session.md
 
 Then continue working on the Rand Medical Center website at:
 /home/user/RMC-CLAUDE-CODE-V1/rand-medical-center/
@@ -319,36 +345,35 @@ PROJECT STATUS:
 - 85 pages building successfully
 - Design polish COMPLETE on all pages
 - SEO schema markup COMPLETE on all page types
-- "When to See a Doctor" added to 14 key conditions
-- Local SEO optimization complete for meta descriptions
+- "When to See a Doctor" added to ALL 31 conditions
+- Local SEO optimization complete for all meta descriptions
 
-PRIORITY TASKS FOR THIS SESSION:
+PRIORITY TASKS FOR THIS SESSION (choose based on needs):
 
-1. Add whenToSeeDoctor to Remaining 17 Conditions
-   File: src/lib/conditions.ts
-   Conditions: whiplash, neuropathy, diabetic-neuropathy, rotator-cuff-tear,
-   myofascial-pain, fibromyalgia, chronic-pain, facet-syndrome, radiculopathy,
-   si-joint-pain, complex-regional-pain-syndrome, occipital-neuralgia,
-   trigeminal-neuralgia, piriformis-syndrome, osteoarthritis, work-injuries,
-   auto-accident-injuries
-
-2. Add Social Media Links
+1. Add Social Media Links (if URLs are available)
    File: src/lib/constants.ts
    Add Facebook, Instagram, LinkedIn URLs
 
-3. Add More Testimonials
+2. Add More Testimonials
    Add 3-5 patient testimonials with condition-specific details
 
-4. UX Improvements (Choose one or more):
+3. UX Improvements (Choose one or more):
    - Add scroll-triggered animations (IntersectionObserver)
    - Add estimated read time to blog posts
    - Add social share buttons to blog posts
    - Add filtering/sorting for conditions/treatments pages
+   - Add sticky mobile header
+
+4. Content Expansion:
+   - Add overview text to remaining 17 conditions
+   - Add more detailed provider bios
+   - Create additional blog posts
 
 5. Optional - Real Images
    If images are available, add:
    - Provider headshots to /public/images/providers/
    - Facility photos to /public/images/facility/
+   - Social sharing OG image
 
 Run "npm run build" to verify all changes work. Build should produce 85 pages.
 ```
@@ -362,6 +387,7 @@ Run "npm run build" to verify all changes work. Build should produce 85 pages.
 - All navigation links working
 - Design polish completed on ALL pages (animations, micro-interactions)
 - SEO schema markup on conditions (MedicalCondition) and treatments (MedicalProcedure + FAQPage)
+- ALL 31 conditions have complete whenToSeeDoctor sections
 - Dark mode CSS variables exist but not activated
 - Contact page uses external booking links (no form)
-- 14 of 31 conditions have whenToSeeDoctor data
+- Social media links are placeholder empty strings (need real URLs)
