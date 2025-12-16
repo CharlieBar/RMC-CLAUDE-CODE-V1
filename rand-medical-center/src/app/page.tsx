@@ -78,31 +78,32 @@ export default function Home() {
       <section className="relative py-20 lg:py-32 bg-gradient-to-br from-slate-50 via-white to-teal-50/30 overflow-hidden">
         {/* Background decoration */}
         <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-teal-500/5 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2 animate-pulse-glow" />
+        <div className="absolute top-20 right-20 w-64 h-64 bg-teal-400/5 rounded-full blur-2xl animate-float" />
 
         <div className="container container-default mx-auto relative z-10">
           <div className="max-w-3xl">
             {/* Trust Badge */}
-            <Badge variant="primary" size="lg" className="mb-6">
+            <Badge variant="primary" size="lg" className="mb-6 animate-fade-in-up">
               <Award className="h-4 w-4 mr-1" />
               Joint Commission Accredited
             </Badge>
 
             {/* Headline */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-slate-900 mb-6 leading-tight animate-fade-in-up animate-delay-100">
               Comprehensive Medical Care in{" "}
               <span className="gradient-text-medical">Arlington Heights</span>
             </h1>
 
             {/* Subheadline */}
-            <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+            <p className="text-xl text-slate-600 mb-8 leading-relaxed animate-fade-in-up animate-delay-200">
               Pain management, orthopedics, physical therapy, and immediate care
               &mdash; all under one roof. Board-certified specialists with 15+
               years of experience helping patients get back to their lives.
             </p>
 
             {/* Trust indicators */}
-            <div className="flex flex-wrap gap-6 mb-10 text-slate-600">
+            <div className="flex flex-wrap gap-6 mb-10 text-slate-600 animate-fade-in-up animate-delay-300">
               <div className="flex items-center gap-2">
                 <BadgeCheck className="h-5 w-5 text-teal-500" />
                 <span>Board Certified</span>
@@ -118,15 +119,15 @@ export default function Home() {
             </div>
 
             {/* CTAs */}
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="group" asChild>
+            <div className="flex flex-wrap gap-4 animate-fade-in-up animate-delay-400">
+              <Button size="lg" className="group hover-lift hover-glow" asChild>
                 <Link href={SITE_CONFIG.bookingUrl}>
                   <Calendar className="h-5 w-5" />
                   Book Appointment
                   <ChevronRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" asChild>
+              <Button variant="outline" size="lg" className="hover-lift" asChild>
                 <a href={SITE_CONFIG.phoneTel}>
                   <Phone className="h-5 w-5" />
                   Call {SITE_CONFIG.phoneDisplay}
