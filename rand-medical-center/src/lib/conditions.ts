@@ -475,6 +475,8 @@ export const CONDITIONS: Condition[] = [
     name: "Spinal Stenosis",
     description:
       "Spinal stenosis is a narrowing of the spaces within your spine, which can put pressure on the nerves that travel through the spine. It most commonly occurs in the lower back and neck. While some people have no symptoms, others may experience pain, numbness, muscle weakness, and problems with bladder or bowel function.",
+    overview:
+      "At Rand Medical Center in Arlington Heights, our spine specialists use advanced diagnostic imaging and minimally invasive treatments to relieve spinal stenosis symptoms. We offer comprehensive care including epidural injections, physical therapy, and pain management for patients throughout the northwest Chicago suburbs.",
     causes: [
       "Overgrowth of bone (bone spurs) from osteoarthritis",
       "Herniated discs pressing on the spinal canal",
@@ -513,6 +515,8 @@ export const CONDITIONS: Condition[] = [
     name: "Degenerative Disc Disease",
     description:
       "Degenerative disc disease is not actually a disease, but rather a term used to describe the normal changes in your spinal discs as you age. The spinal discs act as shock absorbers between the vertebrae, and over time they can break down and cause pain, instability, and other symptoms.",
+    overview:
+      "Our Arlington Heights pain management specialists offer advanced treatments for degenerative disc disease, including minimally invasive procedures that target pain at its source. We serve patients from Palatine, Mount Prospect, Des Plaines, and throughout the northwest suburbs with personalized, evidence-based care.",
     causes: [
       "Natural aging and wear on spinal discs",
       "Loss of fluid in the discs reducing flexibility",
@@ -551,6 +555,8 @@ export const CONDITIONS: Condition[] = [
     name: "Hip Pain",
     description:
       "Hip pain is a common complaint that can be caused by a wide variety of problems. The precise location of your hip pain can provide valuable clues about the underlying cause. Problems within the hip joint itself tend to cause pain inside the hip or groin, while problems with muscles, ligaments, or tendons may cause pain in the thigh, outer hip, or buttocks.",
+    overview:
+      "Rand Medical Center's orthopedic specialists and pain management physicians work together to diagnose and treat hip pain in Arlington Heights and surrounding communities. From conservative treatments like physical therapy and injections to surgical referrals when needed, we provide comprehensive care for patients in Schaumburg, Rolling Meadows, and the northwest suburbs.",
     causes: [
       "Osteoarthritis or rheumatoid arthritis",
       "Hip fractures from falls or trauma",
@@ -589,6 +595,8 @@ export const CONDITIONS: Condition[] = [
     name: "Peripheral Neuropathy",
     description:
       "Peripheral neuropathy refers to damage to the peripheral nerves, which transmit messages between your brain and spinal cord and the rest of your body. This condition can cause weakness, numbness, and pain, usually in the hands and feet. It can result from traumatic injuries, infections, metabolic problems, and exposure to toxins.",
+    overview:
+      "Our Arlington Heights pain specialists provide comprehensive neuropathy treatment using advanced medications, nerve blocks, and innovative therapies to reduce pain and improve function. We specialize in managing diabetic neuropathy and other peripheral nerve disorders for patients across Palatine, Elk Grove Village, and the northwest Chicago region.",
     causes: [
       "Diabetes (most common cause)",
       "Autoimmune diseases",
@@ -628,6 +636,8 @@ export const CONDITIONS: Condition[] = [
     name: "Diabetic Neuropathy",
     description:
       "Diabetic neuropathy is a type of nerve damage that can occur in people with diabetes. High blood sugar can injure nerves throughout the body, but diabetic neuropathy most often damages nerves in the legs and feet. Depending on the affected nerves, symptoms can range from pain and numbness to problems with the digestive system, urinary tract, and heart.",
+    overview:
+      "Rand Medical Center's pain management team in Arlington Heights specializes in treating diabetic neuropathy with a combination of medication management, nerve blocks, and lifestyle counseling. We help diabetes patients throughout Mount Prospect, Palatine, and the northwest suburbs manage painful neuropathy symptoms and prevent complications.",
     causes: [
       "Prolonged high blood sugar levels",
       "Metabolic factors associated with diabetes",
@@ -667,6 +677,8 @@ export const CONDITIONS: Condition[] = [
     name: "Rotator Cuff Tear",
     description:
       "A rotator cuff tear is a common cause of pain and disability among adults. The rotator cuff is a group of four muscles and tendons that stabilize the shoulder joint and enable you to lift and rotate your arm. A tear in the rotator cuff can occur from an injury or from degeneration over time.",
+    overview:
+      "At Rand Medical Center in Arlington Heights, our fellowship-trained orthopedic surgeons specialize in diagnosing and treating rotator cuff tears using both conservative and surgical approaches. We offer comprehensive shoulder care for patients throughout Des Plaines, Schaumburg, and the northwest Chicago suburbs, from physical therapy to minimally invasive surgery.",
     causes: [
       "Acute injury from a fall or lifting",
       "Repetitive overhead motions",
@@ -706,6 +718,8 @@ export const CONDITIONS: Condition[] = [
     name: "Myofascial Pain Syndrome",
     description:
       "Myofascial pain syndrome is a chronic pain disorder in which pressure on sensitive points in your muscles (trigger points) causes pain in the muscle and sometimes in seemingly unrelated parts of your body. This is called referred pain. Myofascial pain typically occurs after a muscle has been contracted repetitively.",
+    overview:
+      "Rand Medical Center in Arlington Heights offers comprehensive myofascial pain treatment including trigger point injections, physical therapy, and manual therapy techniques. Our pain specialists help patients from Mount Prospect, Palatine, and the northwest Chicago suburbs find relief from chronic muscle pain and trigger points.",
     causes: [
       "Repetitive motions used in jobs or hobbies",
       "Muscle injury or strain",
@@ -745,6 +759,8 @@ export const CONDITIONS: Condition[] = [
     name: "Fibromyalgia",
     description:
       "Fibromyalgia is a disorder characterized by widespread musculoskeletal pain accompanied by fatigue, sleep, memory, and mood issues. Researchers believe that fibromyalgia amplifies painful sensations by affecting the way your brain and spinal cord process painful and nonpainful signals.",
+    overview:
+      "Rand Medical Center's multidisciplinary team in Arlington Heights provides comprehensive fibromyalgia care combining medication management, physical therapy, and lifestyle interventions. We understand the challenges of living with fibromyalgia and offer compassionate, evidence-based treatment for patients across Mount Prospect, Palatine, and the northwest Chicago area.",
     causes: [
       "Genetics may play a role in susceptibility",
       "Physical or emotional trauma triggering onset",
@@ -784,6 +800,8 @@ export const CONDITIONS: Condition[] = [
     name: "Chronic Pain",
     description:
       "Chronic pain is pain that lasts for longer than three months, or beyond the normal healing time for an injury. It can affect any part of the body and can range from mild to severe. Chronic pain can significantly impact quality of life, affecting sleep, mood, and daily activities.",
+    overview:
+      "Our board-certified pain management specialists in Arlington Heights use a multimodal approach to chronic pain treatment, combining advanced interventional procedures, physical therapy, and medication management. We help patients from Schaumburg, Rolling Meadows, Elk Grove Village, and throughout the northwest suburbs regain function and improve their quality of life.",
     causes: [
       "Initial injury or infection that triggers ongoing pain",
       "Ongoing cause of pain such as arthritis",
@@ -823,6 +841,8 @@ export const CONDITIONS: Condition[] = [
     name: "Facet Joint Syndrome",
     description:
       "Facet joint syndrome is a condition where the facet joints in the spine become a source of pain. Facet joints are small joints at each segment of the spine that provide stability and help guide motion. They can become painful due to arthritis, injury, or mechanical stress.",
+    overview:
+      "Our Arlington Heights pain specialists offer targeted treatment for facet joint syndrome including facet joint injections and radiofrequency ablation to provide lasting relief. We serve patients from Palatine, Schaumburg, Mount Prospect, and across the northwest suburbs with minimally invasive procedures that target spine pain at its source.",
     causes: [
       "Degenerative changes from aging",
       "Injury or trauma to the spine",
@@ -862,6 +882,8 @@ export const CONDITIONS: Condition[] = [
     name: "Radiculopathy",
     description:
       "Radiculopathy occurs when a nerve root in the spine becomes compressed, inflamed, or damaged. This can cause pain, numbness, tingling, or weakness along the path of the nerve. Radiculopathy is often referred to as a pinched nerve and can occur in any part of the spine.",
+    overview:
+      "Rand Medical Center in Arlington Heights specializes in diagnosing and treating radiculopathy with advanced imaging and targeted interventions including epidural injections and selective nerve blocks. Our spine specialists provide expert care for patients experiencing pinched nerves throughout Des Plaines, Elk Grove Village, and the northwest Chicago region.",
     causes: [
       "Herniated or bulging discs",
       "Bone spurs from arthritis",
@@ -901,6 +923,8 @@ export const CONDITIONS: Condition[] = [
     name: "Sacroiliac (SI) Joint Pain",
     description:
       "The sacroiliac joints connect the lower spine to the pelvis and are responsible for transferring weight and forces between the upper body and legs. Dysfunction or inflammation in these joints can cause pain in the lower back, buttocks, and legs.",
+    overview:
+      "At Rand Medical Center in Arlington Heights, our pain management physicians specialize in diagnosing and treating SI joint pain with targeted injections and radiofrequency ablation. We provide relief for patients suffering from sacroiliac joint dysfunction throughout Mount Prospect, Palatine, and the northwest Chicago suburbs.",
     causes: [
       "Arthritis wearing down the SI joint cartilage",
       "Pregnancy causing ligament loosening",
@@ -940,6 +964,8 @@ export const CONDITIONS: Condition[] = [
     name: "Complex Regional Pain Syndrome (CRPS)",
     description:
       "Complex regional pain syndrome (CRPS) is a chronic pain condition that usually affects an arm or leg. It typically develops after an injury, surgery, stroke, or heart attack, and the pain is out of proportion to the severity of the initial injury.",
+    overview:
+      "At Rand Medical Center in Arlington Heights, our specialized pain management team provides comprehensive CRPS treatment combining nerve blocks, physical therapy, and advanced pain interventions. We offer expert care for patients with complex regional pain syndrome throughout Des Plaines, Schaumburg, Rolling Meadows, and the northwest Chicago area.",
     causes: [
       "Injury or trauma to the affected limb",
       "Surgery complications",
@@ -979,6 +1005,8 @@ export const CONDITIONS: Condition[] = [
     name: "Occipital Neuralgia",
     description:
       "Occipital neuralgia is a condition characterized by chronic pain in the upper neck, back of the head, and behind the eyes. It is caused by irritation or injury to the occipital nerves, which run from the top of the spinal cord up through the scalp.",
+    overview:
+      "Rand Medical Center's pain specialists in Arlington Heights provide targeted occipital nerve blocks and comprehensive treatment for chronic headaches and occipital neuralgia. Our expert care helps patients from Palatine, Mount Prospect, Elk Grove Village, and throughout the northwest suburbs find lasting relief from debilitating head and neck pain.",
     causes: [
       "Trauma to the back of the head",
       "Neck tension or muscle tightness",
@@ -1018,6 +1046,8 @@ export const CONDITIONS: Condition[] = [
     name: "Trigeminal Neuralgia",
     description:
       "Trigeminal neuralgia is a chronic pain condition affecting the trigeminal nerve, which carries sensation from your face to your brain. Even mild stimulation of your face — such as from brushing your teeth or putting on makeup — may trigger a jolt of excruciating pain.",
+    overview:
+      "At Rand Medical Center in Arlington Heights, our pain management specialists offer advanced treatments for trigeminal neuralgia including medication management, nerve blocks, and interventional procedures. We provide compassionate care for patients experiencing severe facial pain throughout Des Plaines, Palatine, and the northwest Chicago suburbs.",
     causes: [
       "Blood vessel pressing on the trigeminal nerve",
       "Multiple sclerosis or similar disorders",
@@ -1057,6 +1087,8 @@ export const CONDITIONS: Condition[] = [
     name: "Piriformis Syndrome",
     description:
       "Piriformis syndrome is a neuromuscular disorder that occurs when the piriformis muscle, located in the buttock region, spasms and causes buttock pain. The piriformis muscle can also irritate the nearby sciatic nerve and cause pain, numbness, and tingling along the back of the leg.",
+    overview:
+      "Rand Medical Center in Arlington Heights provides specialized treatment for piriformis syndrome combining physical therapy, trigger point injections, and targeted pain management. Our experienced team helps patients from Mount Prospect, Rolling Meadows, Schaumburg, and the northwest Chicago area overcome buttock and leg pain caused by piriformis muscle irritation.",
     causes: [
       "Muscle spasm in the piriformis muscle",
       "Swelling of the piriformis muscle from injury",
@@ -1096,6 +1128,8 @@ export const CONDITIONS: Condition[] = [
     name: "Osteoarthritis",
     description:
       "Osteoarthritis is the most common form of arthritis, affecting millions of people worldwide. It occurs when the protective cartilage that cushions the ends of the bones wears down over time. Although osteoarthritis can damage any joint, the disorder most commonly affects joints in the hands, knees, hips, and spine.",
+    overview:
+      "At Rand Medical Center in Arlington Heights, we provide comprehensive osteoarthritis treatment from conservative therapies to joint injections and surgical options. Our team of orthopedic specialists and pain physicians work together to preserve joint function and reduce pain for patients in Des Plaines, Palatine, and across the northwest Chicago region.",
     causes: [
       "Age-related wear and tear on cartilage",
       "Joint injuries from sports or accidents",
@@ -1135,6 +1169,8 @@ export const CONDITIONS: Condition[] = [
     name: "Auto Accident Injuries",
     description:
       "Auto accident injuries can range from minor to severe and may not be immediately apparent after a collision. Common injuries include whiplash, back injuries, and soft tissue damage. Prompt evaluation and treatment are essential for proper recovery and documentation.",
+    overview:
+      "Rand Medical Center in Arlington Heights specializes in treating auto accident injuries with comprehensive evaluation, documentation, and treatment. We provide same-day appointments and work directly with attorneys and insurance companies. Serving accident victims from Mount Prospect, Des Plaines, Palatine, and throughout the northwest Chicago suburbs with compassionate, expert care.",
     causes: [
       "Rear-end collisions causing whiplash",
       "Side-impact collisions",
@@ -1174,6 +1210,8 @@ export const CONDITIONS: Condition[] = [
     name: "Workplace Injuries",
     description:
       "Workplace injuries can occur in any job setting and may involve acute trauma or develop over time from repetitive activities. Workers' compensation cases require proper documentation and coordinated care between medical providers, employers, and insurers.",
+    overview:
+      "Our Arlington Heights medical team has extensive experience treating workers' compensation injuries and managing all required documentation. We coordinate care with employers, case managers, and insurance companies to ensure smooth claims processing. Serving injured workers from Des Plaines, Elk Grove Village, Schaumburg, and throughout the northwest Chicago suburbs with expert, timely care.",
     causes: [
       "Lifting heavy objects improperly",
       "Slips, trips, and falls",
