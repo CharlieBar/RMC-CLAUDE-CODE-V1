@@ -268,15 +268,11 @@ Each treatment page includes: what it is, ideal candidates, how it’s performed
 
 Providers (All) — /providers/
 
-Dr. Demetrios Giokaris, Internal Medicine — Chief Doctor — /providers/demetrios-giokaris-md/
+Dr. Krishna C. Chunduri, Pain Management — Chief Doctor — /providers/krishna-chunduri-md/
 
-Dr. Krishna C. Chunduri, Pain Management — /providers/krishna-chunduri-md/
+Dr. Asim Eladl, DPT — Physical Therapist — /providers/asim-eladal-dpt/ 
 
-Ruben Bermudez, PA — /providers/ruben-bermudez-pa/
-
-Dr. Christos S. Giannoulias, Orthopedic Surgeon — /providers/christos-giannoulias-md/
-
-Dr. Thomas Poepping, Orthopedic Surgeon — /providers/thomas-poepping-md/
+Sheila Delizo, MSN, APRN, FNP-C — Nurse Practitioner — /providers/sheila-delizo-fnp/
 
 Provider page layout: headshot, specialties, conditions treated, procedures performed, philosophy, education & training, hospital/surgery center affiliations, languages, insurances, new‑patient status, online booking widget, downloadable vCard.
 
